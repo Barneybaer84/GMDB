@@ -1,0 +1,30 @@
+GMDB Crew
+-----------------------
+
+German Mangos DataBase
+
+Version 0.3
+
+MaNGOS 2.0.12
+
+Diese Übersetzung ist kompatiebel mit SDB Changeset 197+, 
+der neusten Sivermoon DB und der neusten MoDB
+
+-----------------------
+Changes from 0.2
+
+- finished translation of "gameobject_template"
+- finished translation of "item_template"
+- converted files to UTF-8 so that they can be importet with every Tool now!
+- many many bug fixes (see sourceforge changelog)
+
+
+-----------------------
+Kommentar:
+
+Wieder mit dabei: Ein DELETE-Patch für alle GMDB Entwickler und die, die es werden wollen!
+
+-----------------------
+### GMDB-Crew ###
+-----------------------
+

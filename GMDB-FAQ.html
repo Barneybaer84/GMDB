@@ -1,0 +1,531 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>-=GMDB-FAQ=-</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<style type="text/css">
+			a{
+				color: #0000ee;
+				text-decoration: underline;
+			}
+			a:hover{
+				color: #000000;
+			}
+			
+			div.toTop{
+				float: right;
+			}
+			
+			div.question{
+				font-size: 20px;
+				font-weight: bold;
+				text-decoration: underline;
+				margin-bottom: 30px;
+			}
+			
+			div.text{
+				margin-bottom: 15px;
+			}
+			
+			strong.green{
+				color: #008800;
+			}
+			
+			strong.red{
+				color: #ff0000;
+			}
+			
+			div.highlight{
+				color: #008800;
+			}
+			
+			hr{
+				margin-top: 50px;
+				margin-bottom: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<a id="top"></a>
+			
+			<div style="text-align: center;">
+<pre>################################################################################
+#####                                                                      #####
+#####          GGGGGGGG    MM      MM     DDDDDDD    BBBBBBB               #####
+#####         GG           M M    M M     D     DD   B      B              #####
+#####        GG    GGG     M  M  M  M     D      D   BBBBBBB               #####
+#####         GG     GG    M   MM   M     D     DD   B      B              #####
+#####          GGGGGGG     M        M     DDDDDDD    BBBBBBB               #####
+#####                             CREW                                     #####
+################################################################################</pre>
+			</div>
+			
+			<h1>##### FAQ	#####</h1>
+			<h2>&Uuml;bersicht:</h2>
+			
+			<h3>Allgemein:</h3>
+			<ul>
+				<li>
+					<a href="#all_what_is_gmdb">
+						Was ist GMDB?
+					</a>
+				</li>
+				<li>
+					<a href="#all_how_to_use">
+						Wie verwende ich die GMDB?
+					</a>
+				</li>
+				<li>
+					<a href="#all_errors_while_patching">
+						Ich bekomme Fehler beim Patchen! Was soll ich tun?
+					</a>
+				</li>
+				<li>
+					<a href="#all_where_is_my_question">
+						Ich kann meine Frage hier nicht finden! Was tun?
+					</a>
+				</li>
+				<li>
+					<a href="#all_how_to_get_newest_version">
+						Wie lese ich die AKTUELLSTEN GMDB Dateien aus dem SVN aus?
+					</a>
+				</li>
+				<li>
+					<a href="#all_sd2">
+						Bosse und Wachen in den St&auml;dten sind noch Englisch! Was kann ich tun?
+					</a>
+				</li>
+			</ul>
+			
+			<h3>Patchen mit SQLyog:</h3>
+			<ul>
+				<li>
+					<a href="#sqlyog_how_to_patch">
+						Wie patche ich bei SQLyog &uuml;ber die Konsole?
+					</a>
+				</li>
+			</ul>
+			
+			<h3>Patchen mit Navicat</h3>
+			<ul>
+				<li>
+					<a href="#navi_how_to_patch">
+						Wie patche ich mit Navicat?
+					</a>
+				</li>
+				<li>
+					<a href="#navi_how_to_patch_cons">
+						Wie patche ich mit Navicat &uuml;ber die Konsole?
+					</a>
+				</li>
+			</ul>
+			
+			<h3>Patchen &uuml;ber mySQL:</h3>
+			<ul>
+				<li>
+					<a href="#mysql_how_to_patch">
+						Wie patche ich aus der mySQL Konsole unter Windows?
+					</a>
+				</li>
+			</ul>
+			
+			<h3>Patchen unter GNU/Linux:</h3>
+			<ul>
+				<li>
+					<a href="#linux_how_to_patch">
+						Wie patche ich unter GNU/Linux?
+					</a>
+				</li>
+			</ul>
+			
+			<br />
+			<hr />
+			
+			<div class="toTop">
+				<a href="#top">
+					Go To Top
+				</a>
+			</div>
+			<div class="question" id="all_what_is_gmdb">
+				Was ist GMDB?
+			</div>
+			<div class="text hilight">
+				GMDB ist die Abk&uuml;rzung f&uuml;r GermanMangosDataBase!
+			</div>
+			<div class="text">
+				GMDB ist das derzeit gr&ouml;&szlig;te deutschsprachige Projekt, dass sich zum Ziel gesetzt hat Datenbanken von den 2 Projekten (MaNGOS, Trinity) auf Deutsch zu &uuml;bersetzen!
+			</div>
+			<div class="text">
+				GMDB teilt sich in 2 Unterprojekte auf:
+				<ol>
+					<li>
+						GMDB <strong class="green">GermanMangosDataBase</strong>
+						<br />
+						Dieses Projekt k&uuml;mmert sich um die Datenbanken von MaNGOS (z.B. UDB (<a href="http://sourceforge.net/projects/unifieddb/" target="_blank">UDB on Sourceforge</a>))
+					</li>
+					<li>
+						GTDB <strong class="green">GermanTrinityDataBase</strong>
+						<br />
+						Dieses Projekt k&uuml;mmert sich um die Datenbanken von Trinity (z.B. TrinityDB (<a href="http://svn.assembla.com/svn/trinitydatabase" target="_blank">TrinityDB SVN</a>))
+					</li>
+				</ol>
+			</div>
+			<div class="text">
+				Die 2 Datenbanken die hier aufgelistet sind, sind nur Beispiele!
+			</div>
+			<div class="text">
+				Alle Dateien sind <strong class="red">UPDATE-Files</strong>!
+			</div>
+			<div class="text">
+				Das hei&szlig;t, ihr k&ouml;nnt sie auch f&uuml;r andere DBs verwenden!
+			</div>
+			
+			<hr />
+			
+			<div class="toTop">
+				<a href="#top">
+					Go To Top
+				</a>
+			</div>
+			<div class="question" id="all_how_to_use">
+				Wie verwende ich die GMDB?
+			</div>
+			<div class="text">
+				<ol>
+					<li>
+						Zuerst l&auml;dtst du dir die neuste GMDB herunter!
+						<br />
+						Du findest das letzte offizielle Release im <a href="http://sourceforge.net/project/showfiles.php?group_id=193394" target="_blank">Downloadbereich</a>!
+						<br />
+						Aktuellere Releases gibt es &uuml;bers SVN! (Wie du diese bekommst wird in einem anderen Teil des FAQ's erkl&auml;rt!)
+					</li>
+					<li>
+						Nun entpackst du die soeben erhaltene *.rar Datei (Du ben&ouml;tigt hierzu ein Programm wie WinRar -> Google)
+					</li>
+					<li>
+						Die entpackte *.sql Datei patched du nun &uuml;ber deine UDB (oder jede andere DB die mit MaNGOS kompatibel ist)
+						<br />
+						Wie du patched erf&auml;hrst du in der weiteren FAQ!
+					</li>
+				</ol>
+			</div>
+			
+			<hr />
+			
+			<div class="toTop">
+				<a href="#top">
+					Go To Top
+				</a>
+			</div>
+			<div class="question" id="all_errors_while_patching">
+				Ich bekomme Fehler beim Patchen! Was soll ich tun?
+			</div>
+			<div class="text">
+				Sollten Umlaut-Fehler bei dir auftreten versuche zun&auml;chst &uuml;ber die Konsole zu patchen! (Wie?--->Siehe weitere FAQ)
+			</div>
+			<div class="text">
+				Tritt der Fehler danach immernoch auf wende dich bitte an uns 
+				(<a href="mailto:mordor5654@users.sourceforge.net?subject=Fehler%20beim%20Patchen">e-Mail an Mordor</a> 
+				oder im <a href="http://sourceforge.net/forum/?group_id=193394" target="_blank">Sourceforge-Forum</a> 
+				oder im <a href="http://udbforums.kicks-ass.net/index.php?board=42.0" target="_blank">deutschen Unterforum im UDB Forum</a> 
+				oder in unserem eigene <a href="http://gmdb-forum.de/" target="_blank">GMDB-Forum</a>)
+			</div>
+			
+			<hr />
+			
+			<div class="toTop">
+				<a href="#top">
+					Go To Top
+				</a>
+			</div>
+			<div class="question" id="all_where_is_my_question">
+				Ich kann meine Frage hier nicht finden! Was tun?
+			</div>
+			<div class="text">
+				Gerne beantworten wir dir auch Fragen die du ganz speziell zu unserem Projekt hast!
+			</div>
+			<div class="text">
+				Du kannst uns unter folgenden Links jederzeit erreichen:
+			</div>
+			<div class="text">
+				<ul>
+					<li>
+						<a href="mailto:mordor5654@users.sourceforge.net?subject=Fehler%20beim%20Patchen">
+							e-Mail an Mordor
+						</a>
+					</li>
+					<li>
+						<a href="https://sourceforge.net/projects/gm-db/forums" target="_blank">
+							Sourceforge-Forum von GMDB
+						</a>
+					</li>
+					<li>
+						<a href="http://udbforums.kicks-ass.net/index.php?board=42.0" target="_blank">
+							Deutsches Unterforum im UDB Forum
+						</a>
+					</li>
+					<li>
+						<a href="http://gmdb-forum.de/" target="_blank">
+							GMDB-Forum
+						</a>
+					</li>
+					<li>Oder du postest einfach in userem Thread aus den diversen MaNGOS Foren!</li>
+				</ul>
+			</div>
+			
+			<hr />
+			
+			<div class="toTop">
+				<a href="#top">
+					Go To Top
+				</a>
+			</div>
+			<div class="question" id="all_how_to_get_newest_version">
+				Wie lese ich die AKTUELLSTEN GMDB Dateien aus dem SVN aus?
+			</div>
+			<div class="text">
+				<ol>
+					<li>
+						Lade dir zuerst TortoiseSVN aus dem Netz! Du findest es <a href="http://tortoisesvn.net/downloads" target="_blank">HIER</a>
+					</li>
+					<li>
+						Installiere das Programm!
+					</li>
+					<li>
+						Nun erstellst du einen Ordner mit dem Namen GMDB (kann auch anders hei&szlig;en)
+					</li>
+					<li>
+						Rechtsklick auf den neuen Ordner und w&auml;hle "SVN Auschecken"
+					</li>
+					<li>
+						Als "URL des Projectarchivs" gibst du folgenden Link ein: https://gm-db.svn.sourceforge.net/svnroot/gm-db
+					</li>
+					<li>
+						Best&auml;tige nun noch! Darauf wird das komplette SVN ausgelesen! Wenn dies beendet wurde wird dir angezeigt welches Release nun im Ordner ist
+					</li>
+					<li>
+						Wenn du nun erneut auf den Ordner rechtsklicktst und auf SVN aktualisieren gehst, wird &uuml;berpr&uuml;ft, ob ein neueres Release vorhanden ist und dies wird dann auch gleich gedownloaded!
+					</li>
+				</ol>
+			</div>
+			
+			<hr />
+			
+			<div class="toTop">
+				<a href="#top">
+					Go To Top
+				</a>
+			</div>
+			<div class="question" id="all_sd2">
+				Bosse und Wachen in den St&auml;dten sind noch Englisch! Was kann ich tun?
+			</div>
+			<div class="text">
+				Bosse und sprechende NPCs werden von ScriptDev2 festgelegt!
+			</div>
+			<div class="text">
+				SD2 hat erst vor kurzem Multilanguagesupport eingef&uuml;hrt!
+			</div>
+			<div class="text">
+				D.h. es sind noch nicht alle Texte in die SD2-Datenbank &uuml;bertragen!
+			</div>
+			<div class="text">
+				Die bereits &uuml;bertragenen Texte (und &uuml;bersetzten) findest du im SVN im entsprechenden ScriptDev2 Ordner! Diese Dateien musst du in deine SD2-Datenbank patchen!
+			</div>
+			
+			<hr />
+			
+			<div class="toTop">
+				<a href="#top">
+					Go To Top
+				</a>
+			</div>
+			<div class="question" id="sqlyog_how_to_patch">
+				Wie patche ich bei SQLyog &uuml;ber die Konsole?
+			</div>
+			<div class="text">
+				<ol>
+					<li>
+						&Ouml;ffne SQLyog und connecte zu deiner DB!
+					</li>
+					<li>
+						W&auml;hle die zu patchende DB links aus
+					</li>
+					<li>
+						&Ouml;ffne das *.sql-File : File -> Open
+					</li>
+					<li>
+						Nun steht im "Query" alles was in der *.sql Datei enthalten war
+					</li>
+					<li>
+						Nun noch auf Edit -> Execute Query -> Execute All Queries
+					</li>
+					<li>
+						SQLyog beginnt zu arbeiten: Fehler werden ignoriert (falls &uuml;berhaupt vorhanden)! 
+						Wenn der Vorgang zu Ende ist erscheint unter "Query" ein Stausbericht!
+					</li>
+				</ol>
+			</div>
+			
+			<hr />
+			
+			<div class="toTop">
+				<a href="#top">
+					Go To Top
+				</a>
+			</div>
+			<div class="question" id="navi_how_to_patch">
+				Wie patche ich mit Navicat?
+			</div>
+			<div class="text">
+				<ol>
+					<li>
+						&Ouml;ffne Navicat und connecte zu deiner DB!
+					</li>
+					<li>
+						Rechtsklick auf die Datenbank auf die gepatcht werden soll (Standart: mangos)
+					</li>
+					<li>
+						W&auml;hle: "Batchdatei ausf&uuml;hren..."
+					</li>
+					<li>
+						W&auml;hle nun das (bzw. die) SQL-File(s) aus
+					</li>
+					<li>
+						&Ouml;ffnen
+					</li>
+					<li>
+						Navicat beginnt das Patch-File in die Datenbank zu packen
+					</li>
+				</ol>
+			</div>
+			<div class="text">
+				INFO: Sollten Fehler auftreten, versuche zuerst &uuml;ber die Navicat Konsole zu patchen (siehe weitere FAQ)!
+			</div>
+			<div class="text">
+				Tritt der Fehler danach immernoch auf wende dich bitte an uns 
+				(<a href="mailto:mordor5654@users.sourceforge.net?subject=Fehler%20beim%20Patchen">e-Mail an Mordor</a> 
+				oder im <a href="https://sourceforge.net/projects/gm-db/forums" target="_blank">Sourceforge-Forum</a> 
+				oder im <a href="http://udbforums.kicks-ass.net/index.php?board=42.0" target="_blank">deutschen Unterforum im UDB Forum</a> 
+				oder in unserem eigene <a href="http://gmdb-forum.de/" target="_blank">GMDB-Forum</a>)
+			</div>
+			
+			<hr />
+			
+			<div class="toTop">
+				<a href="#top">
+					Go To Top
+				</a>
+			</div>
+			<div class="question" id="navi_how_to_patch_cons">
+				Wie patche ich mit Navicat &uuml;ber die Konsole?
+			</div>
+			<div class="text">
+				<ol>
+					<li>
+						&Ouml;ffne Navicat!
+					</li>
+					<li>
+						&Ouml;ffne deine Datenbank und Rechtsklick auf die mangos DB (Standartname: mangos)!
+					</li>
+					<li>
+						W&auml;hle "Konsole..."
+					</li>
+					<li>
+						Nun auf Datei ---> Laden! Und &ouml;ffne die *.sql-Datei
+					</li>
+					<li>
+						Nun noch ENTER
+					</li>
+					<li>
+						Navicat beginnt zu arbeiten
+					</li>
+					<li>
+						Wenn keine weiteren Nachrichten in der Konsole erscheinen ist der Patchvorgang abgeschlossen!
+					</li>
+				</ol>
+			</div>
+			
+			<hr />
+			
+			<div class="toTop">
+				<a href="#top">
+					Go To Top
+				</a>
+			</div>
+			<div class="question" id="mysql_how_to_patch">
+				Wie patche ich aus der mySQL Konsole unter Windows?
+			</div>
+			<div class="text">
+				<ol>
+					<li>
+						Man &ouml;ffnet die mySQL Konsole unter Windows unter Start -> Programme -> mySQL -> "MySQL Command Line Client"
+					</li>
+					<li>
+						Dort wird man nach einem Passwort gefragt -> Passwort eingeben
+					</li>
+					<li>
+						W&auml;hle nun die Datenbank aus auf die du patchen willst!
+						<br />
+						Dies geht mit dem Befehl: Use "DATENBANKNAME" (Standart: mangos)
+					</li>
+					<li>
+						Nun ben&ouml;tigt ihr den Pfad zu euerem File das ihr patchen wollt!
+						<br />
+						Nehmen wir an der file hei&szlig;t "GMDB.sql" und liegt direkt unter c:/
+						<br />
+						Hier w&uuml;rdet ihr folgenden commend ben&ouml;tigen: <code style="color: #ff0000;">\. c:/GMDB.sql</code>
+					</li>
+					<li>
+						Die Konsole arbeitet! Anschlie&szlig;end ist das Patchen beendet!
+					</li>
+				</ol>
+			</div>
+			
+			<hr />
+			
+			<div class="toTop">
+				<a href="#top">
+					Go To Top
+				</a>
+			</div>
+			<div class="question" id="linux_how_to_patch">
+				Wie patche ich unter GNU/Linux?
+			</div>
+			<div class="text">
+				<ol>
+					<li>
+						Man entpackt die *.rar Datei mit dem Befehl <code style="color: #ff0000;">unrar x *.rar /path/to/extract</code>
+					</li>
+					<li>
+						Die entpackte Datei findet ihr unter /path/to/extract
+					</li>
+					<li>
+						Nun wechseln wir in die mySQL Konsole mit dem Befehl <code style="color: #ff0000;"> mysql -u [USER] -p</code> und gebt dann euer Passwort ein.
+					</li>
+					<li>
+						Das weitere Vorgehen ist genau das selbe wie unter Windows und wird unter 
+						<a href="#mysql_how_to_patch">Wie patche ich aus der mySQL Konsole unter Windows?</a> beschrieben!
+					</li>
+				</ol>
+			</div>
+			<div class="text">
+				Hinweis: Es ist auch m&ouml;glich freie Programme aus der OpenSource Welt f&uuml;r GNU/Linux zu benutzen die sich auch finden lassen ;)
+			</div>
+			
+			<hr />
+			
+			<div style="text-align: center;">
+<pre>################################################################################
+#####                                                                      #####
+#####          GGGGGGGG    MM      MM     DDDDDDD    BBBBBBB               #####
+#####         GG           M M    M M     D     DD   B      B              #####
+#####        GG    GGG     M  M  M  M     D      D   BBBBBBB               #####
+#####         GG     GG    M   MM   M     D     DD   B      B              #####
+#####          GGGGGGG     M        M     DDDDDDD    BBBBBBB               #####
+#####                             CREW                                     #####
+################################################################################</pre>
+			</div>
+		</div>
+	</body>
+</html>

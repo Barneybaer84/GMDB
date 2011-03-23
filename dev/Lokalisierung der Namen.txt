@@ -1,0 +1,1333 @@
+﻿Hier findet ihr alle Namen die sich während der Patches verändert haben!
+
+
+1.2
+---
+1.2.1
+-----
+1.2.2
+-----
+1.2.3
+-----
+1.2.4
+-----
+1.3
+---
+1.3.1
+-----
+1.4
+---
+	Rethiel der Grünaufseher --> Rethiel der Sumpfhüter 
+	Fray-Insel --> Prügel-Eiland 
+	Dreamfoil --> Traumblatt 
+	Silverwindzuflucht --> Silberwindzuflucht 
+	Großdrachenclan --> Drachenschwarm 
+	Die geschmolzene Spange --> Der geschmolzene Übergang 
+	Die Thandol-Spange --> Der Thandol-Übergang 
+	Schlangenstich --> Schlangenbiss 
+	Vipernstich --> Vipernbiss 
+	Schatten-Schaden --> Schattenschaden 
+	Chillwind Camp --> Chillwind-Lager 
+	Roß --> Ross 
+	Rüstung-Unterstützung --> Rüstungsbonus 
+	Lake Frenzy --> See-Frenzy 
+	Cenarion --> Cenarius 
+	Darkiron --> Dunkeleisen 
+	Faseriges Wolfs-/Geierfleisch --> Sehniges Wolfs-/Geierfleisch 
+	Besänftigende Gewürze/Schildkrötensuppe --> milde Gewürze/Schildkrötensuppe 
+	Arkan-Widerstand --> Arkanwiderstand 
+	Natur-Widerstand --> Naturwiderstand 
+	Schatten-Widerstand --> Schattenwiderstand 
+	Magie-Widerstand --> Magiewiderstand 
+	Feuer-Widerstand --> Feuerwiderstand 
+	Frost-Widerstand --> Frostwiderstand 
+	Ivar the foul --> Ivan der Verfaulte 
+	(Ritual) Kreis der größeren Beschwörung --> Ritual des mächtigen Beschwörungskreises
+1.4.1
+-----
+1.4.2
+-----
+1.5
+---
+	Fadenscheinige Gegenstände --> Sehr Leichte Gegenstände 
+	Small Lustrous Pearl --> Kleine irisierende Perle 
+	Iridescent Pearl --> Schillernde Perle 
+	Goblin-Zugwagen -> Goblin-Rennmaschine 
+	Gnomen-Zugwagen -> Gnomen-Rennmaschine 
+	Ironfur --> Eisenfell 
+	Venomweb-Tal --> Giftwebertal 
+	Thistleshrubtal --> Disteltal 
+	ungeschlachte Gegenstände --> derbe Gegenstände 
+	derbe Gegenstände --> plumpe Gegenstände 
+	Vernichtungsschlag --> Todesstoß 
+1.5.1
+-----
+1.6
+---
+	Stammeslederverarbeitung --> Klanlederverarbeitung. 
+	Set: Nekrophile Roben --> Roben des Totenbeschwörers 
+	Set: Imperiale Plattenrüstung --> Stolz des Imperiums -?-
+	Paladinset "Esse des Lichts": "Leichtgeschmiedete" Setteile wurden in "Armschienen des Lichts" usw. umbenannt. 
+	Magiergewirkt --> Magierzwirn 
+	Schreckensgewirkt --> Schreckenszwirn 
+	Traumgewirkter --> Traumzwirn 
+	Flammengewirkt --> Brandzwirn 
+	Frostgewirkt --> Winterzwirn 
+	Geistgewirkt --> Geisterzwirn 
+	Grüngewirkt --> Grünzwirn 
+	Schattengewirkt --> Schattenzwirn 
+	Hexergewirkt --> Hexerzwirn 
+
+
+1.6.1
+-----
+1.7
+---
+	Deepmoss --> Kluftmoos 
+	Shadowmaw --> Schattentatze 
+	Shaleskin --> Schieferhaut 
+	Alle Kreaturen mit 'Pygmäen' --> 'Zwerg'... (z.B. Pygmy Cockatrice --> Zwerghühnchen) 
+	Boulderkin --> Felsklopper 
+	Flarecore --> Flimmerkern 
+Gegenstände und Kreaturen mit der Bezeichnung 'Schlepper', wurden jetzt in 'Häscher' umbenannt. 
+Ortsnamen: 
+	Boulderlode-Mine --> Felsadermine 
+	Red Rocks --> Teufelsfelsen 
+	Bramblebladeklamm --> Dornrankenklamm 
+	Kapelle der Hoffnung des Lichts --> Kapelle des hoffnungsvollen Lichts 
+	Morgan's Vigil --> Morgans Wacht 
+	Talonbranchlichtung --> Nachtlaublichtung 
+1.8
+---
+Gegenstände 
+	Ring of the Underwood --> Ring des Waldlandes 
+	Dawnspire-Cord --> Kordel der Morgenröte 
+	Ring der Underwood --> Ring des Waldlandes 
+	Stonewall Girdle --> Steinkrempengurt 
+	Chiselbrand-Gurt --> Beitelmalgurt 
+	Venomshroud --> Giftschleier 
+	Shadowhide --> Schattenfell 
+	Saltstone --> Salzstein 
+	Starsight-Tunika --> Sternensuchertunika 
+	Emberfury-Talisman --> Talisman des glühenden Zorns 
+	Blazefury-Medallion --> Medaillon des lodernden Zorns 
+	Clamshell-Armschienen --> Doppelgreifarmschienen 
+	Sprightring-Helm --> Rüstringhelm 
+	Nightsky --> Nachthauch 
+	Geheimnisfleisch --> Eigenartiges Fleisch 
+	Geheimniseintopf --> Eigenartiger Eintopf 
+	Deadwood XXX --> XXX der Totenwaldfelle 
+Setgegenstände 
+	Gewänder der Gerechtigkeit --> Gegenstände überarbeitet 
+	Nebel der Furcht --> Roben des Glutnebels 
+	Wildherzset --> Herz der Wildnis 
+	Rüstung des gerechten Urteils --> Rüstung des Richturteils 
+Ortsnamen 
+	Raven Hill --> Rabenflucht 
+	Die Blutgift Wasserfälle --> Die Blutgiftfälle 
+	Sentinel Hill --> Die Späherkuppe 
+	Frostsaber Rock --> Frostsäblerfelsen 
+	Twilighttal --> Das Zwielichttal 
+	Skull Rock --> Die Knochenhöhle 
+	Thunder Ridge --> Die Donnerklippen 
+	Der faulende Obsthain --> Der verlassene Obstgarten 
+	Mistmantle-Anwesen --> Anwesen der Mistmantles 
+	Nightmaretal --> Alptraumtal 
+	Haldarr-Lager --> Lager der Haldarr 
+	Whispershore --> Die stille Küste 
+	Legash-Lager --> Lager der Legashi 
+	Twilight Base Camp --> Basislager der Twilight 
+	Valor's Rest --> Heldenwacht 
+	Darkmist Cavern --> Graunebelhöhlen 
+	Dreadmistgipfel --> Glutnebelgipfel 
+	Dreadmist-Bau --> Glutnebelbau 
+	Dreadmistgipfelteich --> Glutnebelteich 
+	Highperch --> Der Steilhang 
+	Dustwindhöhle --> Staubwindhöhle 
+	Dustwind Gulch --> Staubwindschlucht 
+	Mosshide-Moor --> Moosfellmoor 
+	Palemane Rock --> Bleichmähnenfels 
+	Windfury-Kamm --> Windfurienkamm 
+	Die Palisaden von Stormwind --> Das Depot von Stormwind 
+	Bloodfen-Bau --> Blutsumpfbau 
+	Bluefen --> Blaumoor 
+	Emberstrifes Hütte --> Aschenschwingens Bau 
+	Drywhiskerschlucht --> Schlucht der Trockenstoppel 
+	Deadwood Village --> Lager der Totenwaldfelle 
+	Southwind --> Südwindposten 
+Kreaturen 
+	Silvermane --> Silbermähnen 
+	Wrathtail --> Rächerflossen (Nagas) 
+	Darkfang --> Dunkelzahn 
+	Blitzschlagbalg --> Blitzechse 
+	Thunderhead --> Donnerkopf 
+	Stormsnout --> Sturmschnauze 
+	Thunderstomp --> Donnerstampfer 
+	Stormhide --> Sturmechse 
+	Thunderstomp Stegodon --> Donnerstampferstegodon 
+	Ingenieurskunstfachmann --> Ingenieursfachmann 
+	Pridewing --> Prachtschwingen 
+	Oakenscowl --> Grimmeiche 
+	Deathsheadstamm --> Totenkopfstamm 
+	Highperch Creatures --> Steilhang 
+	Nightweb-Spinnen --> Nachtweber 
+	Mosshoof --> Mooshuf 
+	Creepthess --> Kriechfänger 
+	Bloodfen --> Blutsumpf 
+	Grimmaw --> Grimmtatze 
+	Ironbeak --> Eisenschnabel 
+	Twilight-Läufer --> Mondlichtläufer 
+	Spiteflayer --> Fledderschnabel 
+	Oakpaw --> Knurrtatze 
+	Bloodsnout-Worg --> Blutschnauzenworg 
+	Dustwind-Harpyen --> Harpyien der Staubschwingen 
+	Mosshide --> Moosfelle (Gnolle) 
+	Palemane... --> ...der Bleichmähnen 
+	Windfury... --> ...der Windfurien 
+	Stormscale-Nagas --> Sturmschuppen 
+	Spitelash-Nagas --> Grollflossen 
+	Hatecrest-Nagas --> Hasskämme 
+	Daggerspine --> Säbelflossen 
+	Thrashtail --> Donnerschwanz 
+	Gritjaw --> Knirschkiefer 
+	Saltstone --> Salzstein 
+	Ironeye --> Eisenauge 
+	Jadespine --> Jaderücken 
+	Ambereye --> Goldaugen 
+	Deatheye --> Todesauge 
+	Ursangous --> Ursangus 
+	Shadumbra --> Schattumbra 
+	Angerclaw --> Wutklauen 
+	Shardtooth --> Splitterzahn 
+	Drywallow --> Staubsuhler 
+	Shadowhide XXX --> XXX der Schattenfelle 
+	Timberweb-Eremit --> Baumspinnereremit 
+	Emberstrife --> Aschenschwinge 
+	Slitherblade --> Zackenkämme (Naga) 
+	Sunscale --> Bluthorn 
+	Saltflats --> Salzwüsten 
+	Blacknails --> Schwarznagel 
+	Grimtooth --> Grimmzahn 
+	Fangore --> Fangor 
+	Un'Goro-Stomper --> Un'Goro-Stampfer 
+	Drywhisker-XXX --> XXX der Trockenstoppel 
+	Deadwood XXX --> XXX der Totenwaldfelle
+1.8.1
+-----
+1.8.2
+-----
+1.8.3
+-----
+1.8.4
+-----
+1.9
+---
+1.9.1
+-----
+1.9.2
+-----
+1.9.3
+-----
+Ortsnamen 
+	Blackrock-Festung --> Festung der Blackrock 
+	Darkspearstrand --> Strand der Darkspear 
+	Brauerei Thunderbrew --> Brauerei Donnerbräu 
+	Grom'gol Basislager --> Basislager von Grom'gol 
+	Dragonmaw-Tore --> Tore der Dragonmaw 
+	Warpwoodviertel --> Wucherborkenviertel 
+	Shadow Wing Lair --> Schattenschwingenunterschlupf 
+	Bluegill-Marsch --> Blaukiemenmarschen 
+Gegenstände 
+	Voones Klemmgriffe --> Voones Zwingenhandschutz 
+	Klemmgriffe --> Zwingenhandschutz 
+	Loch-Krok-Balgweste --> Weste aus Lochkrokiliskenhaut 
+	Stahlschmied-Schienbeinschützer --> Schienbeinschützer des Stahlschmieds 
+	Kahler-Heuler-Armschützer --> Armschützer des kahlen Heulers 
+	Thunderbrew-Lagierbier --> Donnerbräu Lagerbier 
+	Barrel of Thunderbrew Ale --> Fass mit Donnerbier 
+	Donnerbrauering --> Ring der Donnerbraue 
+	Battlechaser-Schienbeinschützer --> Schienbeinschützer der Kampfraserei 
+	Blackflame-Cape --> Cape der schwarzen Flamme 
+	Blackfury --> Schattenzorn 
+	Blinkstrike-Armschützer --> Armschützer des flinken Schlags 
+	Bluegill-Sandalen --> Sandalen der Blaukiemen 
+	Brazecore-Armschützer --> Glutbandarmschützer 
+	Brusslehide-Gamaschen --> Gaiagamaschen 
+	Chillhide-Armschienen --> Armschienen der eisigen Kälte 
+	Clayridge-Helm --> Vulkanhelm 
+	Cloudkeeper-Beinplatten --> Beinplatten des Wolkenbehüters 
+	Corpselight-Schienbein-Schützer --> Schienbeinschützer des Leichenglanzes 
+	Dalewind-Beinkleider --> Beinkleinder der Talwinde 
+	Darkshire-Panzergamaschen --> Panzergamaschen von Darkshire 
+	Deepfury-Armschienen --> Armschienen des tiefen Zorns 
+	Deputy-Kettenmantel --> Kettenmantel des Deputies 
+	Direwing-Beinschützer --> Beinschützer der Düsterschwinge 
+	Drakewing-Bänder --> Drachenschwingenbänder 
+	Dredgemire-Gamaschen --> Gamaschen des Sumpfgräbers 
+	Elementare Rockridge-Gamaschen --> Elementarfelsgamaschen 
+	Featherbead-Armschienen --> Federleichte Armschienen 
+	Fleetfoot-Schienbeinschützer --> Schienbeinschützer des Flinkfußes 
+	Ghostloom-Gamaschen --> Geistergamaschen 
+	Grimtoll-Handgelenksschutz --> Handgelenkschutz des dunklen Tributs 
+	Gripsteel-Handgelenksschutz --> Handgelenkschutz des eisernen Griffs 
+	Gustweald-Umhang --> Klippenwindumhang 
+	Happy Fun Rock --> Lustiger Spaßstein 
+	Lavacrest-Gamaschen --> Lavakranzgamaschen 
+	Lightheel-Stiefel --> Leichtfußstiefel 
+	Lightstep-Gamaschen --> Gamaschen des leichten Schritts 
+	Loamflake-Armschienen --> Lehmfarbene Armschienen 
+	Loomguard-Armstützen --> Armstützen der Lichtwacht 
+	Magiskull-Manschetten --> Schädelmanschetten des Magus 
+	Mistwalker-Stiefel --> Stiefel des Nebelläufers 
+	Nightbrace-Tunika --> Schattenhauchtunika 
+	Nightfall --> Nachtlauer 
+	Nightfall---> Nachtlauer 
+	Owlbeards-Armschienen --> Eulenbarts Armschienen 
+	Plainsguard-Gamaschen --> Gamaschen des Ebenenwächters 
+	Pridemail-Gamaschen --> Panzergamaschen des Löwenmutes 
+	Ribsteel-Fußschützer --> Stahlbeschlagene Fußschützer 
+	Ridgeback-Armschienen --> Salzgegerbte Armschienen 
+	Riverpride-Halsschmuck --> Halsschmuck des Flussgeists 
+	Shadefiend-Stiefel --> Stiefel der Schattengeister 
+	Shadewood-Mantel --> Schattenlaubmantel 
+	Shadow-Wing-Fokussierstab --> Fokussierstab der Schattenschwingen 
+	Shalehusk-Stiefel --> Schieferplattenstiefel 
+	Silkstream-Manschetten --> Seidenbandmanschetten 
+	Skullsmoke-Hose --> Schädelstaubhose 
+	Slashclaw-Armschienen --> Wolfsklauenarmschienen 
+	Spritekin-Umhang --> Grimmlingumhang 
+	Stonefist-Gurt --> Steinfaustgurt 
+	Stoneweaver-Gamaschen --> Gamaschen des Steinwebers 
+	Stormbringer-Gürtel --> Gürtel des Sturmbringers 
+	Swiftdart-Kampfstiefel --> Kampfstiefel der Pfeilschnelle 
+	Tearfall-Armschienen --> Tränensteinarmschienen 
+	Der Lobotomizer --> Der Geistesbrecher 
+	Thunderfury --> Donnerzorn 
+	Tigerstrike-Mantel --> Tigerfellmantel 
+	Tressermane-Gamaschen --> Flechtmähnengamaschen 
+	Trollbane-Gamaschen --> Gamaschen des Trollfluchs 
+	Vigorsteel-Unterarmschienen --> Unterarmschienen der stählernen Schlagkraft 
+	Webwing-Umhang --> Netzschwingenumhang 
+	Wolfrunner-Schuhe --> Schuhe des Wolfsläufers 
+	Wolfshear-Gamaschen --> Wolfsfellgamaschen 
+Setgegenstände 
+	Nightscape- --> des Nachtschleichers 
+	Schlachtrüstung der Tapferkeit --> Schlachtrüstung der Ehre 
+Kreaturen 
+	Gordok Hinterwald --> Einzelkämpfer der Gordok 
+	Gordok- --> der Gordok 
+	Arctic Riding Wolf --> Arktischer Reitwolf 
+	Frostwolf-Heuler --> Frostwolfheuler 
+	Allianz- --> der Allianz 
+	Horde- --> der Horde 
+	Blackrock- --> der Blackrock 
+	Sharptooth Frenzy --> Nadelzahnfrenzy 
+	Dreck-Frenzy --> Schlammfrenzy 
+	-Frenzy --> frenzy 
+	Streitross der Stormpike --> Streitwidder der Stormpike 
+	Scarshield- --> der Schmetterschilde 
+	Thunderbrew --> Donnerbräu 
+	Warpwood-Moosschinder --> Wucherborkenschinder 
+	Warpwood- --> Wucherborken 
+	Tendris Warpwood --> Tendris Wucherborke 
+	Deeprot- --> Rottwurzel 
+	Deeprot-Verwirrer --> Rottwurzelgreifer 
+	Dragonmaw- --> der Dragonmaw 
+	Prinz Thunderaan --> Prinz Donneraan 
+	Ebonroc --> Schattenschwinge 
+	Spirestone-Lord-Magus --> Maguslord der Felsspitzoger 
+	Spirestone-Oger-Magus --> Magus der Felsspitzoger 
+	Spirestone- --> der Felsspitzoger 
+	Bloodaxe- --> der Blutäxte 
+	Bloodaxe-Legion --> Blutaxtlegion 
+	Smolderthorn- --> der Gluthauer 
+	Die Schmelze --> Der Schmelzer (Titel von Gilnid) 
+	Thessala-Hydra --> Thessalahydra 
+	Bluegill- --> der Blaukiemen 
+	Dunkeleisen- --> der Dunkeleisenzwerge 
+	Zanzil- --> von Zanzil 
+	Rattlecage-Soldat --> Klappernder Skelettsoldat 
+	Rattlecage-Skelett --> Klapperndes Skelett 
+	Crackedskull-Soldat --> Trümmerschädelsoldat 
+	Dunkelauge-Knochenwerfer --> Dunkler Skelettmagier 
+	Felpeitsche --> Teufelspeitsche 
+	Übel riechender Kadaver --> Übel riechender Leichnam 
+	Schreckensfürst --> Schreckenslord 
+1.9.4
+-----
+1.10
+----
+Ortsnamen 
+	Die Brennende Steppe --> Die brennende Steppe 
+	Die Sengende Schlucht --> Die sengende Schlucht 
+Gegenstände 
+	Hasenführer-Handschuhe --> Handschuhe des Hasenjägers 
+	Eberführer-Handschuhe --> Handschuhe des Eberjägers 
+	Wolfsführer-Handschuhe --> Handschuhe des Wolfsjägers 
+	Roben des Arkanen --> Roben von Arcana 
+	Akolyten-Opferroben --> Opferroben des Akolyten 
+	Rockjaw --> der Felskiefer 
+	Korb mit hausgemachtem Brot --> Brotsack mit hausgemachtem Brot 
+	Leere Hülle --> Leere Pralinenhülle 
+	Gesegneter Akolytenstab Qiraji --> Gesegneter Akolytenstab der Qiraji 
+	Kettenmantel des Deputies --> Kettenmantel des Deputys 
+	Die Beschreibungen der Zauberbücher aus Ahn'Qiraj (z.B. 'Leitfaden des Meuchelns IX' oder 'Foliant der Arkanen Geschosse VIII') wurden korrigiert. 
+Setgegenstände 
+	Umarmung des tödlichen Schlags --> Umarmung des Todesboten (Ahn'Qiraj-Schurkenset) 
+	des tödlichen Schlags --> des Todesboten 
+Kreaturen 
+	Scharlachroter Auszubildender --> Scharlachroter Lehrling 
+	Eisenborken-Beschützer --> Beschützer von Eisenborke 
+	Unlebendiger/Unlebender --> Untoter 
+	Shen'dralar- --> der Shen'dralar 
+	Eldreth- --> der Eldreth 
+	Rockjaw- --> der Felskiefer 
+	Verirrter Schrecken --> Wuchernder Schrecken 
+	Übel riechender Leichnam --> Stinkender Leichnam 
+	Dunkler Zaubererkundiger --> Dunkler Zauberer 
+	Verfaulter Flieger --> Eitriger Flieger 
+	Rastloser Schemen --> Ruheloser Schemen 
+	Dunkler-Strang- --> des dunklen Strangs 
+	Marodierendes/r --> Plünderndes/r 
+	Seuchen-Ghul --> Seuchenghul 
+	Kannibalen-Ghul --> Menschenfresserghul 
+	Thorneater-Ghul --> Dornenfresserghul 
+	Fleischschinder-Ghul --> Fleischschinderghul 
+	Boneflayer-Ghul --> Knochenschinderghul 
+	Ungesehen --> Unsichtbarer 
+	Geißel/Geißel- --> der Geißel 
+	Gordunni- --> der Gordunni 
+	Mo'grosh- --> der Mo'grosh 
+	Zukk'ash- --> der Zukk'ash 
+	Centipaar- --> der Centipaar 
+	Hazzali- --> der Hazzali 
+	Gorishi- --> der Gorishi 
+	Nijelsspitze-Wache --> Wache der Nijelspitze
+1.10.1
+------
+1.10.2
+------
+1.11
+----
+	Drachenschuppenlederverarbeitung --> Drachenlederverarbeitung 
+	Firegut-Furchtsturm --> Furchtsturm der Feuermägen 
+	Mirefin-Fungus --> Schlammflossenfungus 
+	Nightlash-Klage --> Nachtseeles Klagelied 
+	Timberline-Waffen --> Schlachtholzwaffen 
+	Waffe des Windfurors --> Waffe des Windzorns 
+Ortsnamen 
+	Abtei Northshire --> Abtei von Nordhain 
+	Blackwater-Bucht --> Schwarzmeerbucht 
+	Bladefist Bay --> Messerbucht 
+	Boulder'gor --> Fels'gor 
+	Boulderfist-Außenposten --> Außenposten der Felsfäuste 
+	Boulderfist-Halle --> Halle der Felsfäuste 
+	Brightwood-Hain --> Schattenhain 
+	Browman Mill/Browmans Mühle --> Braumanns Mühle 
+	Burg Stonewatch --> Burg Steinwacht 
+	Cragpoolsee --> Felskesselsee 
+	Crystalvein-Mine --> Kristalladermine 
+	Dalsons Tränen --> Dalsons Tränenfeld 
+	Darkshire --> Dunkelhain 
+	Das Grom'Gol Basislager --> Das Basislager von Grom'Gol 
+	Das Holzfällerlager von Eastvale --> Holzfällerlager des Osttals 
+	Das Kap von Stranglethorn --> Kap des Schlingendorntals 
+	Deadeye Shore --> Killrogs Küste 
+	Deadwind-Schlucht --> Schlucht der Totenwinde 
+	Der Blackwolf --> Schwarzwolfschnellen 
+	Der Mosh'Ogg Ogerhügel --> Ogerhügel der Mosh'Ogg 
+	Der Stonefield-Hof --> Hof der Stonefields 
+	Die Dustbelch Grotte --> Die Staubspeiergrotte 
+	Die Maclure-Weinberge --> Weinberge der Maclures 
+	Dreadmaul Rock --> Schreckensfels 
+	Dreadmaul-Posten --> Schreckensfelsposten 
+	Drygulch-Klamm --> Staubwindklamm 
+	Dunemaul-Truppenlager --> Truppenlager der Dünenbrecher 
+	Duskwood --> Dämmerwald 
+	Echoridge-Mine --> Echokammmine 
+	Everstill-Brücke --> Immerruhbrücke 
+	Everstillsee --> Immerruhsee 
+	Fargodeep-Mine --> Tiefenschachtmine 
+	Felstone-Feld --> Teufelssteinfeld 
+	Feral Scar-Tal --> Wildschrammtal 
+	Feste Dreadmaul --> Feste Schreckensfels 
+	Forlorn Rowe --> Das verlassene Gut 
+	Gahrron's Withering --> Gahrrons Trauerfeld 
+	Goldshire --> Goldhain 
+	Greatwoodtal --> Hochwipfeltal 
+	Grimtotem-Truppenlager --> Truppenlager der Grimmtotem 
+	Grimtotemposten --> Posten der Grimmtotem 
+	Jaggedswine-Hof --> Scheckeneberhof 
+	Jaguero-Insel --> Die Insel Jaguero 
+	Janeiro-Spitze --> Janeirospitze 
+	Jasperlode-Mine --> Jaspismine 
+	Kodorock --> Kodofels 
+	Lakeridge-Straße --> Uferpfad 
+	Lakeshire --> Seenhain 
+	Lost Point --> Die verlassene Wacht 
+	Northpoint-Turm --> Nordwacht 
+	Northshire --> Nordhain 
+	Northshire-Weinberge --> Weinberge von Nordhain 
+	Northshiretal --> Nordhaintal 
+	Posten von Freewind --> Freiwindposten 
+	Rage Scar-Feste --> Wutschrammfeste 
+	Razorwind-Canyons --> Klingenschlucht 
+	Redridge-Canyons --> Rotkammschlucht 
+	Redridgegebirge --> Rotkammgebirge 
+	Ridgepoint-Turm --> Kammwacht 
+	Rocktusk-Hof --> Felshauerhof 
+	Scuttle-Küste --> Schipperküste 
+	Sentry Point --> Späherwacht 
+	Shadowthreadhöhle --> Schattenweberhöhle 
+	Shimmerridge --> Schimmergrat 
+	Spiritrock --> Geisterfelsen 
+	Stonesplinter-Tal --> Splittersteintal 
+	Stonewatch --> Steinwacht 
+	Stonewatch-Turm --> Turm der Steinwacht 
+	Stonewatchfalls --> Steinwachtfälle 
+	Stranglethorn --> Schlingendorntal 
+	Sun Rock --> Sonnenfels 
+	Terrordale --> Schreckenstal 
+	Terrorwingpfad --> Schreckenspfad 
+	Thousand Needles --> Tausend Nadeln 
+	Vul'Gol Ogerhort --> Ogerhort Vul'Gol 
+	Westbrook-Garnison --> Weststromgarnison 
+	Whitereachposten --> Weißgipfelposten 
+	Windbreakcanyon --> Schlucht der heulenden Winde 
+	Witchhill --> Hexenhügel 
+	Woodpawbau --> Waldpfotenbau 
+	Woodpawhügel --> Waldpfotenhügel 
+	Writhing Haunt --> Das trostlose Feld 
+Gegenstände 
+	[Gegenstand] der Atal'ai --> Atal'aiische [Gegenstand] 
+	[Gegenstand] des Fangzahns --> [Gegenstand] des Giftzahns 
+	Abgetrenntes Horn der Entweiher --> Abgetrenntes Horn des Entweihers 
+	Angerforges Streitaxt --> Zornesschmieds Streitaxt 
+	Barleybrew-Scalder --> Gerstenbräu 
+	Bashguuder --> Draufhauer 
+	Blackstone-Ring --> Schwarzsteinring 
+	Boahns Fangzahn --> Boahns Giftzahn 
+	Bombling --> Winzige wandelnde Bombe 
+	Brantwood-Schärpe --> Brandholzschärpe 
+	Cenarius-[Gegenstand] --> cenarische(s) [Gegenstand] 
+	Dalaranscharf -> Pikanter Dalarankäse 
+	Der 1 Ring -> Der Eine Ring 
+	Der Kieferbrecher --> Der Kieferknacker 
+	Die Grünen Hügel von Stranglethorn --> Die Grünen Hügel des Schlingendorntals 
+	Einbuddlerarmschienen --> Armschienen des Wühlers 
+	Eridans Laden --> Eridans Tasche 
+	Fass/Fässlein mit Barleybrew-Scalder --> Fass/Fässlein mit Gerstenbräu 
+	Felstone-Glücksbringer --> Glücksbringer aus Teufelsstein 
+	Felstonehäscher --> Teufelssteinhäscher 
+	Frostmaul-Splitter --> Frosthagelsplitter 
+	Frostwhispers Balsamierungsflüssigkeit --> Frostraunens Balsamierungsflüssigkeit 
+	Frostwhispers Lebensstein --> Frostraunens Lebensstein 
+	Gesprungene Drachenschmelzform --> Rissige Drachenhaut 
+	Highvale-[Gegenstand] --> Hochtal[Gegenstand] 
+	Hillman-[Gegenstand] --> [Gegenstand] des Hügelwächters 
+	Hochgeborenen-Astrolabium --> Astrolabium der Hochgeborenen 
+	Kaltstein- Slipper --> Kaltsteinschuhe 
+	Kristallauflader --> Kristallsprengladung 
+	Ley-Stab --> Leystab 
+	Main-Gauche --> Parierdolch 
+	Manasturm - Gamaschen --> Gamaschen des Manasturms 
+	Menschlicher Kopf von Ras Frostwhisper --> Menschlicher Kopf von Ras Frostraunen 
+	Mirefin-Kopf --> Schlammflossenkopf 
+	Old Blanchys Decke --> Graumähnes Decke 
+	Old Blanchys Futtersack --> Graumähnes Futtersack 
+	Onyxia Balg Rucksack --> Rucksack aus Onyxias Haut 
+	Patronenschleuder-Schrotflinte --> Kugelspeiende Schrotflinte 
+	Quillfire-Bogen --> Feuerfederbogen 
+	Ravenclaw-Talisman --> Rabenkrallentalisman 
+	Ravens Klauen --> Rabenklauen 
+	Schmelzform des schwarzen/rasenden Drachenschwarms --> Abgestreifte Haut des schwarzen/rasenden Drachenschwarms 
+	Schwarze Drachenschwarm-Schmelzform --> Schmelzform des schwarzen Drachenschwarms 
+	Shovelphlanges Bergbauaxt --> Schaufelphlansches Bergbauaxt 
+	Skyfury-Helm --> Helm des Himmelszorns 
+	Skyfury-Stäbe --> Himmelszornstäbe 
+	Sternenfeuer-Tiara --> Tiara des Sternenfeuers 
+	Stonesplinter-[Gegenstand] --> Splitterstein[Gegenstand] 
+	Stonevault-Knochenbrecher --> Steingruftknochenbrecher 
+	Stonevault-Messer --> Steingruftmesser 
+	Stranglethorn-Samenkorn --> Schlingendornsamenkorn 
+	Stratholme Militia - Schulterschutz --> Schulterschutz der Stratholmemiliz 
+	Stratholme, heiliges Wasser/Heiliges Stratholme-Wasser --> Heiliges Wasser aus Stratholme 
+	Tierbombling --> Bombling 
+	Tobender-Berserkerhelm --> Helm des tobenden Berserkers 
+	Tornfin-Auge --> Fetzenflossenauge 
+	Truhe der Ravenclaws --> Truhe der Rabenkralle 
+	Uldaman-Reliefs --> Bruchstücke aus Uldaman 
+	Veränderte Schwarze Drachenschwarm-Schmelzform -->Veränderte Schmelzform des schwarzen Drachenschwarms 
+	Vilefin-Orakelstab --> Orakelstab der Finsterflossen 
+	Vilefin-Streitaxt --> Streitaxt der Finsterflossen 
+	Vilefinschuppe --> Finsterflossenschuppe 
+	Wastewander-Wasserbeutel --> Wasserbeutel eines Wüstenläufers 
+	Wendigo-[Gegenstand] --> Wendigo[Gegenstand] 
+	Woodpaw-[Gegenstand] --> [Gegenstand] der Waldpfotengnolle/eines Waldpfotengnolls 
+Kreaturen 
+	[Ortsname]-Bürger --> Bürger von [Ortsname] 
+	Anger'rel -->Zorn'rel 
+	Doom'rel -->Un'rel 
+	Dope'rel --> Trott'rel 
+	Gloom'rel -->Dunk'rel 
+	Hate'rel -->Hass'rel 
+	Seeth'rel -->Wut'rel 
+	Vile'rel -->Bös'rel 
+	Abercrombie --> Calvinius 
+	Aggem Thorncurse --> Aggem Dornfluch 
+	Alshirr Banebreath --> Alshirr Teufelsodem 
+	Anvilrage-[Kreaturname] --> [Kreaturname] der Zorneshämmer 
+	Bannok Grimaxe --> Bannock Grimmaxt 
+	Barak Kodobane --> Barak Kodobann 
+	Baron Bloodbane --> Baron Blutbann 
+	Blackbreath-Spießgeselle --> Pestatems Spießgeselle 
+	Blackwater-[Kreaturname] --> [Kreaturname] der Schwarzmeerräuber 
+	Blindlight-[Kreaturname] --> [Kreaturname] der Nachtaugen 
+	Blutsegel-[Kreaturname] --> [Kreaturname] der Blutsegelbukaniere 
+	Blutsegel-Seehund --> Blutsegel-Seebär 
+	Botschafter Bloodrage --> Botschafter Blutzorn 
+	Botschafter Flamelash --> Botschafter Flammenschlag 
+	Boulderfist-[Kreaturname] --> [Kreaturname] der Felsfäuste 
+	Bruder Ravenoak --> Bruder Rabeneiche 
+	Bruegal Ironknuckle --> Bruegal Eisenfaust 
+	Brutlord Lashlayer --> Brutwächter Dreschbringer 
+	Burgle Eye --> Schwarzauge 
+	Caer Darrow-[Kreaturname] --> [Kreaturname] von Caer Darrow 
+	Caer Darrow-Geist --> Geist von Caer Darrow 
+	Captain	Fairmount --> Captain Hellstieg 
+	Captain Flat Tusk --> Captain Stumpfhauer 
+	Captain Garran Vimes --> Captain Garran Mumm 
+	Captain Gerogg Hammertoe --> Captain Gerogg Hammerzeh 
+	Captain Ironhill --> Captain Eisenberg 
+	Cenarius-[Kreaturname] --> cenarische(r) [Kreaturname] 
+	Crekori Mudwater --> Crekori Matschwasser 
+	Dabyrie-[Kreaturname] --> [Kreaturname] der Dabyrie 
+	Dalaran-Beschützer --> Beschützer von Dalaran 
+	Darrowshire-[Kreaturname] --> [Kreaturname] von Darrowshire 
+	Darrowshire-Geist --> Geist von Darrowshire 
+	Deadwind-[Kreaturname] --> [Kreaturname] der Totenwindoger 
+	Digger Flameforge --> Buddler Flammenschmied 
+	Draenei-Verbannter/-Flüchtling --> Verbannter/Flüchtling der Draenei 
+	Dreadmaul- --> [Kreaturname] der Schreckensfelsoger 
+	Dreadscorn --> Mutreich 
+	Dreadwhisper --> Todesraunen 
+	Drysnap-[Kreaturname] --> Kaltschnapp[Kreaturname] 
+	Dughal Stormwing --> Dughal Sturmbart 
+	Dunemaul-[Kreaturname] --> [Kreaturname] der Dünenbrecher 
+	Dustbelcher-[Kreaturname] --> [Kreaturname] der Staubspeier 
+	Dustwraith --> Karaburan 
+	Fanglord --> Giftzahnlord 
+	Fangzahn-Druide --> Druide des Giftzahns 
+	Felweaver Scornn --> Höllenwirker Hoohn 
+	Fingat --> Flossgat 
+	Firegut-[Kreaturname] --> [Kreaturname] der Feuermägen 
+	Fizzle Darkstorm --> Fizzle Dunkelsturm 
+	Flagglemurk der Grausame --> Platsch der Grausame 
+	Flamewaker-[Kreaturname] --> Feuerschuppen[Kreaturname] 
+	Foulbelly --> Faulbauch 
+	Frostmaul- --> Frosthagel 
+	Furcht-Zauberer --> Schreckenszauberer 
+	Fürst Ragereaver --> Fürst Zornschlächter 
+	Galgann Firehammer --> Galgann Feuerhammer 
+	Garneg Charskull --> Garneg Brandschädel 
+	Gasher --> Schlitzer 
+	General Angerforge --> General Zornesschmied 
+	General Twinbraid --> General Doppelzopf 
+	Ghok Bashguud --> Ghok Haudrauf 
+	Gilmorian --> Kiemorius 
+	Gluggle --> Gluckser 
+	Goraluk Anvilcrack --> Goraluk Hammerbruch 
+	Gravelflint-[Kreaturname] --> [Kreaturname] der Kieselsplittertroggs 
+	Gravis Slipknot --> Gravis Galgenknoten 
+	Greymist-[Kreaturname] --> [Kreaturname] der Grauflossen 
+	Grimtotem-[Kreaturname] --> [Kreaturname] der Grimmtotem 
+	Grubenmeister Shovelphlange --> Grubenmeister Schaufelphlansch 
+	Hain-Druide --> Druide des Hains 
+	Hammerspine --> Hammerbuckel 
+	Heggin Stonewhisker --> Heggin Steinbart 
+	Hezrul Bloodmark --> Hezrul Blutmal 
+	Highvale-[Kreaturname] --> Hochtal[Kreaturname] 
+	Hochgeborenen-Erscheinung --> Erscheinung einer Hochgeborenen 
+	Hochgeborenen-Lichling --> Lichling eines Hochgeborenen 
+	Hochklerist(in) --> Hochkleriker(in) 
+	Hurley Blackbreath --> Hurley Pestatem 
+	Häuptling Sharptusk Thornmantle --> Häuptling Spitzhauer Dornenmantel 
+	Illyana Ravenoak --> Illyana Rabeneiche 
+	Immolatus --> Korruptus 
+	Instabiler Kadaver --> Faulender Leichnam 
+	Jed Runewatcher --> Jed Runenblick 
+	Kanonier Smythe --> Kanonier Hecksler 
+	Kanonier Whessan --> Kanonier Knoch 
+	Kernon Shadowclaw --> Kernon Schattenpranke 
+	Kessellord Bilemaw --> Kessellord Gallenschlund 
+	Kessellord Malvinious --> Kessellord Malvinius 
+	Kessellord Soulwrath --> Kessellord Rachseele 
+	Klagender Hochgeborener --> Klagende Hochgeborene 
+	Klauen-Druide --> Druide der Klaue 
+	Kor'gresh Coldrage --> Kor'gresh Frostzorn 
+	Krallen-Druide --> Druide der Kralle 
+	Kreenig Snarlsnout --> Kreenig Grantelschnauze 
+	Lady Moongazer --> Lady Mondblick 
+	Ledergeselle/in --> Lederverarbeitungsgeselle/in 
+	Leisetreter --> Schleicher 
+	Lieutenant Valorcall --> Lieutenant Heldenruf 
+	Lord Cobrahn --> Lord Kobrahn 
+	Lord Cyrik Blackforge --> Lord Cyrik Schwarzschmied 
+	Lord Darkscythe --> Lord Finstersense 
+	Lord Falconcrest --> Lord Falkenstein 
+	Lord Sinslayer --> Lord Sündenbrecher 
+	Lumpen[Kreaturname] --> [Kreaturname] der schwarzen Wache 
+	Mad Magglish --> Zausel der Verrückte 
+	Magister Hawkhelm --> Magister Falkhelm 
+	Magregan Deepshadow --> Magregan Grubenschatten 
+	Marsch-[Kreaturname] --> Marschen[Kreaturname] 
+	Master Feardred --> Meister Gräuelbart 
+	Maws --> Der weiße Riese 
+	Mercutio Filthgorger --> Mercutio Dreckschipper 
+	Miblon Snarltooth --> Miblon Fletschmaul 
+	Mirefin-[Kreaturname] --> [Kreaturname] der Schlammflossen 
+	Molt Thorn --> Moosbart 
+	Mondpirschervater --> Mondpirscherpatriarch 
+	Mossflayer-[Kreaturname] --> [Kreaturname] der Moosschinder 
+	Muckshell-[Kreaturname] --> Matschpanzer[Kreaturname] 
+	Mugglefin --> Muggelflosse 
+	Mulgore-Beschützer --> Beschützer von Mulgore 
+	Murkdeep --> Gurgelbacke 
+	Murkgill-[Kreaturname] --> [Kreaturname] der Düsterkiemen 
+	Murkshallow-[Kreaturname] --> Untiefen[Kreaturname] 
+	Murta Grimgut --> Murta Bauchgrimm 
+	NSC-Namen "Barleybrew" --> Gerstenbräu 
+	Necrosis --> Nekrosis 
+	Nekrum Gutchewer --> Nekrum der Ausweider 
+	Nightlash --> Nachtseele 
+	Nightshade --> Nachtschatten 
+	Noboru der Knüppel --> Noboru der Knüppler 
+	Oberanführer Ramtusk --> Oberanführer Rammhauer 
+	Oberrichter Grimstone --> Oberrichter Grimmstein 
+	Old Blanchy --> Graumähne 
+	Old Icebeard --> Eisbart der Alte 
+	Opfertroll --> Geopferter Troll 
+	Oro Eyegouge --> Oro Hohlauge 
+	Plappernder Ghoul (Gibbering Ghoul) --> Jammernder Ghoul 
+	Prinz Raze --> Prinz Schleifer 
+	Pyromant Loregrain --> Pyromant Weiskorn 
+	Quel'Lithien-Beschützer --> Beschützer von Quel'Lithien 
+	Quietscher Thornmantel --> 'Quietscher' Dornenmantel 
+	Rage Scar-Yeti --> Wutschrammyeti 
+	Ralo'shan der ewige Wächter --> Ralo'shan die ewige Wächterin 
+	Ras Frostwhisper --> Ras Frostraunen 
+	Rattlegore --> Blutrippe 
+	Raven --> Die Krähe 
+	Ravenclaw-[Kreaturname] --> [Kreaturname] von Rabenklaue 
+	Raze --> Schleifer 
+	Redridge-Gnolle --> [Kreaturname] der Rotkammgnolle 
+	Reuevoller Hochgeborener --> Reuevolle Hochgeborene 
+	Rockwing-Gargoyle --> Steinschwingengargoyle 
+	Rockwing-Kreischer --> Steinschwingenkreischer 
+	Roth Bluntblade --> Roth Stumpfklinge 
+	Ruul Onestone --> Ruul Zweistein 
+	Saltspittle-[Kreaturname] --> [Kreaturname] der Salzflossen 
+	Sandarr Dunereaver --> Sandarr der Dünenräuber 
+	Scargil --> Narbenflosse 
+	Schemen von Ambermoon --> Schemen von Mondglanz 
+	Scholomance-[Kreaturname] --> [Kreaturname] aus Scholomance 
+	Seuchenhund-Mastiff --> Seuchenmastiff 
+	Seuchenhund-Wicht --> Kleiner Seuchenhund 
+	Sever --> Häcksler 
+	Shadowsilk-Wilderer --> Schattenseidewilderer 
+	Siechender Speerbalg --> Siechender Speerträger 
+	Skelettschreckensreiter --> Skelettstoßtruppsoldat 
+	Skracher Mudmuzzle --> Skracher Schlammschnauze 
+	Sloth --> Faultier 
+	Smith Regzar --> Schmied Regzar 
+	Snagglespear --> Stummelspeer 
+	Snarlmane --> Knurrmähne 
+	Splinterbone-[Kreaturname] --> Splitterknochen[Kreaturname] 
+	Squiddic --> Kalmarrik 
+	Stitches --> Kleiner 
+	Stonespine --> Steinbuckel 
+	Stonesplinter-[Kreaturname] --> [Kreaturname] der Splittersteintroggs 
+	Stonevault-[Kreaturname] --> [Kreaturname] der Steingrufttroggs 
+	Stranglethorn-[Kreaturname] --> Schlingendorn[Kreaturname] 
+	Stratholme-Kurier --> Kurier von Stratholme 
+	Südmeer-[Kreaturname] --> [Kreaturname] der Südmeerfreibeuter 
+	Tatterhide --> Zottelfell 
+	Terrordale-Geist --> Schreckenstalgeist 
+	Theradrim-Shardling --> Theradrimsteinling 
+	Thule Ravenclaw --> Thule Rabenklaue 
+	Tier-Bombe --> Mobile Bombe 
+	Todesritter Darkreaver --> Todesritter Schattensichel 
+	Todesritter Soulbearer --> Todesritter Seelenspalter 
+	Toothgnasher --> Knirschzahn 
+	Tornfin-[Kreaturname] --> [Kreaturname] der Fetzenflossen 
+	Urok Doomhowl --> Urok Schreckensbote 
+	Verachtung --> Der Verächter 
+	Verirrter [Kreaturname] --> [Kreaturname] der Verirrten 
+	Verirrter Spaltreisender --> Rissreisender der Verirrten 
+	Verirrter Spaltsucher --> Risssucher der Verirrten 
+	Vilefin-[Kreaturname] --> [Kreaturname] der Finsterflossen 
+	Vilefin-Murloc --> Finsterflossenmurloc 
+	Voggah Todesgriff --> Voggah Deathgrip 
+	Vorlus Vilehoof --> Vorlus Elendshuf 
+	Wachmann Doomgrip --> Wachmann Stahlgriff 
+	Waldläuferlord Hawkspear --> Waldläuferlord Falkenspeer 
+	Warbringer-Konstrukt --> Kriegshetzerkonstrukt 
+	Wastewander-[Kreaturname] --> [Kreaturname] der Wüstenläufer 
+	Weegli Blastfuse --> Weegli Lunte 
+	Wildnis-Druide --> Druide der Wildnis 
+	Wildskar-Yeti --> Wildschrammyeti 
+	Witherheart der Pirscher --> Kaltherz der Streicher 
+	Wollstonecraft --> Prankenstein 
+	Woodpaw-[Kreaturname] --> [Kreaturname] der Waldpfoten 
+	Wrath-Hammer-Konstrukt --> Kriegshammerkonstrukt 
+	Yarrog Baneshadow --> Yarrog Schattenbann 
+	Zevrim Thornhoof --> Zevrim Dornhuf 
+	Zuchtmeister Snivvle --> Zuchtmeister Schnuffel 
+	Zul'arek Hatefowler --> Zul'arek Faulhass
+1.11.1
+------
+1.11.2
+------
+Ortsnamen 
+	Featherbeards Hütte --> Federbarts Hütte 
+Gegenstände 
+	Bonecreeper-Griffel --> Gräuelknochengriffel 
+Kreaturen 
+	Gizrul der Sklavenhalter --> Gizrul der Geifernde 
+	Ragglesnout --> Struppmähne 
+	Grundig Darkcloud --> Grundig Finsterwolke 
+	Oggleflint --> Flintauge 
+	Ironpatch --> Stahlauge 
+	Jalinde Summerdrake --> Jalinde Sommerdrache 
+	Zul'Brin Warpbranch --> Zul'Brin Wirbelstab 
+	Baron longshore --> Baron Küstenschipper 
+	Zimmermädchen Pillaclencher --> Zimmermädchen Kissenquetscher 
+1.12
+----
+Ortsnamen 
+	Die Ruinen von Stardust --> Die Sternenstaubruinen 
+	Ironforge Arzt --> Heiler von Ironforge 
+	Stormwind-Berge --> Berge von Stormwind 
+	Stormwind-Kaserne --> Kaserne von Stormwind 
+	Sundown-Marsch --> Sonnenwendmarschen 
+Gegenstände 
+	Hillborn-Axt --> Hügelkämpferaxt 
+	Iceblade-Hacker --> Eisklingenaxt 
+	Rivenspike --> Rüstspalter 
+	Sekret-Speier --> Giftspeier 
+	Braidfur-Handschuhe --> Geschnürte Fellhandschuhe 
+	Schredder-Bedienungsanleitung --> Schredderanleitung 
+	Onyx-Schredder-Plattenpanzer --> Onyxverzierter Schredderplattenpanzer 
+	Rüstungsgutschein der Stormwind-Armee --> Rüstungsgutschein der Armee von Stormwind 
+	Stormwind-Medallion --> Medaillon von Stormwind 
+	Gobin-Randalieraufladung --> Goblinsche Pioniersprengladung 
+	Randalierer-Handschuhe --> Pionierhandschuhe 
+	Razorklinge -> Messers Schneide 
+Kreaturen 
+	Rageclaw --> Zornklaue 
+	Oben Rageclaw --> Oben Zornklaue 
+	Caliph Scorpidsting --> Kalif Skorpidstich 
+	Andre Firebeard --> Andre Feuerbart 
+	Schatzsucher-[Kreaturname] --> Schatzsuchende [Kreaturname] 
+	Garr Salthoof --> Garr Salzhuf 
+	Captain Stillwater --> Kapitän Stillwasser 
+	Captain Kielhol --> Käpt'n Kielhol 
+	Gorehoof der Schwarze --> Narbenhuf der Schwarze 
+	Harb Foulmountain --> Harb Faulberg 
+	Mystlash-Hydra --> Mythosschuppenhydra 
+	Mystlash-Schinder --> Mythosschuppenschinder 
+	Stinglasher --> Zornstachel 
+	Zähflüssiger Niederschlag --> Verflüssigte Ablagerung 
+	Stürmer der Kolkar --> Sturmruferin der Kolkar 
+	Stürmerin der Galak --> Sturmruferin der Galak 
+	Stürmer der Magram --> Sturmruferin der Magram 
+	Stürmer der Maraudine --> Sturmruferin der Maraudine 
+	Thundris Windweaver --> Thundris Windwirker 
+	Randalierer der Dunkeleisenzwerge --> Pionier der Dunkeleisenzwerge 
+	Randalierer der Hakkari --> Pionier der Hakkari 
+	[Kreaturname]großdrachling --> [Kreaturname]drachling 
+1.12.1
+------
+	Burning Blade --> Brennende Klinge 
+	Searing Blade --> Sengende Klinge 
+Ortsnamen 
+	Northrend --> Nordrend 
+	Slaughter Hollow --> Schlächtergrotte 
+	Northfold-Anwesen --> Nordhof 
+	Bough Shadow --> Schattengrün 
+	Demonfall-Canyon --> Dämonensturz 
+	Demonfall-Kamm --> Dämonenstieg 
+	Der Fallenskysee --> Der Himmelssturzsee 
+	Der Wildbend --> Die Wildschnellen 
+	Fire Scar-Schrein --> Schrein des sengenden Feuers 
+	Night Run --> Nachtflucht 
+	Der altgediente Bau --> Der Graufelsbau 
+	Northdale --> Nordtal 
+	Shatter Scar-Tal --> Narbengrund 
+	Southpoint-Turm --> Südwacht 
+	Westpoint-Turm --> Westwacht 
+	Grizzlepaw-Grat --> Grautatzengrat 
+	Stagalbog --> Stagalsumpf 
+	Stagalboghöhle --> Stagalsumpfhöhle 
+	Southbreak Shore --> Südbrandung 
+	Ruinen von Noonshade --> Ruinen des Tagschattens 
+	Valorwindsee --> Ehrenwindsee 
+	Stillwater-Tümpel --> Stillwassertümpel 
+	Fungal Rock --> Fungusfels 
+	Sorrow Hill --> Trauerhügel 
+	Sorrowmurk --> Sorgendunkel 
+	Die heißen Quellen von Frostfire --> Die Frostfeuerquellen 
+	Southmoon-Ruinen --> Südmondruinen 
+	Ruinen von Eastmoon --> Ostmondruinen 
+	Der Greymane-Wall --> Der Graumarnwall 
+Gegenstände 
+	Claymore von Darkstone --> Dunkelsteinclaymore 
+	Darkstone-Schrifttafel --> Dunkelsteinschrifttafel 
+	Mosh'aru-Schrifftafel --> Schrifttafel von Mosh'aru
+Kreaturen 
+	Melnan Darkstone --> Melnan Dunkelstein 
+	Kruban Darkblade --> Kruban Dunkelklinge 
+	Gruul Darkblade --> Gruul Dunkelklinge 
+	Majordomus Executus --> Majordomus Exekutus 
+	[Kreaturname] der Bloodscalp --> [Kreaturname] der Blutskalpe 
+	[Kreaturname] der Shattered Hand --> [Kreaturname] der Zerschmetterten Hand 
+	Emeriss --> Smariss 
+	Genn Greymane --> Genn Graumarn 
+2.0.1 - 2.0.2
+-------------
+Orts- und Gebietsnamen 
+	Ashenvale --> Eschental 
+	Aerie Peak --> Der Nistgipfel 
+	Ambermill --> Mühlenbern 
+	Amberstill-Ranch --> Gehöft Bernruh 
+	Angerfang-Lager --> Lager der Grollhauer 
+	Anvilmar --> Ambossar 
+	Anwesen der Mistmantles --> Anwesen der Dunstmantels 
+	Außenposten der Silverwing --> Außenposten der Silberschwingen 
+	Ban'ethil Hollow --> Lichtung von Ban'ethil 
+	Basislager der Twilight --> Basislager des Schattenhammers 
+	Beren's Peril --> Berens List 
+	Blackcharhöhle --> Schwarzbrandhöhle 
+	Blackfathom-Tiefe --> Tiefschwarze Grotte 
+	Blackrockpass --> Schwarzfelspass 
+	Blackrockspitze --> Schwarzfelsspitze 
+	Blackrocktiefen --> Schwarzfelstiefen 
+	Blackwoodsee --> Faulholzsee 
+	Bloodhoof --> Dorf der Bluthufe 
+	Booty Bay --> Beutebucht 
+	Brackwells Kürbisbeet --> Brackbrunns Kürbisbeet 
+	Brewnall --> Bräuhall 
+	Bronzebeards Lager --> Bronzebarts Lager 
+	Burg Shadowfang --> Burg Schattenfang 
+	Caer Darrow --> Darrowehr 
+	Chillbreezetal --> Frosthauchtal 
+	Chillwind-Lager --> Zugwindlager 
+	Chillwindspitze --> Zugwindspitze 
+	Cliffspring --> Klippenquell 
+	Cliffspring Falls --> Klippenquellfälle 
+	Coldhearth-Anwesen --> Das verlassene Anwesen 
+	Coldridgepass --> Eisklamm 
+	Coldridgetal --> Eisklammtal 
+	Coldtooth-Mine --> Eisbeißermine 
+	Crossroads --> Das Wegekreuz 
+	Crushridgehöhle --> Trümmergrathöhle 
+	Darkfire-Enklave --> Dunkelfeuerenklave 
+	Darrow Hill --> Darrohügel 
+	Darrowmeresee --> Darromersee 
+	Darrowshire --> Darroheim 
+	Das Fallow Heiligtum --> Zuflucht der Verirrten 
+	Das Grosh'gok Lager --> Das Lager von Grosh'gok 
+	Das Holzfällerlager der Warsong --> Holzfällerlager des Kriegshymnenklans 
+	Das Ivar-Feld --> Das Ivarfeld 
+	Das Verlies von Stormwind --> Das Verlies von Sturmwind 
+	Deathknell --> Todesend 
+	Deepmountain-Bergbaugilde --> Tiefenbergbaugilde 
+	Der Blackrock --> Der Schwarzfels 
+	Der Hafen von Menethil --> Hafen von Menethil 
+	Der Kral von Razorfen --> Kral der Klingenhauer 
+	Der Stonewroughtdamm --> Der Steinwerkdamm 
+	Der Un'Goro Krater, auch: Un'goro-Krater --> Krater von Un'Goro 
+	Der Wellspring --> Der Quellfluss 
+	Diamondhead --> Diamantschnellen 
+	Die Feste Northwatch --> Die Feste Nordwacht 
+	Die Hügel von Razorfen --> Hügel der Klingenhauer 
+	Die Quel'Danil-Hütte --> Jagdhütte von Quel'Danil 
+	Die Staubschüssel --> Das Staubbecken 
+	Die Stonemaul Ruinen --> Ruinen der Steinbrecher 
+	Die Stormrage Grabhügel --> Sturmgrimms Grabhügel 
+	Die Tundrid-Hügel --> Die Tundridhügel 
+	Die Weitschreiter-Lodge --> Jagdhütte der Weltenwanderer 
+	Direforge Hill --> Hügel der Düsterschmiede 
+	Dreadmurk Shore --> Schreckensmoorküste 
+	Dustwallow Bay --> Bucht der Düstermarschen 
+	Elune'ara See --> See von Elune'ara 
+	Everlook --> Ewige Warte 
+	Farwatch-Posten --> Fernwacht 
+	Fegefeuer-Insel --> Fegefeuerinsel 
+	Felder von Hillsbrad --> Felder des Hügellands 
+	Felfire Hill --> Dämonenhügel 
+	Feste Silverwing --> Feste der Silberschwingen 
+	Festung der Blackrock --> Schwarzfelsfestung 
+	Festung Feathermoon --> Mondfederfeste 
+	Festung Thunder Axe --> Festung Donneraxt 
+	Feuerfedergrat --> Feuersäulengrat 
+	Firewatchgrat --> Feuerwachtgrat 
+	Foothold-Zitadelle --> Wehrzitadelle 
+	Forest Song --> Waldeslied 
+	Frostwhisperschlucht --> Frosthauchschlucht 
+	Frostwolf --> Dorf der Frostwölfe 
+	Frostwolf-Friedhof --> Friedhof der Frostwölfe 
+	Furlbrows Kürbishof --> Brauenwirbels Kürbishof 
+	Garnison-Waffenkammer --> Garnisonswaffenkammer 
+	Gol'bolar Steinbruch --> Steinbruch von Gol'Bolar 
+	Gol'Bolar Steinbruch-Mine --> Gol'Bolarmine 
+	Grimesilt-Grabungsstätte --> Rußschlacks Grabungsstätte 
+	Grimesilt-Nebengebäude --> Rußschlacks Schuppen 
+	Growlesshöhle --> Eisfellhöhle 
+	Hain der Silverwing --> Hain der Silberschwingen 
+	Halle der Blackhand --> Schwarzfausthalle 
+	Hammertoes Grabungsstätte --> Hammerzehs Grabungsstätte 
+	Hearthglen --> Herdweiler 
+	Helmsbedsee --> Helmsbettsee 
+	Hillsbrad --> Hügellandhof 
+	Hof der Stonefields --> Hof der Steinfelds 
+	Höhle der Frostmane --> Höhle der Frostmähnen 
+	Holzlager Northridge --> Sägewerk des Nordkamms 
+	Hütte der Heiler von Frostwolf --> Heilerhütte der Frostwölfe 
+	Iceblood-Bunker --> Eisblutbunker 
+	Iceblood-Friedhof --> Eisblutfriedhof 
+	Iceblood-Garnison --> Eisblutgarnison 
+	Iceblood-Turm --> Eisblutturm 
+	Iceflowsee --> Eiswellensee 
+	Icewing-Bunker --> Eisschwingenbunker 
+	Icewinghöhle --> Eisschwingenhöhle 
+	Icewingpass --> Eisschwingenpass 
+	Ironbands Ausgrabungsstätte --> Eisenbands Ausgrabungsstätte 
+	Ironbands Truppenlager --> Eisenbands Truppenlager 
+	Ironbeards Grabmal --> Eisenbarts Grabmal 
+	Irondeep-Mine --> Eisenschachtmine 
+	Ironforge --> Eisenschmiede 
+	Kavernen der Twilight --> Kavernen des Schattenhammers 
+	Lager der Warsongarbeiter --> Lager des Kriegshymnenklans 
+	Longshore --> Die endlose Küste 
+	Lost-Rigger-Bucht --> Mast- und Schotbucht 
+	Mannorocs Koven --> Zirkel der Mannoroc 
+	Marschen von Dustwallow --> Düstermarschen 
+	Marshals Zuflucht --> Marschalls Zuflucht 
+	Moonbrook --> Mondbruch 
+	Moonglade --> Mondlichtung 
+	Nethander-Siedlung --> Nethandersiedlung 
+	Nighthaven --> Nachthafen 
+	Nightsongwälder --> Nachtweisenwald 
+	North Tide's Hollow --> Nördliche Gezeitenlichtung 
+	North Tide's Run --> Nördlicher Gezeitenstrom 
+	Olsen's Farthing --> Olsens Acker 
+	Pyrewood --> Lohenscheit 
+	Quel'Lithien-Lodge --> Jagdhütte von Quel'Lithien 
+	Ragefireabgrund --> Der Flammenschlund 
+	Ratchet --> Ratschet 
+	Ravencrest-Monument --> Rabenkrones Monument 
+	Ravenhold-Anwesen --> Rabenholdtanwesen 
+	Raynewood --> Rajenbaum 
+	Red Cloud Mesa --> Hochwolkenebene 
+	Revantusk --> Dorf der Bruchhauer 
+	Rustmaul-Grabungsstätte --> Rostnagels Grabungsstätte 
+	Sägewerk der Warsong --> Sägewerk des Kriegshymnenklans 
+	Sandsorrow-Wache --> Sandmarterwache 
+	Scrabblescrews Lager --> Schraubenbuddels Lager 
+	Shadowbreakklamm --> Schattenklamm 
+	Shadowglen --> Laubschattental 
+	Shadowprey --> Schattenflucht 
+	Shadowsong-Schrein --> Schattensangschrein 
+	Skulk Rock --> Lauerfels 
+	Snowfall-Friedhof --> Schneewehenfriedhof 
+	South Tide's Run --> Südlicher Gezeitenstrom 
+	Southridge-Strand --> Südklippenufer 
+	Southshore --> Süderstade 
+	Splintertreeposten --> Splitterholzposten 
+	Staghelms Stätte --> Hirschhaupts Stätte 
+	Starbreeze --> Sternenhauch 
+	Starfall --> Sternfall 
+	Steamwheedle --> Dampfdruckpier, (Das Dampfdruckkartell) 
+	Steelgrills Depot --> Stahlrosts Depot 
+	Stonard --> Steinard 
+	Stonebullsee --> Steinbullensee 
+	Stonehearth-Außenposten --> Steinbruchaußenposten 
+	Stonehearth-Bunker --> Steinbruchbunker 
+	Stonehearth-Friedhof --> Steinbruchfriedhof 
+	Stonewroughtpass --> Der Steinwerkpass 
+	Stormpike-Friedhof --> Friedhof der Sturmlanzen 
+	Stormpike-Lazarett --> Lazarett der Sturmlanzen 
+	Stormwind --> Sturmwind 
+	Strand der Darkspear --> Strand der Dunkelspeere 
+	Swamplight-Anwesen --> Irrlichtanwesen 
+	Terrorweb-Tunnel --> Schreckenstunnel 
+	Thandol-Übergang --> Thandolübergang 
+	Thunder Bluff --> Donnerfels 
+	Tidefury-Bucht --> Tidenbucht 
+	Tore der Dragonmaw --> Tore des Drachenmals 
+	Trollbanes Halle --> Trollbanns Halle 
+	Tüftlerstadt --> Die Tüftlerstadt 
+	Twilight-Außenposten --> Außenposten des Schattenhammers 
+	Twilight-Posten --> Posten des Schattenhammers 
+	Undercity --> Unterstadt 
+	Verwüsteter Twilight-Stützpunkt --> Stützpunkt des Schattenhammers 
+	Vorgebirge von Hillsbrad --> Vorgebirge des Hügellands 
+	Warsongschlucht --> Kriegshymnenschlucht 
+	Waterspring-Feld --> Wasserfeld 
+	Wellspringsee --> Der Quellsee 
+	Winterspring --> Winterquell 
+	Witherbark --> Lager der Bleichborken 
+	Witherbark-Höhlen --> Höhlen der Bleichborken 
+NSCs 
+	Aedelas Blackmoore --> Aedelas Schwarzmoor 
+	Alleria Windrunner --> Alleria Windläufer 
+	Baron Rivendare --> Baron Totenschwur 
+	Blackhand the Destroyer --> Schwarzfaust der Zerstörer 
+	Cairne Bloodhoof --> Cairne Bluthuf 
+	Chen Stormstout --> Chen Sturmbräu 
+	Danath Trollbane --> Danath Trollbann 
+	Deathwing --> Todesschwinge 
+	Desdel Stareye --> Desdel Sternauge 
+	Fandral Staghelm --> Fandral Hirschhaupt 
+	Fürstin Mara Fordragon --> Fürstin Mara Drachenwill 
+	Galen Trollbane --> Galen Trollbann 
+	Gelbin Mekkatorque --> Gelbin Mekkadrill 
+	Genn Greymane --> Genn Graumarn 
+	Griselda Blackhand --> Griselda Schwarzfaust 
+	Grom Hellscream --> Grom Höllschrei 
+	Großadmiral Daelin Proudmoore --> Großadmiral Daelin Prachtmeer 
+	Hamuul Runetotem --> Hamuul Runentotem 
+	Hochinquisitorin Whitemane --> Hochinquisitorin Weißsträhne 
+	Hochlord Bolvar Fordragon --> Hochlord Bolvar Drachenwill 
+	Illidan Stormrage --> Illidan Sturmgrimm 
+	Jaina Proudmoore --> Jaina Prachtmeer 
+	Jarod Shadowsong --> Jarod Schattensang 
+	Kael'thas Sunstrider --> Kael'thas Sonnenwanderer 
+	Kargath Bladefist --> Kargath Messerfaust 
+	Kilrogg Deadeye --> Killrogg Totauge 
+	King Magni Bronzebeard --> König Magni Bronzebart 
+	Kur'talos Ravencrest --> Kur'talos Rabenkrone 
+	Kyle Blackthorne --> Kyle Blackthorne 
+	Magatha Grimtotem --> Magatha Grimmtotem 
+	Maiev Shadowsong --> Maiev Schattensang 
+	Maim Blackhand --> Maim Schwarzfaust 
+	Malfurion Stormrage --> Malfurion Sturmgrimm 
+	Melithar Staghelm --> Melithar Hirschhaupt 
+	Modimus Anvilmar --> Modimus Ambossar 
+	Nathanos Blightcaller --> Nathanos Pestrufer 
+	Nekros Skullcrusher --> Nekros Schädelberster 
+	Orgrim Doomhammer --> Orgrim Schicksalshammer 
+	Rend Blackhand --> Rend Schwarzfaust 
+	Robogenieur Thermaplugg --> Robogenieur Thermadraht 
+	Serena Scarscale --> Serena Spaltzunge 
+	Shandris Feathermoon --> Shandris Mondfeder 
+	Sylvanas Windrunner --> Sylvanas Windläufer 
+	Teron Gorefiend --> Teron Blutschatten 
+	Thoras Trollbane --> Thoras Trollbann 
+	Tyrande Whisperwind --> Tyrande Wisperwind 
+	Uther Lightbringer --> Uther Lichtbringer 
+Stämme und Klans 
+	Blackhand-Legion --> Schwarzfaustlegion 
+	Blackrockklan -> Schwarzfelsklan 
+	Bleeding Hollow -> Klan des Blutenden Auges 
+	Bloodscalp --> Blutskalpstamm 
+	Bonechewer --> Klan der Knochenmalmer 
+	Darkspear -> Dunkelspeere 
+	Dragonmaw --> Drachenmalklan 
+	Frostmane --> Frostmähnen 
+	Laughing Skull --> Klan des Lachenden Schädels 
+	Revantusk --> Bruchhauerstamm 
+	Sandfury --> Sandwüterstamm 
+	Shadowmoon -> Der Schattenmondklan 
+	Shattered Hand -> Die Zerschmetterte Hand 
+	Shatterspear --> Splitterspeerstamm 
+	Silverwing -> Silberschwingen 
+	Skullsplitter --> Schädelspalterstamm 
+	Stormpike -> Sturmlanzenklan 
+	Twilight-Hammer --> Schattenhammerklan 
+	Vilebranch --> Blutfratzenstamm 
+	Warsongklan -> Kriegshymnenklan 
+	Witherbark --> Bleichborkenstamm 
+2.0.3
+-----
+2.0.4
+-----
+2.0.5
+-----
+2.0.6
+-----
+2.0.7
+-----
+2.0.8
+-----
+2.0.10
+-----
+2.0.12
+------
+2.1
+---
+2.1.1
+-----
+2.1.2
+-----
+2.1.3
+-----
+2.2.0
+-----
+2.2.2
+-----
+2.2.3
+-----
+2.3.0
+-----
+2.3.2
+-----
+	- Der 'Bergsilberweisling' wurde überarbeitet und heißt nunmehr 'Bergsilbersalbei'. 
+	- Ein Giftreagenz für Schurken, 'Pein der Maid', wurde in 'Jungfernleid' umbenannt. 
+	- Die Astronomen der Blutelfen sind auf ihren magischen Berufszweig zurückgekehrt und heißen nun 'Astromanten'. 
+	  Entsprechend wurden auch die 'Beinkleider des Astromanten' angepasst. 
+	- 'Verformtes Fleisch' von Kreaturen der Scherbenwelt wurde in 'Phasenverschobenes Fleisch' umbenannt. Möge euch der Doppelwarper wohl bekommen. 
+2.3.3
+-----
+2.4
+---
+	- Das "Gnomische Verbergungsgerät" trägt nun den Namen "Gnomische Tarnvorrichtung". 
+	- Die Worgs und die Worgen, die zuvor gesammelt als 'Worgs' bezeichnet wurden, tragen nun ihre richtigen Namen. 
+	  'Worg' bezeichnet ein wolfähnliches Tier, während 'Worgen' die Bezeichnung für einen wolfartigen Humanoiden ist. 
+	- Hochlord Bolvar trägt nun den Nachnamen 'Fordragon' statt wie zuvor 'Drachenwill'. 
+	- Der Lehrer für den 'Extrem sicherer Transporter: Toshleys Station' trägt nun den Namen Smiles O'Byron statt wie zuvor Schmunzel O'Byron. 
+	- Der Schwadronskommandant auf der Netherschwingenscherbe trägt nun den Namen Slidore statt wie zuvor Erzrutsch. 
+	- Morbent, Jasper, Drum und Korin tragen nun alle den Nachnamen 'Teufel' statt wie zuvor 'Teufels'. 
+	- Stephanie, John, Katrina und Brendan tragen nun alle den Nachnamen 'Turner' statt wie zuvor 'Drechsler'. 
+	- Caylees Begleiter wurde von 'Glupsch' auf 'Dusky' zurückbenannt. 
+	- Der Gegenstand 'Tiefendonner' heißt nun 'Donnergroll'. 
+	- Der Schreihals in Shattrath wurde von 'Cro Starkfaden' zu 'Cro Dickfädel' umbenannt. 
+	- Wie immer wurden weitere kleinere Lokalisierungsfehler im Spiel korrigiert. 
+2.4.1
+-----
+2.4.2
+-----
+2.4.3
+-----
+3.0.2
+-----
+3.0.3
+-----
+3.0.8
+-----
+	- Zwei Zauber des Paladins waren zuvor identisch als 'Heiliger Schild' benannt. Der Zauber 'Holy Shield' heißt weiterhin 'Heiliger Schild'. Der Zauber 'Sacred Shield' wurde zu 'Geheiligter Schild' umbenannt. 
+	- Zwei Zauber des Paladins waren zuvor identisch als 'Göttliche Gunst' benannt. Der Zauber 'Divine Favor' heißt weiterhin 'Göttliche Gunst'. Der Zauber 'Divine Guardian' wurde zu 'Heiliger Wächter' umbenannt. 
+	- Die Titel der Erfolge 'Todesengel' und 'Abbrisskugel' waren zuvor vertauscht und wurden in die richtige Reihenfolge gebracht. 
+	- Der NSC Oliver Zwist in Shattrath trägt nun wieder den englischen Namen Dirty Larry. 
+	- Wie immer wurden weitere Fehler im Spiel korrigiert. 
+3.0.8a
+------
+3.0.9
+-----
+3.1.0
+-----
+3.1.1
+-----
+3.1.2
+-----
+	- Der Tooltip des Schamanentalents 'Auge des Sturms' wurde korrigiert und gibt nun den tatsächlichen Effekt an: Verringert die durch erlittenen Schaden verursachte Zauberzeiterhöhung beim Wirken der Zauber 'Blitzschlag', 'Kettenblitzschlag', 'Lavaeruption' und 'Verhexen' um $s1%.
+	- Es wurde ein Tippfehler im Tooltip des Jägertalents 'Langlebigkeit' behoben.
+	- Aus dem Tooltip der Jägerfähigkeit 'Sichern und Laden' wurde die Abklingzeit entfernt.
+	- Es wurde ein Fehler im Tootip der Fähigkeit 'Aufspießen' von Ebern als Jägerbegleiter behoben.
+	- Der Wortlaut der Glyphe 'Siegel des Blutes' wurde präzisiert.
+	- Das Verzauberungsprodukt Rolle der Umhangverzauberung - Hast wurde in Rolle der Umhangverzauberung - Großes Tempo umbenannt, um dem erstellenden Zauber zu entsprechen.
+	- Die Verzauberung Umhang - Weisheit gibt als Wert nun korrekt +10 Willenskraft statt +10 Weisheit an.
+	- Das gediegene Sturmjuwel gibt als Wert nun korrekt +30 Ausdauer statt +20 Ausdauer an.
+	- Das elastische Arachnogewebe gibt als Wert nun korrekt +18 Zaubermacht statt +15 Zaubermacht an.
+	- Das Siegel des rachsüchtigen Herzens wurde in Siegel des rachgierigen Herzens umbenannt.
+	- Als Bedingung des Erfolgs "In seinem Heim wartet er und träumt" ist nun korrekt "Die Ermordung von König Llane" angegeben.
+	- Alchemist Finkelstein sucht nun nach getrockneten Fledermausflügeln, nicht vertrockneten.
+	- Die Quest "Eine würdige Waffe" weist nun in den Nordosten der Drachenöde und nicht mehr in den Nordwesten.
+	- Wie immer wurden weitere kleinere Lokalisierungsfehler im Spiel korrigiert.
+3.1.3
+-----
+3.2.0
+-----
+    * Der Gegenstand "Hoffnungsmacher" trägt nun den Namen "Ende aller Hoffnung".
+    * Das "Kaiserliche Schreibzeug" ist ab sofort unter dem Namen "Schreibzeug des Virtuosen" zu erwerben.
+    * Der bisher unter dem Namen "Meuchelmörder" bekannte Dolch trägt nun den Namen "Mord".
+    * Das ehemals als "Sonnenwendzelebrant" bekannte Set, welches gegen Brandblüten erwerbbar ist, wurde zu "Sonnenwendfeiernder" umbenannt.
+    * Der "Helm des zweiten Blicks" heißt von nun an "Helm des zweiten Gesichts".
+    * "Excal'eber" trägt ab sofort den Namen "X'caleber".
+    * Die "Stiefel des inneren Lebens" sind ab sofort unter dem Namen "Stiefel des inneren Leidens" zu finden.
+    * Die "Felsnischenstarkfische" und die "Felsnischeneber" haben sich gemeinsam entschlossen, ihr Nischendasein nicht mehr in den Vordergrund stellen zu wollen und lieber nach Äußerlichkeiten benannt zu werden. Dementsprechend kann man sie jetzt als "Steinhautstarkfische" und "Steinhauteber" finden.
+    * Die folgenden T8-Sets wurden umbenannt:
+          o "Aegisschlachtrüstung" in "Schlachtrüstung der Aegis"
+          o "Aegisplattenrüstung" in "Plattenrüstung der Aegis"
+          o "Weltenbrecherschlachtrüstung" in "Schlachtrüstung des Weltenbrechers"
+          o "Weltenbrechergewandung" in "Gewandung des Weltenbrechers"
+          o "Weltenbrecherornat" in "Ornat des Weltenbrechers"
+          o "Schreckensklingenschlachtrüstung" in "Schlachtrüstung der Schreckensklinge"
+          o "Nachtweisenschlachtrüstung" in "Schlachtrüstung des Nachtweisen"
+          o "Nachtweisengewand" in "Gewand des Nachtweisen"
+          o "Nachtweisenornat" in "Ornat des Nachtweisen"
+          o "Blockadenbrecherschlachtrüstung" in "Schlachtrüstung des Blockadenbrechers"
+          o "Blockadenbrecherplattenrüstung" in "Plattenrüstung des Blockadenbrechers"
+          o "Weihegewandung" in "Gewandung der Weihe"
+          o "Weiheornat" in "Ornat der Weihe"
+          o "Todesbringergewandung" in "Gewandung des Todesbringers"
+          o "Geißeljägerschlachtrüstung" in "Schlachtrüstung des Geißeljägers".
+    * Die Quest "Wo das Wilde umherstreift" heißt jetzt "Wo die wilden Tiere wohnen".
+    * Einige Gegenstände tragen jetzt das Adjektiv "unbeständig" im Namen. Dies betrifft: "Veränderlicher Umhang" (geändert zu "Unbeständiger Umhang"), "Mitternachtsschärpe der Wandlung" (geändert zu "Unbeständige Mitternachtsschärpe"), "Latros Schwert der Wandlung" (geändert zu "Latros unbeständiges Schwert"), "Schal der veränderlichen Wahrscheinlichkeiten" (geändert zu "Schal der unbeständigen Wahrscheinlichkeiten"), "Stiefel des sich wandelnden Alptraums" (geändert zu "Stiefel des unbeständigen Alptraums"), "Veränderlicher Naarusplitter" (geändert zu "Unbeständiger Naarusplitter"), "Veränderliche Sonnenkuriosität" (geändert zu "Unbeständige Sonnenkuriosität").
+    * Wie immer wurden weitere kleinere Lokalisierungsfehler und -unstimmigkeiten im Spiel korrigiert.
+3.2.0a
+------
+3.2.2
+-----
+    * Der Erfolg 'Flink wie ein Wiesel' heißt nun 'Wer braucht schon Kampfrausch?'.
+    * Der Erfolg 'Vorsicht, Schrottboter' heißt nun 'Schwächt die Schrottboter endlich ab!'.
+    * Der Erfolg 'Vorsicht, Bummboter' heißt nun 'Schwächt die Bummboter endlich ab!'.
+    * Der Erfolg 'Vorsicht, Gravitationsbombe' heißt nun 'Schwächt die Gravitationsbomben endlich ab!'.
+    * Der Erfolg 'Ich erwähle Euch, Runenmeister Molgeim' heißt nun 'Ich wähle dich, Runenmeister Molgeim'.
+    * Der Erfolg 'Ich erwähle Euch, Sturmrufer Brundir' heißt nun 'Ich wähle dich, Sturmrufer Brundir'.
+    * Der Erfolg 'Ich erwähle Euch, Stahlbrecher' heißt nun 'Ich wähle dich, Stahlbrecher'.
+    * Der Erfolg 'Irre Katzendame' heißt nun 'Die verrückte Katzenlady'.
+    * Die verehrte 'Karen "Ich nix Karibu" die Schlächterin' trägt nun den Namen 'Karen "Rutsch mit den Karibuckel runter" die Schlächterin'.
+    * Die Questgeberin 'Sarah Kalke' trägt nun den Namen 'Sarah Chalke'.
+    * 'Harolds Verjüngungsahle' heißt nun 'Harolds Verjüngungsbrosche'.
+    * Wie immer wurden weitere kleinere Lokalisierungsfehler und -unstimmigkeiten im Spiel korrigiert.
+3.2.2a
+------
+3.3.0
+-----
+    * Die Zauberhexer und Zauberhexerinnen Azeroths haben sich entschlossen, ihre Berufsbezeichnung zu überdenken - und heißen ab sofort Zauberer und Zauberinnen. Davon betroffen sind auch Gegenstände wie das "Instabile Fläschchen des Zauberhexers", das nun "Instabiles Fläschchen des Zauberers" heißt.
+    * Die Fähigkeit ‘Kinnhaken‘ von Jägerbegleitern (Gorillas, Motten, Rhinozerosse, Sporensegler und Wespen) wurde zu ‘Zustoßen‘ umbenannt.
+    * Nachdem Fumblub sich sein Sitzkissen näher angesehen hat, beschloss er, dass er gerne genauso heißen möchte und nennt sich dementsprechend ab sofort Flumblub.
+    * Nach jahrelangem Stählen seines Magens hat Kapitän Gutstahl endlich das Stadium erreicht, in dem er guten Gewissens und voller Stolz in seinem Namen auf die Widerstandskraft desselben verweisen kann. Dementsprechend nennt er sich ab sofort Kapitän Stahlmagen.
+    * Der Welpling von Onyxia holt ab sofort nicht mehr einfach nur tief Luft... Nein... er ATMET TIEF EIN...
+
+3.3.0a
+------
+3.3.2
+-----
+    * Die Brühschlammer sind tief in sich gegangen (kein schöner Anblick ...), haben sich von ihrem alten Namen verabschiedet und in ihre drei Unterarten katalogisiert: "Schlamm", "Schlick" und "Schleim".
+    * Wie immer wurden weitere kleinere Lokalisierungsfehler und -unstimmigkeiten im Spiel korrigiert.
+
+3.3.3
+-----
+    * Wie immer wurden kleinere Lokalisierungsfehler und -unstimmigkeiten im Spiel korrigiert.
+3.3.3a
+------
+3.3.5
+-----
+3.3.5a
+------
+
+###### NOT SUPPORTED YET!
+
+4.0.1
+-----
+4.0.1a
+------
+4.0.3
+-----
+4.0.3a
+------
+
+-->To be continued!

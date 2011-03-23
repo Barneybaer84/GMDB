@@ -1,0 +1,38 @@
+﻿GMDB Crew
+-----------------------
+
+German Mangos DataBase
+
+Version 0.8
+
+Clientversion 3.1.3
+
+Diese Übersetzung ist kompatibel mit:
+		- MaNGOS GIT 8444+
+		- UDB Changeset 382+ (und unter Vorbehalt mit jeder weiteren MaNGOS-DB)
+		- ScriptDev2 1387+
+		- ACID 31+
+
+-----------------------
+Changes from 0.7
+
+- WotLK: Dies ist der erste Milestone für WotLK: neue Items, Quests, NPC, Gameobjects...
+- Neu: viele neue Einträge für "locales_page_text"
+- Updates für "command" und "mangos_string"
+- Neu: tausende neue Questtexte
+- Neu: "HardcodedGossipTexts.patch" für SD2-Gossip-Texte!
+- Angepasst: Tabellenstruktur für ACID (jetzt in der MaNGOS-DB zu finden)
+
+ ... (genaueren Changelog wie immer über Sourceforge!)
+
+
+-----------------------
+Kommentar: Der neue Milestone hat lange auf sich warten lassen, wir hoffen, ihr genießt ihn umso mehr :P
+           Mal wieder dürfen wir viele neue Developer begrüßen und alte verabschieden!
+	   Ich möchte allen Entwicklern und der gesamten Community für die Unterstützung danken!
+
+
+-----------------------
+### GMDB-Crew ###
+-----------------------
+

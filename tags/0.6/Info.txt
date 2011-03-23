@@ -1,0 +1,38 @@
+﻿GMDB Crew
+-----------------------
+
+German Mangos DataBase
+
+Version 0.6
+
+Clientversion 2.4.2
+
+Diese Übersetzung ist kompatibel mit:
+		- MaNGOS 6186+
+		- UDB Changeset 355+ (und unter Vorbehalt mit jeder weiteren MaNGOS-DB)
+
+-----------------------
+Changes from 0.5
+
+- Neu: "creature_movement" ist nun auch mitübersetzt!
+- Neu: "mangos_string" ist nun auch mitübersetzt!
+- Neu: "localized_texts" für die ScriptDev2-DB wurde als extra Datei hinzugefügt!
+- Hinzugefügt: Alle neuen "commands" seit letztem Milestone
+- Subnames der creature-Tabellen wurde erneuert (Änderung mit Client Version 2.3)
+- Viele neue OfferRewardText & RequestItemsText für die Quests
+- Updates von sogut wie allen Dateien (quests, creatures, items, gameobjects, npc_text, quest_*_scripts...)
+ ... (genaueren Changelog wie immer über Sourceforge!)
+
+
+-----------------------
+Kommentar: Unser Team hat sich seit dem letzten Milestone sehr vergrößert!
+		Ich danke hiermit allen Entwicklern und der gesammten Community, die uns sehr unterstützt!
+
+Wieder mit dabei: Ein DELETE-Patch für alle GMDB Entwickler und die, die es werden wollen!
+                  Bitte benutzt diesen allerdings nur wenn ihr wisst, was ihr tut!!!
+                  Es werden die Dateien aus den "*_template" Tabellen gelöscht!!!
+
+-----------------------
+### GMDB-Crew ###
+-----------------------
+

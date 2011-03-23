@@ -1,0 +1,2722 @@
+Index: include/sc_gossip.h
+===================================================================
+--- include/sc_gossip.h	(Revision 1994)
++++ include/sc_gossip.h	(Arbeitskopie)
+@@ -10,65 +10,65 @@
+ #include "QuestDef.h"
+ 
+ // Gossip Item Text
+-#define GOSSIP_TEXT_BROWSE_GOODS        "I'd like to browse your goods."
+-#define GOSSIP_TEXT_TRAIN               "Train me!"
++#define GOSSIP_TEXT_BROWSE_GOODS        "Ich sehe mich hier nur mal um"
++#define GOSSIP_TEXT_TRAIN               "Ich benötige eine Ausbildung"
+ 
+-#define GOSSIP_TEXT_BANK                "The bank"
+-#define GOSSIP_TEXT_IRONFORGE_BANK      "The bank of Ironforge"
+-#define GOSSIP_TEXT_STORMWIND_BANK      "The bank of Stormwind"
+-#define GOSSIP_TEXT_WINDRIDER           "The wind rider master"
+-#define GOSSIP_TEXT_GRYPHON             "The gryphon master"
+-#define GOSSIP_TEXT_BATHANDLER          "The bat handler"
+-#define GOSSIP_TEXT_HIPPOGRYPH          "The hippogryph master"
+-#define GOSSIP_TEXT_ZEPPLINMASTER       "The zeppelin master"
+-#define GOSSIP_TEXT_DEEPRUNTRAM         "The Deeprun Tram"
+-#define GOSSIP_TEXT_FERRY               "The Rut'theran Ferry"
+-#define GOSSIP_TEXT_FLIGHTMASTER        "The flight master"
+-#define GOSSIP_TEXT_AUCTIONHOUSE        "The auction house"
+-#define GOSSIP_TEXT_GUILDMASTER         "The guild master"
+-#define GOSSIP_TEXT_INN                 "The inn"
+-#define GOSSIP_TEXT_MAILBOX             "The mailbox"
+-#define GOSSIP_TEXT_STABLEMASTER        "The stable master"
+-#define GOSSIP_TEXT_WEAPONMASTER        "The weapon master"
+-#define GOSSIP_TEXT_OFFICERS            "The officers' lounge"
+-#define GOSSIP_TEXT_BATTLEMASTER        "The battlemaster"
+-#define GOSSIP_TEXT_BARBER              "Barber"
+-#define GOSSIP_TEXT_CLASSTRAINER        "A class trainer"
+-#define GOSSIP_TEXT_PROFTRAINER         "A profession trainer"
+-#define GOSSIP_TEXT_LEXICON             "Lexicon of Power"
++#define GOSSIP_TEXT_BANK                "Die Bank"
++#define GOSSIP_TEXT_IRONFORGE_BANK      "Die Bank von Eisenschmiede"
++#define GOSSIP_TEXT_STORMWIND_BANK      "Die Bank von Sturmwind"
++#define GOSSIP_TEXT_WINDRIDER           "Der Windreitermeister"
++#define GOSSIP_TEXT_GRYPHON             "Der Greifenmeister"
++#define GOSSIP_TEXT_BATHANDLER          "Der Fledermausführer"
++#define GOSSIP_TEXT_HIPPOGRYPH          "Der Hippogryphenmeister"
++#define GOSSIP_TEXT_ZEPPLINMASTER       "Zeppelinmeister"
++#define GOSSIP_TEXT_DEEPRUNTRAM         "Die Tiefenbahn"
++#define GOSSIP_TEXT_FERRY               "Fähre von Rut'theran"
++#define GOSSIP_TEXT_FLIGHTMASTER        "Den Flugmeister"
++#define GOSSIP_TEXT_AUCTIONHOUSE        "Das Auktionshaus"
++#define GOSSIP_TEXT_GUILDMASTER         "Der Gildenmeister"
++#define GOSSIP_TEXT_INN                 "Ein Gasthaus"
++#define GOSSIP_TEXT_MAILBOX             "Ein Briefkasten"
++#define GOSSIP_TEXT_STABLEMASTER        "Der Stallmeister"
++#define GOSSIP_TEXT_WEAPONMASTER        "Der Waffenlehrer"
++#define GOSSIP_TEXT_OFFICERS            "Die Offiziersmesse"
++#define GOSSIP_TEXT_BATTLEMASTER        "Kampfmeister"
++#define GOSSIP_TEXT_BARBER              "Barbier"
++#define GOSSIP_TEXT_CLASSTRAINER        "Ein Lehrer für eine Klasse"
++#define GOSSIP_TEXT_PROFTRAINER         "Ein Lehrer für einen Beruf"
++#define GOSSIP_TEXT_LEXICON             "Lexikon der Macht"
+ 
+-#define GOSSIP_TEXT_ALTERACVALLEY       "Alterac Valley"
+-#define GOSSIP_TEXT_ARATHIBASIN         "Arathi Basin"
+-#define GOSSIP_TEXT_WARSONGULCH         "Warsong Gulch"
+-#define GOSSIP_TEXT_ARENA               "Arena"
+-#define GOSSIP_TEXT_EYEOFTHESTORM       "Eye of The Storm"
+-#define GOSSIP_TEXT_STRANDOFANCIENT     "Strand of the Ancients"
++#define GOSSIP_TEXT_ALTERACVALLEY       "Das Alteractal"
++#define GOSSIP_TEXT_ARATHIBASIN         "Das Arathibecken"
++#define GOSSIP_TEXT_WARSONGULCH         "Die Kriegshymnem Schlucht"
++#define GOSSIP_TEXT_ARENA               "Die Arena"
++#define GOSSIP_TEXT_EYEOFTHESTORM       "Das Auge des Sturms"
++#define GOSSIP_TEXT_STRANDOFANCIENT     "Strand der Uralten"
+ 
+-#define GOSSIP_TEXT_DEATH_KNIGHT        "Death Knight"
+-#define GOSSIP_TEXT_DRUID               "Druid"
+-#define GOSSIP_TEXT_HUNTER              "Hunter"
+-#define GOSSIP_TEXT_PRIEST              "Priest"
+-#define GOSSIP_TEXT_ROGUE               "Rogue"
+-#define GOSSIP_TEXT_WARRIOR             "Warrior"
++#define GOSSIP_TEXT_DEATH_KNIGHT        "Todesritter"
++#define GOSSIP_TEXT_DRUID               "Druide"
++#define GOSSIP_TEXT_HUNTER              "Jäger"
++#define GOSSIP_TEXT_PRIEST              "Priester"
++#define GOSSIP_TEXT_ROGUE               "Schurke"
++#define GOSSIP_TEXT_WARRIOR             "Krieger"
+ #define GOSSIP_TEXT_PALADIN             "Paladin"
+-#define GOSSIP_TEXT_SHAMAN              "Shaman"
+-#define GOSSIP_TEXT_MAGE                "Mage"
+-#define GOSSIP_TEXT_WARLOCK             "Warlock"
++#define GOSSIP_TEXT_SHAMAN              "Schamane"
++#define GOSSIP_TEXT_MAGE                "Magier"
++#define GOSSIP_TEXT_WARLOCK             "Hexenmeister"
+ 
+-#define GOSSIP_TEXT_ALCHEMY             "Alchemy"
+-#define GOSSIP_TEXT_BLACKSMITHING       "Blacksmithing"
+-#define GOSSIP_TEXT_COOKING             "Cooking"
+-#define GOSSIP_TEXT_ENCHANTING          "Enchanting"
+-#define GOSSIP_TEXT_ENGINEERING         "Engineering"
+-#define GOSSIP_TEXT_FIRSTAID            "First Aid"
+-#define GOSSIP_TEXT_HERBALISM           "Herbalism"
+-#define GOSSIP_TEXT_LEATHERWORKING      "Leatherworking"
+-#define GOSSIP_TEXT_TAILORING           "Tailoring"
+-#define GOSSIP_TEXT_MINING              "Mining"
+-#define GOSSIP_TEXT_FISHING             "Fishing"
+-#define GOSSIP_TEXT_SKINNING            "Skinning"
+-#define GOSSIP_TEXT_JEWELCRAFTING       "Jewelcrafting"
+-#define GOSSIP_TEXT_INSCRIPTION         "Inscription"
++#define GOSSIP_TEXT_ALCHEMY             "Alchemie"
++#define GOSSIP_TEXT_BLACKSMITHING       "Schmiedekunst"
++#define GOSSIP_TEXT_COOKING             "Kochkunst"
++#define GOSSIP_TEXT_ENCHANTING          "Verzauberkunst"
++#define GOSSIP_TEXT_ENGINEERING         "Ingenieurskunst"
++#define GOSSIP_TEXT_FIRSTAID            "Erste Hilfe"
++#define GOSSIP_TEXT_HERBALISM           "Kräuterkunde"
++#define GOSSIP_TEXT_LEATHERWORKING      "Lederverarbeitung"
++#define GOSSIP_TEXT_TAILORING           "Schneiderei"
++#define GOSSIP_TEXT_MINING              "Bergbau"
++#define GOSSIP_TEXT_FISHING             "Angeln"
++#define GOSSIP_TEXT_SKINNING            "Kürschnerei"
++#define GOSSIP_TEXT_JEWELCRAFTING       "Juwelenschleifen"
++#define GOSSIP_TEXT_INSCRIPTION         "Inschriftenkunde"
+ 
+ enum
+ {
+Index: scripts/eastern_kingdoms/blackrock_depths/blackrock_depths.cpp
+===================================================================
+--- scripts/eastern_kingdoms/blackrock_depths/blackrock_depths.cpp	(Revision 1994)
++++ scripts/eastern_kingdoms/blackrock_depths/blackrock_depths.cpp	(Arbeitskopie)
+@@ -507,17 +507,17 @@
+     QUEST_KHARANS_TALE     = 4342
+ };
+ 
+-#define GOSSIP_ITEM_KHARAN_1    "I need to know where the princess are, Kharan!"
+-#define GOSSIP_ITEM_KHARAN_2    "All is not lost, Kharan!"
++#define GOSSIP_ITEM_KHARAN_1    "I need to know where the princess are, Kharan!" //GMDB TODO
++#define GOSSIP_ITEM_KHARAN_2    "Es ist nicht alles verloren, Kharan!"
+ 
+-#define GOSSIP_ITEM_KHARAN_3    "Gor'shak is my friend, you can trust me."
+-#define GOSSIP_ITEM_KHARAN_4    "Not enough, you need to tell me more."
+-#define GOSSIP_ITEM_KHARAN_5    "So what happened?"
+-#define GOSSIP_ITEM_KHARAN_6    "Continue..."
+-#define GOSSIP_ITEM_KHARAN_7    "So you suspect that someone on the inside was involved? That they were tipped off?"
+-#define GOSSIP_ITEM_KHARAN_8    "Continue with your story please."
+-#define GOSSIP_ITEM_KHARAN_9    "Indeed."
+-#define GOSSIP_ITEM_KHARAN_10   "The door is open, Kharan. You are a free man."
++#define GOSSIP_ITEM_KHARAN_3    "Gor'shak is my friend, you can trust me." //GMDB TODO
++#define GOSSIP_ITEM_KHARAN_4    "Not enough, you need to tell me more." //GMDB TODO
++#define GOSSIP_ITEM_KHARAN_5    "Weiter..."
++#define GOSSIP_ITEM_KHARAN_6    "Und was ist passiert?"
++#define GOSSIP_ITEM_KHARAN_7    "Ihr vermutet also, dass jemand auf Eurer Seite darin verwickelt war? Dass sie einen Tipp bekamen?"
++#define GOSSIP_ITEM_KHARAN_8    "Fahrt bitte mit Eurer Geschichte fort."
++#define GOSSIP_ITEM_KHARAN_9    "So ist es."
++#define GOSSIP_ITEM_KHARAN_10   "Die Tür ist offen, Kharan. Ihr seid ein freier Mann."
+ 
+ bool GossipHello_npc_kharan_mighthammer(Player* pPlayer, Creature* pCreature)
+ {
+@@ -602,8 +602,8 @@
+     SPELL_CREATE_THORIUM_BROTHERHOOD_CONTRACT = 23059
+ };
+ 
+-#define GOSSIP_ITEM_SHOW_ACCESS     "Show me what I have access to, Lothos."
+-#define GOSSIP_ITEM_GET_CONTRACT    "Get Thorium Brotherhood Contract"
++#define GOSSIP_ITEM_SHOW_ACCESS     "Show me what I have access to, Lothos." //GMDB TODO
++#define GOSSIP_ITEM_GET_CONTRACT    "Get Thorium Brotherhood Contract" //GMDB TODO
+ 
+ bool GossipHello_npc_lokhtos_darkbargainer(Player* pPlayer, Creature* pCreature)
+ {
+Index: scripts/eastern_kingdoms/blackrock_depths/boss_tomb_of_seven.cpp
+===================================================================
+--- scripts/eastern_kingdoms/blackrock_depths/boss_tomb_of_seven.cpp	(Revision 1994)
++++ scripts/eastern_kingdoms/blackrock_depths/boss_tomb_of_seven.cpp	(Arbeitskopie)
+@@ -35,9 +35,9 @@
+     SKILLPOINT_MIN              = 230
+ };
+ 
+-#define GOSSIP_ITEM_TEACH_1 "Teach me the art of smelting dark iron"
+-#define GOSSIP_ITEM_TEACH_2 "Continue..."
+-#define GOSSIP_ITEM_TRIBUTE "I want to pay tribute"
++#define GOSSIP_ITEM_TEACH_1 "Dunk'rel, gebt Eure Geheimnisse preis!"
++#define GOSSIP_ITEM_TEACH_2 "Continue..." //GMDB TODO not exist on german Realms
++#define GOSSIP_ITEM_TRIBUTE "Ich habe Euren Preis bezahlt, Dunk'rel. Jetzt lehrt mich Eure Geheimnisse!"
+ 
+ bool GossipHello_boss_gloomrel(Player* pPlayer, Creature* pCreature)
+ {
+@@ -72,7 +72,7 @@
+             pCreature->CastSpell(pPlayer, SPELL_LEARN_SMELT, false);
+             break;
+         case GOSSIP_ACTION_INFO_DEF+2:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "[PH] Continue...", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 22);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "[PH] Continue...", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 22); //GMDB TODO not exist on german Realms
+             pPlayer->SEND_GOSSIP_MENU(2604, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+22:
+@@ -100,7 +100,7 @@
+     MAX_DWARF                           = 7
+ };
+ 
+-#define GOSSIP_ITEM_CHALLENGE   "Your bondage is at an end, Doom'rel. I challenge you!"
++#define GOSSIP_ITEM_CHALLENGE   "Eure Knechtschaft hat ein Ende, Un'rel. Ich fordere Euch heraus!"
+ 
+ struct MANGOS_DLL_DECL boss_doomrelAI : public ScriptedAI
+ {
+Index: scripts/eastern_kingdoms/blackwing_lair/boss_vaelastrasz.cpp
+===================================================================
+--- scripts/eastern_kingdoms/blackwing_lair/boss_vaelastrasz.cpp	(Revision 1994)
++++ scripts/eastern_kingdoms/blackwing_lair/boss_vaelastrasz.cpp	(Arbeitskopie)
+@@ -40,7 +40,7 @@
+     SPELL_CLEAVE                = 20684                   // Chain cleave is most likely named something different and contains a dummy effect
+ };
+ 
+-#define GOSSIP_ITEM         "Start Event <Needs Gossip Text>"
++#define GOSSIP_ITEM         "Start Event <Needs Gossip Text>" //GMDB TODO
+ 
+ struct MANGOS_DLL_DECL boss_vaelastraszAI : public ScriptedAI
+ {
+Index: scripts/eastern_kingdoms/blackwing_lair/boss_victor_nefarius.cpp
+===================================================================
+--- scripts/eastern_kingdoms/blackwing_lair/boss_victor_nefarius.cpp	(Revision 1994)
++++ scripts/eastern_kingdoms/blackwing_lair/boss_victor_nefarius.cpp	(Arbeitskopie)
+@@ -27,9 +27,9 @@
+ #define SAY_GAMESBEGIN_2        -1469005
+ #define SAY_VAEL_INTRO          -1469006                    //when he corrupts Vaelastrasz
+ 
+-#define GOSSIP_ITEM_1           "I've made no mistakes."
+-#define GOSSIP_ITEM_2           "You have lost your mind, Nefarius. You speak in riddles."
+-#define GOSSIP_ITEM_3           "Please do."
++#define GOSSIP_ITEM_1           "Ich habe keine Fehler begangen."
++#define GOSSIP_ITEM_2           "Ihr habt den Verstand verloren, Nefarius. Ihr sprecht in Rätseln."
++#define GOSSIP_ITEM_3           "Bitte gern."
+ 
+ #define CREATURE_BRONZE_DRAKANOID       14263
+ #define CREATURE_BLUE_DRAKANOID         14261
+Index: scripts/eastern_kingdoms/blasted_lands.cpp
+===================================================================
+--- scripts/eastern_kingdoms/blasted_lands.cpp	(Revision 1994)
++++ scripts/eastern_kingdoms/blasted_lands.cpp	(Arbeitskopie)
+@@ -32,7 +32,7 @@
+ ## npc_deathly_usher
+ ######*/
+ 
+-#define GOSSIP_ITEM_USHER "I wish to to visit the Rise of the Defiler."
++#define GOSSIP_ITEM_USHER "I wish to to visit the Rise of the Defiler." //GMDB TODO
+ 
+ #define SPELL_TELEPORT_SINGLE           12885
+ #define SPELL_TELEPORT_SINGLE_IN_GROUP  13142
+@@ -63,13 +63,13 @@
+ ## npc_fallen_hero_of_horde
+ ######*/
+ 
+-#define GOSSIP_ITEM_FALLEN "Continue..."
++#define GOSSIP_ITEM_FALLEN "Sprecht bitte weiter, oh Held..."
+ 
+-#define GOSSIP_ITEM_FALLEN1 "What could be worse than death?"
+-#define GOSSIP_ITEM_FALLEN2 "Subordinates?"
+-#define GOSSIP_ITEM_FALLEN3 "What are the stones of binding?"
+-#define GOSSIP_ITEM_FALLEN4 "You can count on me, Hero"
+-#define GOSSIP_ITEM_FALLEN5 "I shall"
++#define GOSSIP_ITEM_FALLEN1 "Was könnte schlimmer sein als der Tod?"
++#define GOSSIP_ITEM_FALLEN2 "Untergebenen?"
++#define GOSSIP_ITEM_FALLEN3 "Was sind die Steine der Bindung?"
++#define GOSSIP_ITEM_FALLEN4 "Verlasst Euch auf mich, oh Held."
++#define GOSSIP_ITEM_FALLEN5 "Das werde ich."
+ 
+ bool GossipHello_npc_fallen_hero_of_horde(Player* pPlayer, Creature* pCreature)
+ {
+@@ -77,13 +77,13 @@
+         pPlayer->PrepareQuestMenu(pCreature->GetGUID());
+ 
+     if (pPlayer->GetQuestStatus(2784) == QUEST_STATUS_INCOMPLETE)
+-        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Why are you here?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+1);
++        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Warum seid ihr hier?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+1);
+ 
+     if (pPlayer->GetQuestStatus(2801) == QUEST_STATUS_INCOMPLETE && pPlayer->GetTeam() == HORDE)
+-        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Continue story...", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+2);
++        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Fahrt mit der Geschichte fort...", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+2);
+ 
+     if (pPlayer->GetQuestStatus(2801) == QUEST_STATUS_INCOMPLETE && pPlayer->GetTeam() == ALLIANCE)
+-        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Why are you here?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+1);
++        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Warum seid ihr hier?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+1);
+ 
+     pPlayer->SEND_GOSSIP_MENU(pPlayer->GetGossipTextId(pCreature), pCreature->GetGUID());
+ 
+Index: scripts/eastern_kingdoms/burning_steppes.cpp
+===================================================================
+--- scripts/eastern_kingdoms/burning_steppes.cpp	(Revision 1994)
++++ scripts/eastern_kingdoms/burning_steppes.cpp	(Arbeitskopie)
+@@ -74,7 +74,7 @@
+         pPlayer->PrepareQuestMenu(pCreature->GetGUID());
+ 
+     if (pPlayer->GetQuestStatus(4224) == QUEST_STATUS_INCOMPLETE)
+-        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Official buisness, John. I need some information about Marsha Windsor. Tell me about the last time you saw him.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF);
++        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Official buisness, John. I need some information about Marsha Windsor. Tell me about the last time you saw him.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF); //GMDB TODO
+ 
+     pPlayer->SEND_GOSSIP_MENU(2713, pCreature->GetGUID());
+     return true;
+@@ -85,47 +85,47 @@
+     switch(uiAction)
+     {
+         case GOSSIP_ACTION_INFO_DEF:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "So what did you do?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 1);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "So what did you do?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 1); //GMDB TODO
+             pPlayer->SEND_GOSSIP_MENU(2714, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+1:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Start making sense, dwarf. I don't want to have anything to do with your cracker, your pappy, or any sort of 'discreditin'.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 2);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Start making sense, dwarf. I don't want to have anything to do with your cracker, your pappy, or any sort of 'discreditin'.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 2); //GMDB TODO
+             pPlayer->SEND_GOSSIP_MENU(2715, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+2:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Ironfoe?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 3);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Ironfoe?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 3); //GMDB TODO
+             pPlayer->SEND_GOSSIP_MENU(2716, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+3:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Interesting... continue John.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 4);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Interesting... continue John.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 4); //GMDB TODO
+             pPlayer->SEND_GOSSIP_MENU(2717, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+4:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "So that's how Windsor died...", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 5);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "So that's how Windsor died...", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 5); //GMDB TODO
+             pPlayer->SEND_GOSSIP_MENU(2718, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+5:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "So how did he die?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 6);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "So how did he die?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 6); //GMDB TODO
+             pPlayer->SEND_GOSSIP_MENU(2719, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+6:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Ok so where the hell is he? Wait a minute! Are you drunk?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 7);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Ok so where the hell is he? Wait a minute! Are you drunk?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 7); //GMDB TODO
+             pPlayer->SEND_GOSSIP_MENU(2720, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+7:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "WHY is he in Blackrock Depths?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 8);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "WHY is he in Blackrock Depths?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 8); //GMDB TODO
+             pPlayer->SEND_GOSSIP_MENU(2721, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+8:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "300? So the Dark Irons killed him and dragged him into the Depths?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 9);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "300? So the Dark Irons killed him and dragged him into the Depths?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 9); //GMDB TODO
+             pPlayer->SEND_GOSSIP_MENU(2722, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+9:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Ahh... Ironfoe", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 10);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Ahh... Ironfoe", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 10); //GMDB TODO
+             pPlayer->SEND_GOSSIP_MENU(2723, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+10:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Thanks, Ragged John. Your story was very uplifting and informative", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 11);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Thanks, Ragged John. Your story was very uplifting and informative", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 11); //GMDB TODO
+             pPlayer->SEND_GOSSIP_MENU(2725, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+11:
+Index: scripts/eastern_kingdoms/eastern_plaguelands.cpp
+===================================================================
+--- scripts/eastern_kingdoms/eastern_plaguelands.cpp	(Revision 1994)
++++ scripts/eastern_kingdoms/eastern_plaguelands.cpp	(Arbeitskopie)
+@@ -116,7 +116,7 @@
+         pPlayer->PrepareQuestMenu(pCreature->GetGUID());
+ 
+     if (pPlayer->GetQuestStatus(5742) == QUEST_STATUS_INCOMPLETE && pPlayer->getStandState() == UNIT_STAND_STATE_SIT)
+-        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "I am ready to hear your tale, Tirion.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+1);
++        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Ich bin bereit, Eure Geschichte anzuhören, Tirion.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+1);
+ 
+     pPlayer->SEND_GOSSIP_MENU(pPlayer->GetGossipTextId(pCreature), pCreature->GetGUID());
+ 
+@@ -128,15 +128,15 @@
+     switch(uiAction)
+     {
+         case GOSSIP_ACTION_INFO_DEF+1:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Thank you, Tirion.  What of your identity?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 2);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Danke, Tirion. Aber was ist nun mit Eurer Identität?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 2);
+             pPlayer->SEND_GOSSIP_MENU(4493, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+2:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "That is terrible.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 3);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Das ist ja schrecklich.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 3);
+             pPlayer->SEND_GOSSIP_MENU(4494, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+3:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "I will, Tirion.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 4);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Das werde ich, Tirion.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 4);
+             pPlayer->SEND_GOSSIP_MENU(4495, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+4:
+Index: scripts/eastern_kingdoms/eversong_woods.cpp
+===================================================================
+--- scripts/eastern_kingdoms/eversong_woods.cpp	(Revision 1994)
++++ scripts/eastern_kingdoms/eversong_woods.cpp	(Arbeitskopie)
+@@ -303,8 +303,8 @@
+     return new npc_prospector_anvilwardAI(pCreature);
+ }
+ 
+-#define GOSSIP_ITEM_MOMENT "I need a moment of your time, sir."
+-#define GOSSIP_ITEM_SHOW   "Why... yes, of course. I've something to show you right inside this building, Mr. Anvilward."
++#define GOSSIP_ITEM_MOMENT "Habt Ihr einen Moment Zeit für mich, mein Herr?"
++#define GOSSIP_ITEM_SHOW   "Warum... ja, natürlich. Ich möchte Euch etwas zeigen, hier, in diesem Gebäude dort, Meister Ambossel."
+ 
+ bool GossipHello_npc_prospector_anvilward(Player* pPlayer, Creature* pCreature)
+ {
+Index: scripts/eastern_kingdoms/ghostlands.cpp
+===================================================================
+--- scripts/eastern_kingdoms/ghostlands.cpp	(Revision 1994)
++++ scripts/eastern_kingdoms/ghostlands.cpp	(Arbeitskopie)
+@@ -35,7 +35,7 @@
+ ## npc_blood_knight_dawnstar
+ ######*/
+ 
+-#define GOSSIP_ITEM_INSIGNIA    "Take Blood Knight Insignia"
++#define GOSSIP_ITEM_INSIGNIA    "Take Blood Knight Insignia" //GMDB TODO
+ 
+ bool GossipHello_npc_blood_knight_dawnstar(Player* pPlayer, Creature* pCreature)
+ {
+@@ -63,7 +63,7 @@
+ ## npc_budd_nedreck
+ ######*/
+ 
+-#define GOSSIP_ITEM_DISGUISE        "You gave the crew disguises?"
++#define GOSSIP_ITEM_DISGUISE        "You gave the crew disguises?" //GMDB TODO
+ 
+ bool GossipHello_npc_budd_nedreck(Player* pPlayer, Creature* pCreature)
+ {
+Index: scripts/eastern_kingdoms/ironforge.cpp
+===================================================================
+--- scripts/eastern_kingdoms/ironforge.cpp	(Revision 1994)
++++ scripts/eastern_kingdoms/ironforge.cpp	(Arbeitskopie)
+@@ -31,11 +31,11 @@
+ ## npc_royal_historian_archesonus
+ ######*/
+ 
+-#define GOSSIP_ITEM_ROYAL   "I am ready to listen"
+-#define GOSSIP_ITEM_ROYAL_1 "That is tragic. How did this happen?"
+-#define GOSSIP_ITEM_ROYAL_2 "Interesting, continue please."
+-#define GOSSIP_ITEM_ROYAL_3 "Unbelievable! How dare they??"
+-#define GOSSIP_ITEM_ROYAL_4 "Of course I will help!"
++#define GOSSIP_ITEM_ROYAL   "Ich bin bereit, Historikerin Archesonus."
++#define GOSSIP_ITEM_ROYAL_1 "Das ist tragisch. Wie konnte das geschehen?"
++#define GOSSIP_ITEM_ROYAL_2 "Interessant... fahrt bitte fort."
++#define GOSSIP_ITEM_ROYAL_3 "Unglaublich! Wie können sie es wagen!"
++#define GOSSIP_ITEM_ROYAL_4 "Natürlich werde ich Euch helfen!"
+ 
+ bool GossipHello_npc_royal_historian_archesonus(Player* pPlayer, Creature* pCreature)
+ {
+Index: scripts/eastern_kingdoms/karazhan/bosses_opera.cpp
+===================================================================
+--- scripts/eastern_kingdoms/karazhan/bosses_opera.cpp	(Revision 1994)
++++ scripts/eastern_kingdoms/karazhan/bosses_opera.cpp	(Arbeitskopie)
+@@ -721,7 +721,7 @@
+ #define SPELL_TERRIFYING_HOWL           30752
+ #define SPELL_WIDE_SWIPE                30761
+ 
+-#define GOSSIP_GRANDMA                  "What phat lewtz you have grandmother?"
++#define GOSSIP_GRANDMA                  "Großmutter, was hast du für große Ohren?"
+ 
+ /**** The Wolf's Entry ****/
+ #define CREATURE_BIG_BAD_WOLF           17521
+Index: scripts/eastern_kingdoms/karazhan/karazhan.cpp
+===================================================================
+--- scripts/eastern_kingdoms/karazhan/karazhan.cpp	(Revision 1994)
++++ scripts/eastern_kingdoms/karazhan/karazhan.cpp	(Arbeitskopie)
+@@ -34,20 +34,20 @@
+ # npc_barnesAI
+ ######*/
+ 
+-#define GOSSIP_READY        "I'm not an actor."
++#define GOSSIP_READY        "Ich bin kein Schauspieler."
+ 
+-#define SAY_READY           "Splendid, I'm going to get the audience ready. Break a leg!"
+-#define SAY_OZ_INTRO1       "Finally, everything is in place. Are you ready for your big stage debut?"
+-#define OZ_GOSSIP1          "I'm not an actor."
+-#define SAY_OZ_INTRO2       "Don't worry, you'll be fine. You look like a natural!"
+-#define OZ_GOSSIP2          "Ok, I'll give it a try, then."
++#define SAY_READY           "Splendid, I'm going to get the audience ready. Break a leg!" //GMDB TODO
++#define SAY_OZ_INTRO1       "Finally, everything is in place. Are you ready for your big stage debut?" //GMDB TODO
++#define OZ_GOSSIP1          "I'm not an actor." //GMDB TODO
++#define SAY_OZ_INTRO2       "Don't worry, you'll be fine. You look like a natural!" //GMDB TODO
++#define OZ_GOSSIP2          "Ok, ich werde es versuchen."
+ 
+-#define SAY_RAJ_INTRO1      "The romantic plays are really tough, but you'll do better this time. You have TALENT. Ready?"
+-#define RAJ_GOSSIP1         "I've never been more ready."
++#define SAY_RAJ_INTRO1      "The romantic plays are really tough, but you'll do better this time. You have TALENT. Ready?" //GMDB TODO
++#define RAJ_GOSSIP1         "I've never been more ready." //GMDB TODO
+ 
+-#define OZ_GM_GOSSIP1       "[GM] Change event to EVENT_OZ"
+-#define OZ_GM_GOSSIP2       "[GM] Change event to EVENT_HOOD"
+-#define OZ_GM_GOSSIP3       "[GM] Change event to EVENT_RAJ"
++#define OZ_GM_GOSSIP1       "[GM] Change event to EVENT_OZ" //GMDB TODO
++#define OZ_GM_GOSSIP2       "[GM] Change event to EVENT_HOOD" //GMDB TODO
++#define OZ_GM_GOSSIP3       "[GM] Change event to EVENT_RAJ" //GMDB TODO
+ 
+ struct Dialogue
+ {
+@@ -390,7 +390,7 @@
+     SPELL_TELEPORT              = 39567
+ };
+ 
+-#define GOSSIP_ITEM_TELEPORT    "Teleport me to the Guardian's Library"
++#define GOSSIP_ITEM_TELEPORT    "Bitte bringt mich zu der Bibliothek des Wächters."
+ 
+ bool GossipHello_npc_berthold(Player* pPlayer, Creature* pCreature)
+ {
+Index: scripts/eastern_kingdoms/loch_modan.cpp
+===================================================================
+--- scripts/eastern_kingdoms/loch_modan.cpp	(Revision 1994)
++++ scripts/eastern_kingdoms/loch_modan.cpp	(Arbeitskopie)
+@@ -39,7 +39,7 @@
+         pPlayer->PrepareQuestMenu(pCreature->GetGUID());
+ 
+     if (!pPlayer->GetQuestRewardStatus(3181) == 1)
+-        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Open the gate please, i need to get to Searing Gorge", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+1);
++        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Öffne bitte das Tor. Ich muß in die Sengende Schlucht reisen", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+1);
+ 
+     pPlayer->SEND_GOSSIP_MENU(pPlayer->GetGossipTextId(pCreature), pCreature->GetGUID());
+ 
+@@ -51,27 +51,27 @@
+     switch(uiAction)
+     {
+         case GOSSIP_ACTION_INFO_DEF+1:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "But i need to get there, now open the gate!", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 2);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Aber ich muss dort hin. Öffne jetzt das Tor!", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 2);
+             pPlayer->SEND_GOSSIP_MENU(1833, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+2:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Ok, so what is this other way?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 3);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Ok, Wo ist dieser andere Weg?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 3);
+             pPlayer->SEND_GOSSIP_MENU(1834, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+3:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Doesn't matter, i'm invulnerable.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 4);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Das macht nichts. Ich bin unverwundbar.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 4);
+             pPlayer->SEND_GOSSIP_MENU(1835, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+4:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Yes...", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 5);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Ja...", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 5);
+             pPlayer->SEND_GOSSIP_MENU(1836, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+5:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Ok, i'll try to remember that.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 6);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Ok, Ich werde daran denken.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 6);
+             pPlayer->SEND_GOSSIP_MENU(1837, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+6:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "A key? Ok!", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 7);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Ein Schlüssel? Ok!", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 7);
+             pPlayer->SEND_GOSSIP_MENU(1838, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+7:
+Index: scripts/eastern_kingdoms/magisters_terrace/magisters_terrace.cpp
+===================================================================
+--- scripts/eastern_kingdoms/magisters_terrace/magisters_terrace.cpp	(Revision 1994)
++++ scripts/eastern_kingdoms/magisters_terrace/magisters_terrace.cpp	(Arbeitskopie)
+@@ -41,11 +41,11 @@
+ 
+ const float afKaelLandPoint[] = {225.045f, -276.236f, -5.434f};
+ 
+-#define GOSSIP_ITEM_KAEL_1      "Who are you?"
+-#define GOSSIP_ITEM_KAEL_2      "What can we do to assist you?"
+-#define GOSSIP_ITEM_KAEL_3      "What brings you to the Sunwell?"
+-#define GOSSIP_ITEM_KAEL_4      "You're not alone here?"
+-#define GOSSIP_ITEM_KAEL_5      "What would Kil'jaeden want with a mortal woman?"
++#define GOSSIP_ITEM_KAEL_1      "Wer seid Ihr?"
++#define GOSSIP_ITEM_KAEL_2      "Wie können wir Euch behilflich sein?"
++#define GOSSIP_ITEM_KAEL_3      "Was führt Euch zum Sonnenbrunnen?"
++#define GOSSIP_ITEM_KAEL_4      "Ihr seid nicht alleine hierher gekommen?"
++#define GOSSIP_ITEM_KAEL_5      "Was würde Kil'jaeden mit einer sterblichen Frau anfangen wollen?"
+ 
+ // This is friendly keal that appear after used Orb.
+ // If we assume DB handle summon, summon appear somewhere outside the platform where Orb is
+Index: scripts/eastern_kingdoms/scarlet_enclave/ebon_hold.cpp
+===================================================================
+--- scripts/eastern_kingdoms/scarlet_enclave/ebon_hold.cpp	(Revision 1994)
++++ scripts/eastern_kingdoms/scarlet_enclave/ebon_hold.cpp	(Arbeitskopie)
+@@ -517,7 +517,7 @@
+     SAY_DUEL_A, SAY_DUEL_B, SAY_DUEL_C, SAY_DUEL_D, SAY_DUEL_E, SAY_DUEL_F, SAY_DUEL_G, SAY_DUEL_H, SAY_DUEL_I
+ };
+ 
+-#define GOSSIP_ACCEPT_DUEL      "I challenge you, death knight!"
++#define GOSSIP_ACCEPT_DUEL      "Ich fordere Euch heraus, Todesritter!"
+ 
+ struct MANGOS_DLL_DECL npc_death_knight_initiateAI : public ScriptedAI
+ {
+Index: scripts/eastern_kingdoms/searing_gorge.cpp
+===================================================================
+--- scripts/eastern_kingdoms/searing_gorge.cpp	(Revision 1994)
++++ scripts/eastern_kingdoms/searing_gorge.cpp	(Arbeitskopie)
+@@ -39,7 +39,7 @@
+         pPlayer->PrepareQuestMenu(pCreature->GetGUID());
+ 
+     if (pPlayer->GetQuestStatus(3441) == QUEST_STATUS_INCOMPLETE)
+-        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Tell me what drives this vengance?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF);
++        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Erzählt mir was diese Rachsucht auslöst", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF);
+ 
+     pPlayer->SEND_GOSSIP_MENU(pPlayer->GetGossipTextId(pCreature), pCreature->GetGUID());
+ 
+@@ -51,11 +51,11 @@
+     switch(uiAction)
+     {
+         case GOSSIP_ACTION_INFO_DEF:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Continue please", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 1);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Bitte fahrt fort", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 1);
+             pPlayer->SEND_GOSSIP_MENU(1954, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+1:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Let me confer with my colleagues", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 2);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Let me confer with my colleagues", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 2); //GMDB TODO
+             pPlayer->SEND_GOSSIP_MENU(1955, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+2:
+@@ -76,7 +76,7 @@
+         pPlayer->PrepareQuestMenu(pCreature->GetGUID());
+ 
+     if (pPlayer->GetQuestRewardStatus(7487) || pPlayer->GetQuestRewardStatus(7848))
+-        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Teleport me to the Molten Core", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 1);
++        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Teleportiert mich zum geschmolzenen Kern, Lothos.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 1);
+ 
+     pPlayer->SEND_GOSSIP_MENU(pPlayer->GetGossipTextId(pCreature), pCreature->GetGUID());
+ 
+@@ -104,7 +104,7 @@
+         pPlayer->PrepareQuestMenu(pCreature->GetGUID());
+ 
+     if (pPlayer->GetQuestStatus(3377) == QUEST_STATUS_INCOMPLETE)
+-        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Tell me your story", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF);
++        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Erzählt mir eure Geschichte", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF);
+ 
+     pPlayer->SEND_GOSSIP_MENU(1920, pCreature->GetGUID());
+ 
+@@ -116,11 +116,11 @@
+     switch(uiAction)
+     {
+         case GOSSIP_ACTION_INFO_DEF:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Please continue...", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 1);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Bitte fahrt fort...", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 1);
+             pPlayer->SEND_GOSSIP_MENU(1921, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+1:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Goodbye", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 2);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Auf Wiedersehen", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 2);
+             pPlayer->SEND_GOSSIP_MENU(1922, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+2:
+Index: scripts/eastern_kingdoms/shadowfang_keep/shadowfang_keep.cpp
+===================================================================
+--- scripts/eastern_kingdoms/shadowfang_keep/shadowfang_keep.cpp	(Revision 1994)
++++ scripts/eastern_kingdoms/shadowfang_keep/shadowfang_keep.cpp	(Arbeitskopie)
+@@ -55,7 +55,7 @@
+     NPC_ADA                 = 3849
+ };
+ 
+-#define GOSSIP_ITEM_DOOR        "Please unlock the courtyard door."
++#define GOSSIP_ITEM_DOOR        "Öffnet bitte die Tür zum Hof."
+ 
+ struct MANGOS_DLL_DECL npc_shadowfang_prisonerAI : public npc_escortAI
+ {
+Index: scripts/eastern_kingdoms/silverpine_forest.cpp
+===================================================================
+--- scripts/eastern_kingdoms/silverpine_forest.cpp	(Revision 1994)
++++ scripts/eastern_kingdoms/silverpine_forest.cpp	(Arbeitskopie)
+@@ -57,7 +57,7 @@
+ bool GossipHello_npc_astor_hadren(Player* pPlayer, Creature* pCreature)
+ {
+     if (pPlayer->GetQuestStatus(1886) == QUEST_STATUS_INCOMPLETE)
+-        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "You're Astor Hadren, right?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 1);
++        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "You're Astor Hadren, right?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 1); //GMDB TODO
+ 
+     pPlayer->SEND_GOSSIP_MENU(623, pCreature->GetGUID());
+ 
+@@ -69,7 +69,7 @@
+     switch(uiAction)
+     {
+         case GOSSIP_ACTION_INFO_DEF + 1:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "You've got something I need, Astor. And I'll be taking it now.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 2);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "You've got something I need, Astor. And I'll be taking it now.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 2); //GMDB TODO
+             pPlayer->SEND_GOSSIP_MENU(624, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF + 2:
+@@ -98,7 +98,7 @@
+     SAY_RANE_REPLY      = -1000314,
+     SAY_CHECK_NEXT      = -1000315,
+     SAY_QUINN           = -1000316,
+-    SAY_QUINN_REPLY     = -1000317,
++    SAY_QUINN_REPLY     = -1000317, //GMDB Missing
+     SAY_BYE             = -1000318,
+ 
+     QUEST_ERLAND        = 435,
+Index: scripts/eastern_kingdoms/stormwind_city.cpp
+===================================================================
+--- scripts/eastern_kingdoms/stormwind_city.cpp	(Revision 1994)
++++ scripts/eastern_kingdoms/stormwind_city.cpp	(Arbeitskopie)
+@@ -34,7 +34,7 @@
+ ## npc_archmage_malin
+ ######*/
+ 
+-#define GOSSIP_ITEM_MALIN "Can you send me to Theramore? I have an urgent message for Lady Jaina from Highlord Bolvar."
++#define GOSSIP_ITEM_MALIN "Könnt ihr mich nach Theramore teleportieren? Ich habe eine wichtige Botschaft Lady Jaina Prachtmeer von Hochlord Bolvar Fordragon."
+ 
+ bool GossipHello_npc_archmage_malin(Player* pPlayer, Creature* pCreature)
+ {
+@@ -196,10 +196,10 @@
+ ## npc_lady_katrana_prestor
+ ######*/
+ 
+-#define GOSSIP_ITEM_KAT_1 "Pardon the intrusion, Lady Prestor, but Highlord Bolvar suggested that I seek your advice."
+-#define GOSSIP_ITEM_KAT_2 "My apologies, Lady Prestor."
+-#define GOSSIP_ITEM_KAT_3 "Begging your pardon, Lady Prestor. That was not my intent."
+-#define GOSSIP_ITEM_KAT_4 "Thank you for your time, Lady Prestor."
++#define GOSSIP_ITEM_KAT_1 "Pardon the intrusion, Lady Prestor, but Highlord Bolvar suggested that I seek your advice." //GMDB TODO
++#define GOSSIP_ITEM_KAT_2 "My apologies, Lady Prestor." //GMDB TODO
++#define GOSSIP_ITEM_KAT_3 "Begging your pardon, Lady Prestor. That was not my intent." //GMDB TODO
++#define GOSSIP_ITEM_KAT_4 "Thank you for your time, Lady Prestor." //GMDB TODO
+ 
+ bool GossipHello_npc_lady_katrana_prestor(Player* pPlayer, Creature* pCreature)
+ {
+Index: scripts/eastern_kingdoms/stratholme/boss_postmaster_malown.cpp
+===================================================================
+--- scripts/eastern_kingdoms/stratholme/boss_postmaster_malown.cpp	(Revision 1994)
++++ scripts/eastern_kingdoms/stratholme/boss_postmaster_malown.cpp	(Arbeitskopie)
+@@ -26,7 +26,7 @@
+ //Spell ID to summon this guy is 24627 "Summon Postmaster Malown"
+ //He should be spawned along with three other elites once the third postbox has been opened
+ 
+-#define SAY_MALOWNED    "You just got MALOWNED!"
++#define SAY_MALOWNED    "Gleich bekommt Ihr es mit Malown zu tun!"
+ 
+ #define SPELL_WAILINGDEAD    7713
+ #define SPELL_BACKHAND    6253
+Index: scripts/eastern_kingdoms/uldaman/uldaman.cpp
+===================================================================
+--- scripts/eastern_kingdoms/uldaman/uldaman.cpp	(Revision 1994)
++++ scripts/eastern_kingdoms/uldaman/uldaman.cpp	(Arbeitskopie)
+@@ -35,7 +35,7 @@
+ bool GossipHello_npc_lore_keeper_of_norgannon(Player* pPlayer, Creature* pCreature)
+ {
+     if (pPlayer->GetQuestStatus(2278) == QUEST_STATUS_INCOMPLETE)
+-        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Who are the Earthen?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+1);
++        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Wer sind die Irdenen?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+1);
+ 
+     pPlayer->SEND_GOSSIP_MENU(1079, pCreature->GetGUID());
+ 
+@@ -47,63 +47,63 @@
+     switch(uiAction)
+     {
+         case GOSSIP_ACTION_INFO_DEF+1:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "What is a \"subterranean being matrix\"?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+2);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Was ist eine \"Matrix für unterirdische Lebewesen\"?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+2);
+             pPlayer->SEND_GOSSIP_MENU(1080, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+2:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "What are the anomalies you speak of?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+3);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Von welchen Anomalien sprecht Ihr?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+3);
+             pPlayer->SEND_GOSSIP_MENU(1081, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+3:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "What is a resilient foundation of construction?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+4);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Was ist \"ureigenstes widerstandsfähiges Material\"?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+4);
+             pPlayer->SEND_GOSSIP_MENU(1082, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+4:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "So... the Earthen were made out of stone?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+5);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Also bestanden die Irdenen aus Stein?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+5);
+             pPlayer->SEND_GOSSIP_MENU(1083, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+5:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Anything else I should know about the Earthen?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+6);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Was sollte ich noch über die Irdenen wissen?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+6);
+             pPlayer->SEND_GOSSIP_MENU(1084, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+6:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "I think I understand the Creators' design intent for the Earthen now. What are the Earthen's anomalies that you spoke of earlier?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+7);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Ich glaube, ich verstehe, warum die Schöpfer die Irdenen erschaffen haben. Von welchen Anomalien der Irdenen war zuvor die Rede?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+7);
+             pPlayer->SEND_GOSSIP_MENU(1085, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+7:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "What high-stress environments would cause the Earthen to destabilize?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+8);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Durch welchen hohen Druck würden sich die Irdenen destabilisieren?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+8);
+             pPlayer->SEND_GOSSIP_MENU(1086, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+8:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "What happens when the Earthen destabilize?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+9);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Was passiert, wenn sich die Irdenen destabilisieren?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+9);
+             pPlayer->SEND_GOSSIP_MENU(1087, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+9:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Troggs?! Are the troggs you mention the same as the ones in the world today?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+10);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Troggs?! Sind das die gleichen Troggs, wie wir sie heute kennen?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+10);
+             pPlayer->SEND_GOSSIP_MENU(1088, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+10:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "You mentioned two results when the Earthen destabilize. What is the second?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+11);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Ihr erwähntet zwei Resultate, wenn sich die Irdenen destabilisieren. Welches ist das zweite?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+11);
+             pPlayer->SEND_GOSSIP_MENU(1089, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+11:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Dwarves!!! Now you're telling me that dwarves originally came from the Earthen?!", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+12);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Zwerge! Ihr wollt mir also sagen, dass die Zwerge von den Irdenen abstammen?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+12);
+             pPlayer->SEND_GOSSIP_MENU(1090, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+12:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "These dwarves are the same ones today, yes? Do the dwarves maintain any other links to the Earthen?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+13);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Und wir reden hier von den Zwergen, wie wir sie heute kennen, ja? Gibt es denn noch andere Verbindungen der Zwerge zu den Irdenen?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+13);
+             pPlayer->SEND_GOSSIP_MENU(1091, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+13:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Who are the Creators?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+14);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Wer sind die Schöpfer?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+14);
+             pPlayer->SEND_GOSSIP_MENU(1092, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+14:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "This is a lot to think about.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+15);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Darüber muss ich jetzt erst mal nachdenken.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+15);
+             pPlayer->SEND_GOSSIP_MENU(1093, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+15:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "I will access the discs now.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+16);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Ich greif jetzt auf die Scheiben zu.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+16);
+             pPlayer->SEND_GOSSIP_MENU(1094, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+16:
+Index: scripts/eastern_kingdoms/western_plaguelands.cpp
+===================================================================
+--- scripts/eastern_kingdoms/western_plaguelands.cpp	(Revision 1994)
++++ scripts/eastern_kingdoms/western_plaguelands.cpp	(Arbeitskopie)
+@@ -42,10 +42,10 @@
+ 
+     if (pPlayer->GetQuestRewardStatus(5237) || pPlayer->GetQuestRewardStatus(5238))
+     {
+-        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "What does the Felstone Field Cauldron need?",      GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+1);
+-        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "What does the Dalson's Tears Cauldron need?",      GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+2);
+-        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "What does the Writhing Haunt Cauldron need?",      GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+3);
+-        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "What does the Gahrron's Withering Cauldron need?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+4);
++        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Was wird für den Kessel des Teufelssteinfelds benötigt?",      GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+1);
++        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Was wird für den Kessel von Dalsons Tränenfeld benötigt?",      GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+2);
++        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Was wird für den Kessel des trostlosen Felds benötigt?",      GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+3);
++        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Was wird für den Kessel von Gahrrons Trauerfeld benötigt?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+4);
+         pPlayer->SEND_GOSSIP_MENU(3985, pCreature->GetGUID());
+     }else
+         pPlayer->SEND_GOSSIP_MENU(pPlayer->GetGossipTextId(pCreature), pCreature->GetGUID());
+@@ -61,19 +61,19 @@
+             pPlayer->SEND_VENDORLIST(pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+1:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Thanks, i need a Vitreous Focuser", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+5);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Ich brauche einen glasartigen Fokussierer.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+5);
+             pPlayer->SEND_GOSSIP_MENU(3980, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+2:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Thanks, i need a Vitreous Focuser", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+5);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Ich brauche einen glasartigen Fokussierer.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+5);
+             pPlayer->SEND_GOSSIP_MENU(3981, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+3:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Thanks, i need a Vitreous Focuser", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+5);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Ich brauche einen glasartigen Fokussierer.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+5);
+             pPlayer->SEND_GOSSIP_MENU(3982, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+4:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Thanks, i need a Vitreous Focuser", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+5);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Ich brauche einen glasartigen Fokussierer.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+5);
+             pPlayer->SEND_GOSSIP_MENU(3983, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+5:
+@@ -95,7 +95,7 @@
+     SPELL_SCARLET_ILLUSION  = 17961
+ };
+ 
+-#define GOSSIP_ITEM_ILLUSION    "I am ready for the illusion, Myranda."
++#define GOSSIP_ITEM_ILLUSION    "I am ready for the illusion, Myranda." //GMDB TODO
+ 
+ bool GossipHello_npc_myranda_the_hag(Player* pPlayer, Creature* pCreature)
+ {
+Index: scripts/eastern_kingdoms/zulaman/zulaman.cpp
+===================================================================
+--- scripts/eastern_kingdoms/zulaman/zulaman.cpp	(Revision 1994)
++++ scripts/eastern_kingdoms/zulaman/zulaman.cpp	(Arbeitskopie)
+@@ -121,7 +121,7 @@
+     SPELL_BANGING_THE_GONG  = 45225
+ };
+ 
+-#define GOSSIP_ITEM_BEGIN   "Thanks for the concern, but we intend to explore Zul'Aman."
++#define GOSSIP_ITEM_BEGIN   "Danke für den Ratschlag, aber wir haben vor, Zul'Aman dennoch zu erforschen."
+ 
+ struct MANGOS_DLL_DECL npc_harrison_jones_zaAI : public npc_escortAI
+ {
+Index: scripts/examples/example_creature.cpp
+===================================================================
+--- scripts/examples/example_creature.cpp	(Revision 1994)
++++ scripts/examples/example_creature.cpp	(Arbeitskopie)
+@@ -67,7 +67,7 @@
+ // List of gossip item texts. Items will appear in the gossip window.
+ // Actually such gossip can already be handled in normal World-Database
+ // If (and only if) a gossip must be handled within SD2, then it should be moved to SD2-database!
+-#define GOSSIP_ITEM     "I'm looking for a fight"
++#define GOSSIP_ITEM     "Ich suche nach einem Kampf"
+ 
+ struct MANGOS_DLL_DECL example_creatureAI : public ScriptedAI
+ {
+Index: scripts/examples/example_escort.cpp
+===================================================================
+--- scripts/examples/example_escort.cpp	(Revision 1994)
++++ scripts/examples/example_escort.cpp	(Arbeitskopie)
+@@ -46,9 +46,9 @@
+     SAY_RAND_2                  = -1999921
+ };
+ 
+-#define GOSSIP_ITEM_1   "Click to Test Escort(Attack, Run)"
+-#define GOSSIP_ITEM_2   "Click to Test Escort(NoAttack, Walk)"
+-#define GOSSIP_ITEM_3   "Click to Test Escort(NoAttack, Run)"
++#define GOSSIP_ITEM_1   "Click to Test Escort(Attack, Run)" //GMDB TODO
++#define GOSSIP_ITEM_2   "Click to Test Escort(NoAttack, Walk)" //GMDB TODO
++#define GOSSIP_ITEM_3   "Click to Test Escort(NoAttack, Run)" //GMDB TODO
+ 
+ struct MANGOS_DLL_DECL example_escortAI : public npc_escortAI
+ {
+Index: scripts/examples/example_gossip_codebox.cpp
+===================================================================
+--- scripts/examples/example_gossip_codebox.cpp	(Revision 1994)
++++ scripts/examples/example_gossip_codebox.cpp	(Arbeitskopie)
+@@ -35,8 +35,8 @@
+ };
+ 
+ // Should actually be handled in SD2-database!
+-#define GOSSIP_ITEM_1       "A quiz: what's your name?"
+-#define GOSSIP_ITEM_2       "I'm not interested"
++#define GOSSIP_ITEM_1       "Ein Quiz: Wie ist Euer Name?"
++#define GOSSIP_ITEM_2       "Ich bin nicht interessiert."
+ 
+ // This function is called when the player opens the gossip menubool
+ bool GossipHello_example_gossip_codebox(Player* pPlayer, Creature* pCreature)
+Index: scripts/kalimdor/azshara.cpp
+===================================================================
+--- scripts/kalimdor/azshara.cpp	(Revision 1994)
++++ scripts/kalimdor/azshara.cpp	(Arbeitskopie)
+@@ -67,7 +67,7 @@
+     SPELL_GIVE_MOONSTONE        = 39886
+ };
+ 
+-#define GOSSIP_ITEM_MOONSTONE   "Hand over the Southfury moonstone and I'll let you go."
++#define GOSSIP_ITEM_MOONSTONE   "Hand over the Southfury moonstone and I'll let you go." //GMDB TODO
+ 
+ struct MANGOS_DLL_DECL npc_rizzle_sprysprocketAI : public npc_escortAI
+ {
+@@ -311,10 +311,10 @@
+         pPlayer->PrepareQuestMenu(pCreature->GetGUID());
+ 
+     if (pPlayer->GetQuestStatus(2744) == QUEST_STATUS_INCOMPLETE)
+-        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Can you help me?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+1);
++        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Könnt ihr mir helfen?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+1);
+ 
+     if (pPlayer->GetQuestStatus(3141) == QUEST_STATUS_INCOMPLETE)
+-        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Tell me your story", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+2);
++        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Erzählt mir eure Geschichte", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+2);
+ 
+     pPlayer->SEND_GOSSIP_MENU(pPlayer->GetGossipTextId(pCreature), pCreature->GetGUID());
+ 
+@@ -331,23 +331,23 @@
+             break;
+ 
+         case GOSSIP_ACTION_INFO_DEF+2:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Please continue", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 21);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Bitte fahrt fort", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 21);
+             pPlayer->SEND_GOSSIP_MENU(1813, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+21:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "I do not understand", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 22);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Ich verstehe nicht", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 22);
+             pPlayer->SEND_GOSSIP_MENU(1814, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+22:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Indeed", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 23);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "In der Tat", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 23);
+             pPlayer->SEND_GOSSIP_MENU(1815, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+23:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "I will do this with or your help, Loramus", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 24);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Ich werde das mit deiner Hilfe tun, $C", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 24);
+             pPlayer->SEND_GOSSIP_MENU(1816, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+24:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Yes", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 25);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Ja", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 25);
+             pPlayer->SEND_GOSSIP_MENU(1817, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+25:
+Index: scripts/kalimdor/azuremyst_isle.cpp
+===================================================================
+--- scripts/kalimdor/azuremyst_isle.cpp	(Revision 1994)
++++ scripts/kalimdor/azuremyst_isle.cpp	(Arbeitskopie)
+@@ -174,7 +174,7 @@
+ }
+ 
+ /*######
+-## npc_engineer_spark_overgrind
++## npc_engineer_spark_awa
+ ######*/
+ 
+ enum
+@@ -190,7 +190,7 @@
+     SPELL_DYNAMITE          = 7978
+ };
+ 
+-#define GOSSIP_FIGHT        "Traitor! You will be brought to justice!"
++#define GOSSIP_FIGHT        "Es ist vorbei, Funks. Der Admiral weiß, dass Ihr es wart, der die Allianz verraten hat. Entweder arbeitet Ihr jetzt mit mir zusammen und erzählt mir alles, was Ihr wisst, oder ich muss handgreiflich werden."
+ 
+ struct MANGOS_DLL_DECL npc_engineer_spark_overgrindAI : public ScriptedAI
+ {
+@@ -399,7 +399,7 @@
+     TAXI_PATH_ID            = 506
+ };
+ 
+-#define GOSSIP_ITEM_READY   "I am ready."
++#define GOSSIP_ITEM_READY   "I am ready." //GMDB TODO
+ 
+ bool GossipHello_npc_susurrus(Player* pPlayer, Creature* pCreature)
+ {
+Index: scripts/kalimdor/bloodmyst_isle.cpp
+===================================================================
+--- scripts/kalimdor/bloodmyst_isle.cpp	(Revision 1994)
++++ scripts/kalimdor/bloodmyst_isle.cpp	(Arbeitskopie)
+@@ -79,7 +79,7 @@
+ {
+     if (pPlayer->HasAura(31609, EFFECT_INDEX_1) && pPlayer->GetQuestStatus(9756) == QUEST_STATUS_INCOMPLETE)
+     {
+-        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "[PH] ", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+1);
++        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Ich bin ein Gefangener, was denn sonst? Der Draeneiabschaum hat mich gefangengenommen, als ich das Sonnentor verließ. Anschließend töteten sie unsere Portalaufseher und zerstörten das Tor. Der Sonnenkönig wird von dieser Wendung der Ergebnisse nicht begeistert sein.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+1);
+         pPlayer->SEND_GOSSIP_MENU(9136, pCreature->GetGUID());
+     }
+     else
+@@ -93,23 +93,23 @@
+     switch(uiAction)
+     {
+         case GOSSIP_ACTION_INFO_DEF+1:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "[PH] ", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+2);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Ah ja, Sironas. Ich hätte beinahe vergessen, dass sie dort war. In der Scherbenwelt diente ich unter Sironas. Allerdings hatte ich keine Ahnung von der Existenz ihrer Monstrosität; Ich war noch nicht vollständig auf dieser Welt materialisiert, da nahmen mich diese verdammten Draenei schon gefangen.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+2);
+             pPlayer->SEND_GOSSIP_MENU(9137, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+2:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "[PH] ", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+3);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Unglaublich. Wie ist Sironas etwas Derartiges gelungen?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+3);
+             pPlayer->SEND_GOSSIP_MENU(9138, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+3:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "[PH] ", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+4);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Sironas ist eine Eredar... Ich meine, ja, offensichtlich.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+4);
+             pPlayer->SEND_GOSSIP_MENU(9139, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+4:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "[PH] ", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+5);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Die Vektorspule ist gigantisch. Ich hoffe, wir verfügen über mehr als eine Monstrosität, um die zahlreichen Schwachpunkte zu bewachen.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+5);
+             pPlayer->SEND_GOSSIP_MENU(9140, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+5:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "[PH] ", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+6);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Das habe ich getan und Ihr habt mir geglaubt. Vielen Dank für die Informationen, Blutelf. Ihr habt uns weit mehr geholfen, als Ihr es für möglich haltet.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+6);
+             pPlayer->SEND_GOSSIP_MENU(9141, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+6:
+Index: scripts/kalimdor/caverns_of_time/dark_portal/dark_portal.cpp
+===================================================================
+--- scripts/kalimdor/caverns_of_time/dark_portal/dark_portal.cpp	(Revision 1994)
++++ scripts/kalimdor/caverns_of_time/dark_portal/dark_portal.cpp	(Arbeitskopie)
+@@ -358,7 +358,7 @@
+ 
+ #define SAY_SAAT_WELCOME        -1269019
+ 
+-#define GOSSIP_ITEM_OBTAIN      "[PH] Obtain Chrono-Beacon"
++#define GOSSIP_ITEM_OBTAIN      "Ich benötige ein Chronosignal, Sa'at"
+ #define SPELL_CHRONO_BEACON     34975
+ #define ITEM_CHRONO_BEACON      24289
+ 
+Index: scripts/kalimdor/caverns_of_time/hyjal/hyjal.cpp
+===================================================================
+--- scripts/kalimdor/caverns_of_time/hyjal/hyjal.cpp	(Revision 1994)
++++ scripts/kalimdor/caverns_of_time/hyjal/hyjal.cpp	(Arbeitskopie)
+@@ -30,14 +30,14 @@
+ #include "precompiled.h"
+ #include "hyjalAI.h"
+ 
+-#define GOSSIP_ITEM_BEGIN_ALLY      "My companions and I are with you, Lady Proudmoore."
+-#define GOSSIP_ITEM_ANETHERON       "We are ready for whatever Archimonde might send our way, Lady Proudmoore."
+-#define GOSSIP_ITEM_BEGIN_HORDE     "I am with you, Thrall."
+-#define GOSSIP_ITEM_AZGALOR         "We have nothing to fear."
++#define GOSSIP_ITEM_BEGIN_ALLY      "Meine Gefährten und ich werden Euch zur Seite stehen, Lady Prachtmeer"
++#define GOSSIP_ITEM_ANETHERON       "Was auch immer Archimonde gegen uns ind Feld schicken mag, wir sind bereit, Lady Prachtmeer."
++#define GOSSIP_ITEM_BEGIN_HORDE     "Ich werde Euch zur Seite stehen, Thrall."
++#define GOSSIP_ITEM_AZGALOR         "Wir haben nichts zu befürchten."
+ 
+-#define GOSSIP_ITEM_RETREAT         "We can't keep this up. Let's retreat!"
++#define GOSSIP_ITEM_RETREAT         "We can't keep this up. Let's retreat!" //GMDB TODO
+ 
+-#define GOSSIP_ITEM_TYRANDE         "Aid us in defending Nordrassil"
++#define GOSSIP_ITEM_TYRANDE         "Ich wäre dankbar für jegliche Hilfe, die Ihr bieten könnt, Priesterin."
+ 
+ CreatureAI* GetAI_npc_jaina_proudmoore(Creature* pCreature)
+ {
+@@ -77,7 +77,7 @@
+                         pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, GOSSIP_ITEM_RETREAT, GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 3);
+ 
+                     if (pPlayer->isGameMaster())
+-                        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_DOT, "[GM] Toggle Debug Timers", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF);
++                        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_DOT, "[GM] Toggle Debug Timers", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF); //GMDB TODO
+                 }
+             }
+         }
+@@ -149,7 +149,7 @@
+                         pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, GOSSIP_ITEM_RETREAT, GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 3);
+ 
+                     if (pPlayer->isGameMaster())
+-                        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_DOT, "[GM] Toggle Debug Timers", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF);
++                        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_DOT, "[GM] Toggle Debug Timers", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF); //GMDB TODO
+                 }
+             }
+         }
+Index: scripts/kalimdor/darkshore.cpp
+===================================================================
+--- scripts/kalimdor/darkshore.cpp	(Revision 1994)
++++ scripts/kalimdor/darkshore.cpp	(Arbeitskopie)
+@@ -317,7 +317,7 @@
+     FACTION_HOSTILE         = 14
+ };
+ 
+-#define GOSSIP_ITEM_INSERT_KEY  "[PH] Insert key"
++#define GOSSIP_ITEM_INSERT_KEY  "Dreht den Schlüssel, um die Maschine zu starten."
+ 
+ struct MANGOS_DLL_DECL npc_threshwackonatorAI : public FollowerAI
+ {
+Index: scripts/kalimdor/dustwallow_marsh.cpp
+===================================================================
+--- scripts/kalimdor/dustwallow_marsh.cpp	(Revision 1994)
++++ scripts/kalimdor/dustwallow_marsh.cpp	(Arbeitskopie)
+@@ -229,7 +229,7 @@
+     SPELL_JAINAS_AUTOGRAPH = 23122
+ };
+ 
+-#define GOSSIP_ITEM_JAINA "I know this is rather silly but i have a young ward who is a bit shy and would like your autograph."
++#define GOSSIP_ITEM_JAINA "Lady Jaina, dies mag nach einer sonderbaren Bitte klingen... aber ich habe da einen jungen Schützling, der recht schüchtern ist. Ihr seid eine Heldin für ihn, deshalb bat er mich, Euch um ein Autogramm zu bitten."
+ 
+ bool GossipHello_npc_lady_jaina_proudmoore(Player* pPlayer, Creature* pCreature)
+ {
+@@ -788,7 +788,7 @@
+     SPELL_ALCAZ_SURVEY          = 42295
+ };
+ 
+-#define GOSSIP_RIDE             "<Ride the gryphons to Survey Alcaz Island>"
++#define GOSSIP_RIDE             "Lady Jaina sagte, ich solle mit Euch über die Verwendung eines Greifen für die Beobachtung der Insel Alcaz sprechen."
+ 
+ bool GossipHello_npc_cassa_crimsonwing(Player* pPlayer, Creature* pCreature)
+ {
+Index: scripts/kalimdor/felwood.cpp
+===================================================================
+--- scripts/kalimdor/felwood.cpp	(Revision 1994)
++++ scripts/kalimdor/felwood.cpp	(Arbeitskopie)
+@@ -48,7 +48,7 @@
+     NPC_CORRUPT_SABER           = 10042
+ };
+ 
+-#define GOSSIP_ITEM_RELEASE     "I want to release the corrupted saber to Winna."
++#define GOSSIP_ITEM_RELEASE     "Ich möchte den verderbten Säbler auf Winna loslassen."
+ 
+ struct MANGOS_DLL_DECL npc_kittenAI : public FollowerAI
+ {
+@@ -175,7 +175,7 @@
+     SPELL_CENARION_BEACON     = 15120
+ };
+ 
+-#define GOSSIP_ITEM_BEACON  "Please make me a Cenarion Beacon"
++#define GOSSIP_ITEM_BEACON  "Ich brauche ein cenarisches Leuchtfeuer."
+ 
+ bool GossipHello_npcs_riverbreeze_and_silversky(Player* pPlayer, Creature* pCreature)
+ {
+Index: scripts/kalimdor/feralas.cpp
+===================================================================
+--- scripts/kalimdor/feralas.cpp	(Revision 1994)
++++ scripts/kalimdor/feralas.cpp	(Arbeitskopie)
+@@ -34,7 +34,7 @@
+         pPlayer->PrepareQuestMenu(pCreature->GetGUID());
+ 
+     if (pCreature->isVendor() && pPlayer->GetQuestStatus(3909) == QUEST_STATUS_INCOMPLETE)
+-        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Buy somethin', will ya?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+1);
++        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Buy somethin', will ya?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+1); //GMDB TODO
+ 
+     pPlayer->SEND_GOSSIP_MENU(2433, pCreature->GetGUID());
+     return true;
+Index: scripts/kalimdor/moonglade.cpp
+===================================================================
+--- scripts/kalimdor/moonglade.cpp	(Revision 1994)
++++ scripts/kalimdor/moonglade.cpp	(Arbeitskopie)
+@@ -44,8 +44,8 @@
+     TAXI_PATH_ID_HORDE          = 316
+ };
+ 
+-#define GOSSIP_ITEM_THUNDER     "I'd like to fly to Thunder Bluff."
+-#define GOSSIP_ITEM_AQ_END      "Do you know where I can find Half Pendant of Aquatic Endurance?"
++#define GOSSIP_ITEM_THUNDER     "Ich würde gerne nach Donnerfels fliegen."
++#define GOSSIP_ITEM_AQ_END      "Kannst du mir sagen, wo sich Halber Anhänger der Wasserbelastbarkeit befindet?"
+ 
+ bool GossipHello_npc_bunthen_plainswind(Player* pPlayer, Creature* pCreature)
+ {
+@@ -232,10 +232,10 @@
+ ## npc_great_bear_spirit
+ ######*/
+ 
+-#define GOSSIP_BEAR1 "What do you represent, spirit?"
+-#define GOSSIP_BEAR2 "I seek to understand the importance of strength of the body."
+-#define GOSSIP_BEAR3 "I seek to understand the importance of strength of the heart."
+-#define GOSSIP_BEAR4 "I have heard your words, Great Bear Spirit, and I understand. I now seek your blessings to fully learn the way of the Claw."
++#define GOSSIP_BEAR1 "Was repräsentierst du, Geist?"
++#define GOSSIP_BEAR2 "Ich suche nach der Wichtigkeit der Stärke des Körpers."
++#define GOSSIP_BEAR3 "Ich suche nach der Wichtigkeit der Stärke des Herzes."
++#define GOSSIP_BEAR4 "Ich habe eure Worte gehöhrt, großer Bärengeist, und ich verstehe sie. Ich werde jetzt nach deiner Weisheit suchen, um die Weise des Greifers zu erlernen."
+ 
+ bool GossipHello_npc_great_bear_spirit(Player* pPlayer, Creature* pCreature)
+ {
+@@ -282,8 +282,8 @@
+ ## npc_silva_filnaveth
+ ######*/
+ 
+-#define GOSSIP_ITEM_RUTHERAN    "I'd like to fly to Rut'theran Village."
+-#define GOSSIP_ITEM_AQ_AGI      "Do you know where I can find Half Pendant of Aquatic Agility?"
++#define GOSSIP_ITEM_RUTHERAN    "I'd like to fly to Rut'theran Village." //GMDB TODO
++#define GOSSIP_ITEM_AQ_AGI      "Kannst du mir sagen, wo sich Halber Anhänger der Wasserbelastbarkeit befindet?"
+ 
+ bool GossipHello_npc_silva_filnaveth(Player* pPlayer, Creature* pCreature)
+ {
+Index: scripts/kalimdor/mulgore.cpp
+===================================================================
+--- scripts/kalimdor/mulgore.cpp	(Revision 1994)
++++ scripts/kalimdor/mulgore.cpp	(Arbeitskopie)
+@@ -162,7 +162,7 @@
+         pPlayer->PrepareQuestMenu(pCreature->GetGUID());
+ 
+     if (!pPlayer->GetQuestRewardStatus(770))
+-        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Tell me a story, Skorn.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF);
++        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Erzählt mir eine Geschichte, Skorn.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF);
+ 
+     pPlayer->SEND_GOSSIP_MENU(522, pCreature->GetGUID());
+ 
+Index: scripts/kalimdor/orgrimmar.cpp
+===================================================================
+--- scripts/kalimdor/orgrimmar.cpp	(Revision 1994)
++++ scripts/kalimdor/orgrimmar.cpp	(Arbeitskopie)
+@@ -41,7 +41,7 @@
+         pPlayer->PrepareQuestMenu(pCreature->GetGUID());
+ 
+     if (pPlayer->GetQuestStatus(QUEST_5727) == QUEST_STATUS_INCOMPLETE)
+-        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "You may speak frankly, Neeru...", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+1);
++        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Ihr dürft frei sprechen, Neeru...", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+1);
+ 
+     pPlayer->SEND_GOSSIP_MENU(4513, pCreature->GetGUID());
+     return true;
+@@ -52,7 +52,7 @@
+     switch(uiAction)
+     {
+         case GOSSIP_ACTION_INFO_DEF+1:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "[PH] ...", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+2);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Es tut gut zu sehen, wie die Brennende Klinge dort das Szepter übernimmt, wo der Schattenrat einst versagt hat.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+2);
+             pPlayer->SEND_GOSSIP_MENU(4513, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+2:
+@@ -207,7 +207,7 @@
+         pPlayer->PrepareQuestMenu(pCreature->GetGUID());
+ 
+     if (pPlayer->GetQuestStatus(QUEST_6566) == QUEST_STATUS_INCOMPLETE)
+-        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Please share your wisdom with me, Warchief.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+1);
++        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Please share your wisdom with me, Warchief.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+1); //GMDB TODO
+ 
+     pPlayer->SEND_GOSSIP_MENU(pPlayer->GetGossipTextId(pCreature), pCreature->GetGUID());
+     return true;
+@@ -218,27 +218,27 @@
+     switch(uiAction)
+     {
+         case GOSSIP_ACTION_INFO_DEF+1:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "What discoveries?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+2);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "What discoveries?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+2); //GMDB TODO
+             pPlayer->SEND_GOSSIP_MENU(5733, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+2:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Usurper?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+3);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Usurper?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+3); //GMDB TODO
+             pPlayer->SEND_GOSSIP_MENU(5734, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+3:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "With all due respect, Warchief - why not allow them to be destroyed? Does this not strengthen our position?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+4);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "With all due respect, Warchief - why not allow them to be destroyed? Does this not strengthen our position?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+4); //GMDB TODO
+             pPlayer->SEND_GOSSIP_MENU(5735, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+4:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "I... I did not think of it that way, Warchief.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+5);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "I... I did not think of it that way, Warchief.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+5); //GMDB TODO
+             pPlayer->SEND_GOSSIP_MENU(5736, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+5:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "I live only to serve, Warchief! My life is empty and meaningless without your guidance.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+6);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "I live only to serve, Warchief! My life is empty and meaningless without your guidance.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+6); //GMDB TODO
+             pPlayer->SEND_GOSSIP_MENU(5737, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+6:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Of course, Warchief!", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+7);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Of course, Warchief!", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+7); //GMDB TODO
+             pPlayer->SEND_GOSSIP_MENU(5738, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+7:
+Index: scripts/kalimdor/razorfen_downs/razorfen_downs.cpp
+===================================================================
+--- scripts/kalimdor/razorfen_downs/razorfen_downs.cpp	(Revision 1994)
++++ scripts/kalimdor/razorfen_downs/razorfen_downs.cpp	(Arbeitskopie)
+@@ -41,8 +41,8 @@
+     GOSSIP_TEXT_POTION_ANSWER                   = 2115,
+ };
+ 
+-#define GOSSIP_ITEM_TEA     "Teach me the cooking recipe"
+-#define GOSSIP_ITEM_POTION  "Teach me the alchemy recipe"
++#define GOSSIP_ITEM_TEA     "Ihr könnt kochen? Ich auch! Könnt Ihr mir vielleicht ein besonderes Rezept verraten?"
++#define GOSSIP_ITEM_POTION  "Teach me the alchemy recipe" //GMDB TODO
+ 
+ bool GossipHello_npc_henry_stern (Player* pPlayer, Creature* pCreature)
+ {
+Index: scripts/kalimdor/silithus.cpp
+===================================================================
+--- scripts/kalimdor/silithus.cpp	(Revision 1994)
++++ scripts/kalimdor/silithus.cpp	(Arbeitskopie)
+@@ -32,13 +32,13 @@
+ ## npc_highlord_demitrian
+ ###*/
+ 
+-#define GOSSIP_ITEM_DEMITRIAN1 "What do you know of it?"
+-#define GOSSIP_ITEM_DEMITRIAN2 "I am listening , Demitrian."
+-#define GOSSIP_ITEM_DEMITRIAN3 "Continue, please."
+-#define GOSSIP_ITEM_DEMITRIAN4 "A battle?"
+-#define GOSSIP_ITEM_DEMITRIAN5 "<Nod>"
+-#define GOSSIP_ITEM_DEMITRIAN6 "Caught unaware? How?"
+-#define GOSSIP_ITEM_DEMITRIAN7 "So what did Ragnaros do next?"
++#define GOSSIP_ITEM_DEMITRIAN1 "Was wisst Ihr darüber?"
++#define GOSSIP_ITEM_DEMITRIAN2 "Ich höre zu , Demitrian."
++#define GOSSIP_ITEM_DEMITRIAN3 "Fahrt bitte fort."
++#define GOSSIP_ITEM_DEMITRIAN4 "Eine Schlacht?"
++#define GOSSIP_ITEM_DEMITRIAN5 "<Nickt>"
++#define GOSSIP_ITEM_DEMITRIAN6 "Unwissend erwischt? Wie?"
++#define GOSSIP_ITEM_DEMITRIAN7 "Und was hat Ragnaros als nächstes getan?"
+ 
+ enum
+ {
+@@ -113,20 +113,20 @@
+ ###*/
+ 
+ //gossip item text best guess
+-#define GOSSIP_ITEM_SEEK1 "I seek information about Natalia"
++#define GOSSIP_ITEM_SEEK1 "Ich suche Informationen über Natalia"
+ 
+-#define GOSSIP_ITEM_RUTGAR2 "That sounds dangerous!"
+-#define GOSSIP_ITEM_RUTGAR3 "What did you do?"
+-#define GOSSIP_ITEM_RUTGAR4 "Who?"
+-#define GOSSIP_ITEM_RUTGAR5 "Women do that. What did she demand?"
+-#define GOSSIP_ITEM_RUTGAR6 "What do you mean?"
+-#define GOSSIP_ITEM_RUTGAR7 "What happened next?"
++#define GOSSIP_ITEM_RUTGAR2 "Das hört sich gefährlich an!"
++#define GOSSIP_ITEM_RUTGAR3 "Was habt ihr getan?"
++#define GOSSIP_ITEM_RUTGAR4 "Wer?"
++#define GOSSIP_ITEM_RUTGAR5 "Frauen tun das. Was hat sie verlangt?"
++#define GOSSIP_ITEM_RUTGAR6 "Was meint ihr?"
++#define GOSSIP_ITEM_RUTGAR7 "Was passierte dann?"
+ 
+-#define GOSSIP_ITEM_FRANKAL11 "Yes, please continue"
+-#define GOSSIP_ITEM_FRANKAL12 "What language?"
+-#define GOSSIP_ITEM_FRANKAL13 "The Priestess attacked you?!"
+-#define GOSSIP_ITEM_FRANKAL14 "I should ask the monkey about this"
+-#define GOSSIP_ITEM_FRANKAL15 "Then what..."
++#define GOSSIP_ITEM_FRANKAL11 "Ja, bitte fahrt fort"
++#define GOSSIP_ITEM_FRANKAL12 "Welche Sprache?"
++#define GOSSIP_ITEM_FRANKAL13 "Die Priesterinnen griffen euch an?!"
++#define GOSSIP_ITEM_FRANKAL14 "Ich sollte den Affen darüber befragen"
++#define GOSSIP_ITEM_FRANKAL15 "Als was..."
+ 
+ enum
+ {
+Index: scripts/kalimdor/tanaris.cpp
+===================================================================
+--- scripts/kalimdor/tanaris.cpp	(Revision 1994)
++++ scripts/kalimdor/tanaris.cpp	(Arbeitskopie)
+@@ -341,7 +341,7 @@
+ ## npc_steward_of_time
+ ######*/
+ 
+-#define GOSSIP_ITEM_FLIGHT  "Please take me to the master's lair."
++#define GOSSIP_ITEM_FLIGHT  "Bringt mich bitte zum Hort des Meisters."
+ 
+ bool GossipHello_npc_steward_of_time(Player* pPlayer, Creature* pCreature)
+ {
+@@ -379,12 +379,12 @@
+ ## npc_stone_watcher_of_norgannon
+ ######*/
+ 
+-#define GOSSIP_ITEM_NORGANNON_1     "What function do you serve?"
+-#define GOSSIP_ITEM_NORGANNON_2     "What are the Plates of Uldum?"
+-#define GOSSIP_ITEM_NORGANNON_3     "Where are the Plates of Uldum?"
+-#define GOSSIP_ITEM_NORGANNON_4     "Excuse me? We've been \"reschedueled for visitations\"? What does that mean?!"
+-#define GOSSIP_ITEM_NORGANNON_5     "So, what's inside Uldum?"
+-#define GOSSIP_ITEM_NORGANNON_6     "I will return when i have the Plates of Uldum."
++#define GOSSIP_ITEM_NORGANNON_1     "Welche Funktion habt Ihr?"
++#define GOSSIP_ITEM_NORGANNON_2     "Was sind die Platten von Uldum?"
++#define GOSSIP_ITEM_NORGANNON_3     "Wo sind die Platten von Uldum?"
++#define GOSSIP_ITEM_NORGANNON_4     "Wie bitte? Es ist ein \"erneuter Besuch\"? geplant? Was soll denn das heißen?"
++#define GOSSIP_ITEM_NORGANNON_5     "Was befindet sich denn in Uldum?"
++#define GOSSIP_ITEM_NORGANNON_6     "Ich komme mit den Platten von Uldum wieder."
+ 
+ bool GossipHello_npc_stone_watcher_of_norgannon(Player* pPlayer, Creature* pCreature)
+ {
+Index: scripts/kalimdor/the_barrens.cpp
+===================================================================
+--- scripts/kalimdor/the_barrens.cpp	(Revision 1994)
++++ scripts/kalimdor/the_barrens.cpp	(Arbeitskopie)
+@@ -47,7 +47,7 @@
+ {
+     if (pPlayer->GetQuestStatus(QUEST_LOST_IN_BATTLE) == QUEST_STATUS_INCOMPLETE ||
+         pPlayer->GetQuestStatus(QUEST_LOST_IN_BATTLE) == QUEST_STATUS_COMPLETE)
+-        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT,"Examine corpse in detail...",GOSSIP_SENDER_MAIN,GOSSIP_ACTION_INFO_DEF+1);
++        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT,"Examine corpse in detail...",GOSSIP_SENDER_MAIN,GOSSIP_ACTION_INFO_DEF+1); //GMDB TODO
+ 
+     pPlayer->SEND_GOSSIP_MENU(3557, pCreature->GetGUID());
+     return true;
+@@ -173,7 +173,7 @@
+         pPlayer->PrepareQuestMenu(pCreature->GetGUID());
+ 
+     if (pPlayer->GetQuestStatus(6981) == QUEST_STATUS_INCOMPLETE)
+-        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT,"Can you tell me about this shard?",GOSSIP_SENDER_MAIN,GOSSIP_ACTION_INFO_DEF);
++        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT,"Könnt Ihr mir etwas über diese Scherbe erzählen?",GOSSIP_SENDER_MAIN,GOSSIP_ACTION_INFO_DEF);
+ 
+     pPlayer->SEND_GOSSIP_MENU(pPlayer->GetGossipTextId(pCreature), pCreature->GetGUID());
+     return true;
+Index: scripts/kalimdor/thousand_needles.cpp
+===================================================================
+--- scripts/kalimdor/thousand_needles.cpp	(Revision 1994)
++++ scripts/kalimdor/thousand_needles.cpp	(Arbeitskopie)
+@@ -266,7 +266,7 @@
+     SPELL_PLUCKY_CHICKEN    = 9220
+ };
+ 
+-#define GOSSIP_ITEM_QUEST   "Please tell me the Phrase.."
++#define GOSSIP_ITEM_QUEST   "Please tell me the Phrase.." //GMDB TODO
+ 
+ struct MANGOS_DLL_DECL npc_plucky_johnsonAI : public ScriptedAI
+ {
+Index: scripts/kalimdor/thunder_bluff.cpp
+===================================================================
+--- scripts/kalimdor/thunder_bluff.cpp	(Revision 1994)
++++ scripts/kalimdor/thunder_bluff.cpp	(Arbeitskopie)
+@@ -104,7 +104,7 @@
+         pPlayer->PrepareQuestMenu(pCreature->GetGUID());
+ 
+     if (pPlayer->GetQuestStatus(925) == QUEST_STATUS_INCOMPLETE)
+-        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "I know this is rather silly but a young ward who is a bit shy would like your hoofprint.", GOSSIP_SENDER_MAIN, GOSSIP_SENDER_INFO);
++        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "I know this is rather silly but a young ward who is a bit shy would like your hoofprint.", GOSSIP_SENDER_MAIN, GOSSIP_SENDER_INFO); //GMDB TODO
+ 
+     pPlayer->SEND_GOSSIP_MENU(7013, pCreature->GetGUID());
+ 
+Index: scripts/kalimdor/winterspring.cpp
+===================================================================
+--- scripts/kalimdor/winterspring.cpp	(Revision 1994)
++++ scripts/kalimdor/winterspring.cpp	(Arbeitskopie)
+@@ -39,7 +39,7 @@
+         pPlayer->PrepareQuestMenu(pCreature->GetGUID());
+ 
+     if (pPlayer->GetQuestStatus(5126) == QUEST_STATUS_INCOMPLETE)
+-        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Talk to me", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF);
++        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Ihr müsst schon entschuldigen, Lorax. Verrücktisch sprech ich nicht.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF);
+ 
+     pPlayer->SEND_GOSSIP_MENU(pPlayer->GetGossipTextId(pCreature), pCreature->GetGUID());
+ 
+@@ -51,23 +51,23 @@
+     switch(uiAction)
+     {
+         case GOSSIP_ACTION_INFO_DEF:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "What do you do here?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 1);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Vergebt mir - ich wusste nicht, dass Ihr versteht, was ich sage. Was genau macht Ihr hier draußen?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 1);
+             pPlayer->SEND_GOSSIP_MENU(3759, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+1:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "I can help you", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 2);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Ach ja? Vielleicht solltet Ihr mir sagen, was Euch bedrückt.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 2);
+             pPlayer->SEND_GOSSIP_MENU(3760, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+2:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "What deal?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 3);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Was für eine Vereinbarung?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 3);
+             pPlayer->SEND_GOSSIP_MENU(3761, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+3:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Then what happened?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 4);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Wie hat er denn die Vereinbarung gebrochen?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 4);
+             pPlayer->SEND_GOSSIP_MENU(3762, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+4:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "He is not safe, i'll make sure of that.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 5);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Vielleicht kann ich Euch ja behilflich sein. Ich schlage Euch einen Handel vor, Satyr: Ich beschaffe Euch diese ungeschmiedete Brustplatte und töte die Bestie, Goraluk Hammerbruch. Und im Gegenzug lehrt Ihr mich wie man die Brustplatte herstellt.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 5);
+             pPlayer->SEND_GOSSIP_MENU(3763, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+5:
+@@ -114,7 +114,7 @@
+ 
+     if (pPlayer->GetQuestRewardStatus(975))
+     {
+-        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "I'd like you to make me a new Cache of Mau'ari please.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+1);
++        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Ich habe den Behälter von Mau'ri verloren. Was kann ich tun?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+1);
+         pPlayer->SEND_GOSSIP_MENU(3377, pCreature->GetGUID());
+     }else
+         pPlayer->SEND_GOSSIP_MENU(3375, pCreature->GetGUID());
+Index: scripts/kalimdor/zulfarrak/zulfarrak.cpp
+===================================================================
+--- scripts/kalimdor/zulfarrak/zulfarrak.cpp	(Revision 1994)
++++ scripts/kalimdor/zulfarrak/zulfarrak.cpp	(Arbeitskopie)
+@@ -41,7 +41,7 @@
+     SPELL_SHIELD_BASH = 11972,
+     SPELL_REVENGE     = 12170
+ };
+-#define GOSSIP_BLY                  "That's it! I'm tired of helping you out. It's time we settled things on the battlefield!"
++#define GOSSIP_BLY                  "Jetzt reichts's! Ich habe es satt, Euch zu helfen! Es wird Zeit, dass wir die Dinge auf dem Schlachtfeld regeln."
+ 
+ //find Bly's gossip menus
+ 
+@@ -149,7 +149,7 @@
+     SPELL_WEEGLIS_BARREL   = 10772
+ };
+ 
+-#define GOSSIP_WEEGLI               "[PH] Please blow up the door."
++#define GOSSIP_WEEGLI               "Werdet Ihr jetzt die Tür aufsprengen?"
+ 
+ struct MANGOS_DLL_DECL npc_weegli_blastfuseAI : public ScriptedAI
+ {
+Index: scripts/northrend/borean_tundra.cpp
+===================================================================
+--- scripts/northrend/borean_tundra.cpp	(Revision 1994)
++++ scripts/northrend/borean_tundra.cpp	(Arbeitskopie)
+@@ -39,8 +39,8 @@
+ ## npc_fizzcrank_fullthrottle
+ ######*/
+ 
+-#define GOSSIP_ITEM_GO_ON   "Go on."
+-#define GOSSIP_ITEM_TELL_ME "Tell me what's going on out here, Fizzcrank."
++#define GOSSIP_ITEM_GO_ON   "Weiter."
++#define GOSSIP_ITEM_TELL_ME "Erzähl mir, was hier vor sich geht, Kurbelzisch."
+ 
+ enum
+ {
+@@ -117,7 +117,7 @@
+ ## npc_iruk
+ ######*/
+ 
+-#define GOSSIP_ITEM_IRUK        "<Search corpse for Issliruk's Totem.>"
++#define GOSSIP_ITEM_IRUK        "<Durchsucht die Leiche nach Issliruks Totem.>"
+ 
+ enum
+ {
+@@ -149,8 +149,8 @@
+ ## npc_kara_thricestar
+ ######*/
+ 
+-#define GOSSIP_ITEM_THRICESTAR1      "Do you think I could take a ride on one of those flying machines?"
+-#define GOSSIP_ITEM_THRICESTAR2      "Kara, I need to be flown out the Dens of Dying to find Bixie."
++#define GOSSIP_ITEM_THRICESTAR1      "Glaubt Ihr, ich könnte eine dieser Flugmaschinen benutzen?"
++#define GOSSIP_ITEM_THRICESTAR2      "Kara, Ich muss zu den Höhlen des Todes ausgeflogen werden, um Bixie zu finden."
+ 
+ enum
+ {
+@@ -319,8 +319,8 @@
+ ## npc_surristrasz
+ ######*/
+ 
+-#define GOSSIP_ITEM_FREE_FLIGHT "I'd like passage to the Transitus Shield."
+-#define GOSSIP_ITEM_FLIGHT      "May I use a drake to fly elsewhere?"
++#define GOSSIP_ITEM_FREE_FLIGHT "Ich möchte Durchgang zum Titusschild."
++#define GOSSIP_ITEM_FLIGHT      "Darf ich den Drachen benutzen, um woanders hinzufliegen?"
+ 
+ enum
+ {
+@@ -362,7 +362,7 @@
+ ## npc_tiare
+ ######*/
+ 
+-#define GOSSIP_ITEM_TELEPORT    "Teleport me to Amber Ledge, please."
++#define GOSSIP_ITEM_TELEPORT    "Teleportiert mich zum Bernsteinflöz, bitte."
+ 
+ enum
+ {
+Index: scripts/northrend/dalaran.cpp
+===================================================================
+--- scripts/northrend/dalaran.cpp	(Revision 1994)
++++ scripts/northrend/dalaran.cpp	(Arbeitskopie)
+@@ -79,7 +79,7 @@
+ ## npc_zidormi
+ ######*/
+ 
+-#define GOSSIP_ITEM_ZIDORMI1    "Take me to the Caverns of Time."
++#define GOSSIP_ITEM_ZIDORMI1    "Bringt mich zu den Höhlen der Zeit."
+ 
+ enum
+ {
+Index: scripts/northrend/dragonblight.cpp
+===================================================================
+--- scripts/northrend/dragonblight.cpp	(Revision 1994)
++++ scripts/northrend/dragonblight.cpp	(Arbeitskopie)
+@@ -41,8 +41,8 @@
+     TAXI_PATH_ID_MIDDLE_TOP             = 881
+ };
+ 
+-#define GOSSIP_ITEM_TAXI_MIDDLE_DOWN    "I would like to take a flight to the ground, Lord Of Afrasastrasz."
+-#define GOSSIP_ITEM_TAXI_MIDDLE_TOP     "My Lord, I must go to the upper floor of the temple."
++#define GOSSIP_ITEM_TAXI_MIDDLE_DOWN    "Ich würde gerne bis auf Bodenhöhe mitfliegen, Lord Afrasastrasz."
++#define GOSSIP_ITEM_TAXI_MIDDLE_TOP     "Mein Fürst, ich muss ins obere Stockwerk des Tempels."
+ 
+ bool GossipHello_npc_afrasastrasz(Player* pPlayer, Creature* pCreature)
+ {
+@@ -82,7 +82,7 @@
+     MOVIE_ID_GATES          = 14
+ };
+ 
+-#define GOSSIP_ITEM_WHAT_HAPPENED   "Alexstrasza, can you show me what happened here?"
++#define GOSSIP_ITEM_WHAT_HAPPENED   "Alexstrasza, könnt Ihr mir zeigen, was hier passiert ist?"
+ 
+ bool GossipHello_npc_alexstrasza_wr_gate(Player* pPlayer, Creature* pCreature)
+ {
+@@ -119,8 +119,8 @@
+     TAXI_PATH_ID_BOTTOM_MIDDLE          = 883
+ };
+ 
+-#define GOSSIP_ITEM_TAXI_BOTTOM_TOP     "My Lord, I must go to the upper floor of the temple."
+-#define GOSSIP_ITEM_TAXI_BOTTOM_MIDDLE  "Can you spare a drake to travel to Lord Of Afrasastrasz, in the middle of the temple?"
++#define GOSSIP_ITEM_TAXI_BOTTOM_TOP     "Bitte erlaubt mir, auf einem der Drachen zu den Gemächern der Königin im obersten Stockwerk des Tempels zu reiten."
++#define GOSSIP_ITEM_TAXI_BOTTOM_MIDDLE  "Habt Ihr vielleicht einen Drachen übrig, der mich zu Lord Afrasastrasz in der Mitte des Tempels bringen kann?"
+ 
+ bool GossipHello_npc_tariolstrasz(Player* pPlayer, Creature* pCreature)
+ {
+@@ -159,8 +159,8 @@
+     TAXI_PATH_ID_TOP_BOTTOM             = 879
+ };
+ 
+-#define GOSSIP_ITEM_TAXI_TOP_MIDDLE     "I would like to see Lord Of Afrasastrasz, in the middle of the temple."
+-#define GOSSIP_ITEM_TAXI_TOP_BOTTOM     "Yes, Please. I would like to return to the ground floor of the temple."
++#define GOSSIP_ITEM_TAXI_TOP_MIDDLE     "Ich möchte zu Lord Afrasastrasz in der Mitte des Tempels."
++#define GOSSIP_ITEM_TAXI_TOP_BOTTOM     "Ja, bitte, ich möchte zum Erdgeschoss des Tempels zurückkehren."
+ 
+ bool GossipHello_npc_torastrasza(Player* pPlayer, Creature* pCreature)
+ {
+Index: scripts/northrend/howling_fjord.cpp
+===================================================================
+--- scripts/northrend/howling_fjord.cpp	(Revision 1994)
++++ scripts/northrend/howling_fjord.cpp	(Arbeitskopie)
+@@ -259,7 +259,7 @@
+ ## npc_deathstalker_razael - TODO, can be moved to database
+ ######*/
+ 
+-#define GOSSIP_ITEM_DEATHSTALKER_RAZAEL "High Executor Anselm requests your report."
++#define GOSSIP_ITEM_DEATHSTALKER_RAZAEL "Hochexekutor Anselm verlangt einen Bericht über die Situation."
+ 
+ enum
+ {
+@@ -302,7 +302,7 @@
+ ## npc_dark_ranger_lyana - TODO, can be moved to database
+ ######*/
+ 
+-#define GOSSIP_ITEM_DARK_RANGER_LYANA "High Executor Anselm requests your report."
++#define GOSSIP_ITEM_DARK_RANGER_LYANA "Hochexekutor Anselm erbittet Euren Bericht."
+ 
+ enum
+ {
+@@ -402,8 +402,8 @@
+ ## npc_mcgoyver - TODO, can be moved to database
+ ######*/
+ 
+-#define GOSSIP_ITEM_MCGOYVER1 "Walt sent me to pick up some dark iron ingots."
+-#define GOSSIP_ITEM_MCGOYVER2 "Yarp."
++#define GOSSIP_ITEM_MCGOYVER1 "Walt hat mich geschickt, um ein paar Dunkeleisenblöcke abzuholen."
++#define GOSSIP_ITEM_MCGOYVER2 "Jarp."
+ 
+ enum
+ {
+Index: scripts/northrend/icecrown.cpp
+===================================================================
+--- scripts/northrend/icecrown.cpp	(Revision 1994)
++++ scripts/northrend/icecrown.cpp	(Arbeitskopie)
+@@ -32,13 +32,13 @@
+ ## npc_arete
+ ######*/
+ 
+-#define GOSSIP_ARETE_ITEM1 "Lord-Commander, I would hear your tale."
+-#define GOSSIP_ARETE_ITEM2 "<You nod slightly but do not complete the motion as the Lord-Commander narrows his eyes before he continues.>"
+-#define GOSSIP_ARETE_ITEM3 "I thought that they now called themselves the Scarlet Onslaught?"
+-#define GOSSIP_ARETE_ITEM4 "Where did the grand admiral go?"
+-#define GOSSIP_ARETE_ITEM5 "That's fine. When do I start?"
+-#define GOSSIP_ARETE_ITEM6 "Let's finish this!"
+-#define GOSSIP_ARETE_ITEM7 "That's quite a tale, Lord-Commander."
++#define GOSSIP_ARETE_ITEM1 "Lordkommandant, ich möchte Eure Geschichte hören."
++#define GOSSIP_ARETE_ITEM2 "<Ihr nickt leicht, aber beendet die Bewegung nicht, da sich die Augen des Lordkommandants verengen, bevor er fortfährt.>"
++#define GOSSIP_ARETE_ITEM3 "Ich dachte, sie würden sich selbst den Scharlachroten Ansturm nennen?"
++#define GOSSIP_ARETE_ITEM4 "Wo ist der Großadmiral hingegangen?"
++#define GOSSIP_ARETE_ITEM5 "Das geht in Ordnung. Wann soll ich anfangen?"
++#define GOSSIP_ARETE_ITEM6 "Lasst es uns beenden!"
++#define GOSSIP_ARETE_ITEM7 "Das ist eine ganz schöne Geschichte, Lordkommandant."
+ 
+ enum
+ {
+Index: scripts/northrend/sholazar_basin.cpp
+===================================================================
+--- scripts/northrend/sholazar_basin.cpp	(Revision 1994)
++++ scripts/northrend/sholazar_basin.cpp	(Arbeitskopie)
+@@ -247,8 +247,8 @@
+ ## npc_vekjik - TODO, can be moved to database (already exist)
+ ######*/
+ 
+-#define GOSSIP_VEKJIK_ITEM1 "Shaman Vekjik, I have spoken with the big-tongues and they desire peace. I have brought this offering on their behalf."
+-#define GOSSIP_VEKJIK_ITEM2 "No no... I had no intentions of betraying your people. I was only defending myself. it was all a misunderstanding."
++#define GOSSIP_VEKJIK_ITEM1 "Schamane Vekjik, ich habe mit den Gro?ungen gesprochen und sie wollen Frieden. Auf ihr Gehei?hin ??bringe ich dieses Angebot."
++#define GOSSIP_VEKJIK_ITEM2 "Nein, nein... Ich hatte nie vor, unser Volk zu verraten. Ich habe mich nur selbst verteidigt. Es war alles ein Missverst?nis."
+ 
+ enum
+ {
+Index: scripts/northrend/storm_peaks.cpp
+===================================================================
+--- scripts/northrend/storm_peaks.cpp	(Revision 1994)
++++ scripts/northrend/storm_peaks.cpp	(Arbeitskopie)
+@@ -44,9 +44,9 @@
+ 
+ };
+ 
+-#define GOSSIP_ITEM_SCOUT_1     "Are you okay? I've come to take you back to Frosthold if you can stand."
+-#define GOSSIP_ITEM_SCOUT_2     "I'm sorry that I didn't get here sooner. What happened?"
+-#define GOSSIP_ITEM_SCOUT_3     "I'll go get some help. Hang in there."
++#define GOSSIP_ITEM_SCOUT_1     "Seid Ihr in Ordnung? Ich bin hier, um Euch zur Eisfestung zurückzubringen, falls Ihr stehen könnt."
++#define GOSSIP_ITEM_SCOUT_2     "Es tut mir leid, dass ich es nicht früher geschafft habe, Was ist passiert?"
++#define GOSSIP_ITEM_SCOUT_3     "Ich werde Hilfe holen gehen. Haltet aus!"
+ 
+ bool GossipHello_npc_frostborn_scout(Player* pPlayer, Creature* pCreature)
+ {
+@@ -85,10 +85,10 @@
+ ## npc_loklira_the_crone
+ ######*/
+ 
+-#define GOSSIP_ITEM_TELL_ME         "Tell me about this proposal."
+-#define GOSSIP_ITEM_WHAT_HAPPENED   "What happened then?"
+-#define GOSSIP_ITEM_YOU_WANT_ME     "You want me to take part in the Hyldsmeet to end the war?"
+-#define GOSSIP_ITEM_VERY_WELL       "Very well. I'll take part in this competition."
++#define GOSSIP_ITEM_TELL_ME         "Erzählt mir von diesem Vorschlag."
++#define GOSSIP_ITEM_WHAT_HAPPENED   "Was ist dann passiert?"
++#define GOSSIP_ITEM_YOU_WANT_ME     "Ihr wollt, dass ich am Hildarthing teilnehme, um den Krieg zu beenden?"
++#define GOSSIP_ITEM_VERY_WELL       "Nun gut. Ich werde an diesem Wettkampf teilnehmen."
+ 
+ enum
+ {
+@@ -146,9 +146,9 @@
+ ## npc_thorim
+ ######*/
+ 
+-#define GOSSIP_ITEM_THORIM1         "Can you tell me what became of Sif?"
+-#define GOSSIP_ITEM_THORIM2         "He did more than that, Thorim. He controls Ulduar now."
+-#define GOSSIP_ITEM_THORIM3         "It needn't end this way."
++#define GOSSIP_ITEM_THORIM1         "Könnt Ihr mir sagen, was mit Sif geschehen ist?"
++#define GOSSIP_ITEM_THORIM2         "Er hat mehr als das getan, Thorim. Er hat jetzt die kontrolle in Ulduar."
++#define GOSSIP_ITEM_THORIM3         "Es muss so nicht enden."
+ 
+ enum
+ {
+@@ -203,8 +203,8 @@
+ ## npc_roxi_ramrocket
+ ######*/
+ 
+-#define GOSSIP_TEXT_RAMROCKET1  "How do you fly in this cold climate?"
+-#define GOSSIP_TEXT_RAMROCKET2  "I hear you sell motorcycle parts."
++#define GOSSIP_TEXT_RAMROCKET1  "Wie fliegt Ihr in diesen kalten Gefilden?"
++#define GOSSIP_TEXT_RAMROCKET2  "Ich habe gehört, dass Ihr Motorradteile verkauft."
+ 
+ enum
+ {
+Index: scripts/northrend/ulduar/halls_of_stone/halls_of_stone.cpp
+===================================================================
+--- scripts/northrend/ulduar/halls_of_stone/halls_of_stone.cpp	(Revision 1994)
++++ scripts/northrend/ulduar/halls_of_stone/halls_of_stone.cpp	(Arbeitskopie)
+@@ -94,8 +94,8 @@
+     TEXT_ID_PROGRESS                    = 13101
+ };
+ 
+-#define GOSSIP_ITEM_START               "Brann, it would be our honor!"
+-#define GOSSIP_ITEM_PROGRESS            "Let's move Brann, enough of the history lessons!"
++#define GOSSIP_ITEM_START               "Brann, es wäre uns eine Ehre!"
++#define GOSSIP_ITEM_PROGRESS            "Lasst uns auf aufbrechen, genug Geschichtsunterricht!"
+ 
+ /*######
+ ## npc_brann_hos
+Index: scripts/outland/black_temple/black_temple.cpp
+===================================================================
+--- scripts/outland/black_temple/black_temple.cpp	(Revision 1994)
++++ scripts/outland/black_temple/black_temple.cpp	(Arbeitskopie)
+@@ -33,7 +33,7 @@
+ ####*/
+ 
+ #define SPELL_TELEPORT      41566                           // s41566 - Teleport to Ashtongue NPC's
+-#define GOSSIP_OLUM1        "Teleport me to the other Ashtongue Deathsworn"
++#define GOSSIP_OLUM1        "Bringt mich zu den anderen Todeshörigen, Olum."
+ 
+ bool GossipHello_npc_spirit_of_olum(Player* pPlayer, Creature* pCreature)
+ {
+Index: scripts/outland/black_temple/boss_illidan.cpp
+===================================================================
+--- scripts/outland/black_temple/boss_illidan.cpp	(Revision 1994)
++++ scripts/outland/black_temple/boss_illidan.cpp	(Arbeitskopie)
+@@ -47,7 +47,7 @@
+ 
+ /************* Quotes and Sounds ***********************/
+ // Gossip for when a player clicks Akama
+-#define GOSSIP_ITEM          "We are ready to face Illidan"
++#define GOSSIP_ITEM          "Wir sind bereit, Illidan zu konfrontieren."
+ 
+ #define SAY_CONVO_1         -1564097
+ #define SAY_CONVO_2         -1564098
+Index: scripts/outland/black_temple/boss_shade_of_akama.cpp
+===================================================================
+--- scripts/outland/black_temple/boss_shade_of_akama.cpp	(Revision 1994)
++++ scripts/outland/black_temple/boss_shade_of_akama.cpp	(Arbeitskopie)
+@@ -33,7 +33,7 @@
+ #include "precompiled.h"
+ #include "black_temple.h"
+ 
+-#define GOSSIP_ITEM                 "We are ready to fight alongside you, Akama"
++#define GOSSIP_ITEM                 "Ich bin bei Euch, Akama"
+ 
+ // Spells
+ enum
+Index: scripts/outland/blades_edge_mountains.cpp
+===================================================================
+--- scripts/outland/blades_edge_mountains.cpp	(Revision 1994)
++++ scripts/outland/blades_edge_mountains.cpp	(Arbeitskopie)
+@@ -272,7 +272,7 @@
+ bool GossipHello_npc_overseer_nuaar(Player* pPlayer, Creature* pCreature)
+ {
+     if (pPlayer->GetQuestStatus(10682) == QUEST_STATUS_INCOMPLETE)
+-        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Overseer, I am here to negotiate on behalf of the Cenarion Expedition.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+1);
++        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Aufseher, ich bin hier, um im Auftrag der Expedition des Cenarius zu verhandeln.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+1);
+ 
+     pPlayer->SEND_GOSSIP_MENU(10532, pCreature->GetGUID());
+ 
+@@ -296,7 +296,7 @@
+ bool GossipHello_npc_saikkal_the_elder(Player* pPlayer, Creature* pCreature)
+ {
+     if (pPlayer->GetQuestStatus(10980) == QUEST_STATUS_INCOMPLETE)
+-        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Yes... yes, it's me.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+1);
++        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Ja... ja, ich bin es...", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+1);
+ 
+     pPlayer->SEND_GOSSIP_MENU(10794, pCreature->GetGUID());
+ 
+@@ -308,7 +308,7 @@
+     switch(uiAction)
+     {
+         case GOSSIP_ACTION_INFO_DEF+1:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Yes elder. Tell me more of the book.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+2);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Ja, Ältester. Bitte erzähl mir mehr über dieses Buch.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+2);
+             pPlayer->SEND_GOSSIP_MENU(10795, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+2:
+@@ -323,7 +323,7 @@
+ ## npc_skyguard_handler_irena
+ ######*/
+ 
+-#define GOSSIP_SKYGUARD "Fly me to Skettis please"
++#define GOSSIP_SKYGUARD "Ja, ich würde gerne zum Schattenwindlager fliegen."
+ 
+ bool GossipHello_npc_skyguard_handler_irena(Player* pPlayer, Creature* pCreature)
+ {
+Index: scripts/outland/hellfire_peninsula.cpp
+===================================================================
+--- scripts/outland/hellfire_peninsula.cpp	(Revision 1994)
++++ scripts/outland/hellfire_peninsula.cpp	(Arbeitskopie)
+@@ -199,7 +199,7 @@
+ ## npc_demoniac_scryer
+ ######*/
+ 
+-#define GOSSIP_ITEM_ATTUNE          "Yes, Scryer. You may possess me."
++#define GOSSIP_ITEM_ATTUNE          "Ja, Seher, Ihr dürft von mir Besitz ergreifen."
+ 
+ enum
+ {
+@@ -382,8 +382,8 @@
+     SPELL_TAXI_TO_BEACH_HEAD    = 35065
+ };
+ 
+-#define GOSSIP_ITEM1_WIN        "Fly me to The Abyssal Shelf"
+-#define GOSSIP_ITEM2_WIN        "Fly me to Honor Point"
++#define GOSSIP_ITEM1_WIN        "Schickt mich zur abyssische Untiefe!"
++#define GOSSIP_ITEM2_WIN        "Schickt mich zum Ehrenposten"
+ 
+ bool GossipHello_npc_gryphoneer_windbellow(Player* pPlayer, Creature* pCreature)
+ {
+@@ -425,7 +425,7 @@
+ ## npc_naladu
+ ######*/
+ 
+-#define GOSSIP_NALADU_ITEM1 "Why don't you escape?"
++#define GOSSIP_NALADU_ITEM1 "Wieso flüchtet Ihr nicht?"
+ 
+ enum
+ {
+@@ -454,9 +454,9 @@
+ ## npc_tracy_proudwell
+ ######*/
+ 
+-#define GOSSIP_TEXT_REDEEM_MARKS        "I have marks to redeem!"
+-#define GOSSIP_TRACY_PROUDWELL_ITEM1    "I heard that your dog Fei Fei took Klatu's prayer beads..."
+-#define GOSSIP_TRACY_PROUDWELL_ITEM2    "<back>"
++#define GOSSIP_TEXT_REDEEM_MARKS        "Ich habe ein Abzeichen einzulösen!"
++#define GOSSIP_TRACY_PROUDWELL_ITEM1    "Ich habe gehört, dass Euer Hund Fei-Fei Klatus Gebetsperlen gestohlen hat..."
++#define GOSSIP_TRACY_PROUDWELL_ITEM2    "<Zurück>"
+ 
+ enum
+ {
+@@ -502,9 +502,9 @@
+ ## npc_trollbane
+ ######*/
+ 
+-#define GOSSIP_TROLLBANE_ITEM1      "Tell me of the Sons of Lothar."
+-#define GOSSIP_TROLLBANE_ITEM2      "<more>"
+-#define GOSSIP_TROLLBANE_ITEM3      "Tell me of your homeland."
++#define GOSSIP_TROLLBANE_ITEM1      "Erzähl mir mehr über die Söhne Lothars."
++#define GOSSIP_TROLLBANE_ITEM2      "<mehr>"
++#define GOSSIP_TROLLBANE_ITEM3      "Erzähl mir von Eurer Heimat."
+ 
+ enum
+ {
+@@ -555,8 +555,8 @@
+     QUEST_SHATTER_POINT         = 10340
+ };
+ 
+-#define GOSSIP_ITEM1_DAB        "Fly me to Murketh and Shaadraz Gateways"
+-#define GOSSIP_ITEM2_DAB        "Fly me to Shatter Point"
++#define GOSSIP_ITEM1_DAB        "Ich habe einen Bomberauftrag von Vorpostenkommandant Wa'ppun. Ich brauche einen Greifenzerstörer!"
++#define GOSSIP_ITEM2_DAB        "Schickt mich zum Trümmerposten."
+ 
+ bool GossipHello_npc_wing_commander_dabiree(Player* pPlayer, Creature* pCreature)
+ {
+@@ -608,9 +608,9 @@
+     SPELL_TAXI_SPINEBREAKER     = 34578
+ };
+ 
+-#define GOSSIP_ITEM1_BRA        "I'm on a bombing mission for Forward Commander To'arch. I need a wyvern destroyer!"
+-#define GOSSIP_ITEM2_BRA        "Fly me to The Abyssal Shelf"
+-#define GOSSIP_ITEM3_BRA        "Lend me a Wind Rider, I'm going to Spinebreaker Post."
++#define GOSSIP_ITEM1_BRA        "Ich habe einen Bombenauftrag von Vorpostenkommandant To'arch. Ich brauche einen Flügeldrachenzerstörer!"
++#define GOSSIP_ITEM2_BRA        "Schickt mich zur abyssischen Untertiefe!"
++#define GOSSIP_ITEM3_BRA        "Gebt mir einen Windreiter. Ich werde zum Rückenbrecherposten fliegen!"
+ 
+ bool GossipHello_npc_wing_commander_brack(Player* pPlayer, Creature* pCreature)
+ {
+Index: scripts/outland/nagrand.cpp
+===================================================================
+--- scripts/outland/nagrand.cpp	(Revision 1994)
++++ scripts/outland/nagrand.cpp	(Arbeitskopie)
+@@ -203,7 +203,7 @@
+ bool GossipHello_mob_lump(Player* pPlayer, Creature* pCreature)
+ {
+     if (pPlayer->GetQuestStatus(QUEST_NOT_ON_MY_WATCH) == QUEST_STATUS_INCOMPLETE)
+-        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "I need answers, ogre!", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF);
++        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Ich will Antworten, Oger!", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF);
+ 
+     pPlayer->SEND_GOSSIP_MENU(TEXT_ID_LUMP_1, pCreature->GetGUID());
+ 
+@@ -215,15 +215,15 @@
+     switch(uiAction)
+     {
+         case GOSSIP_ACTION_INFO_DEF:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Why are Boulderfist out this far? You know that this is Kurenai territory.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 1);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Warum sind die Felsfäuste so weit hier draußen? Ihr wisst, dass dies hier Territorium der Kurenai ist.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 1);
+             pPlayer->SEND_GOSSIP_MENU(TEXT_ID_LUMP_2, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF + 1:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "And you think you can just eat anything you want? You're obviously trying to eat the Broken of Telaar.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 2);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Und Ihr denkt, Ihr könntet alles essen was Ihr wollt? Ihr versucht offensichtlich, die Zerschlagenen von Telaar zu essen.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 2);
+             pPlayer->SEND_GOSSIP_MENU(TEXT_ID_LUMP_3, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF + 2:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "This means war, Lump! War I say!", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 3);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Das bedeutet Krieg, Brocken! Krieg, sage ich!", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 3);
+             pPlayer->SEND_GOSSIP_MENU(TEXT_ID_LUMP_4, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF + 3:
+@@ -281,15 +281,15 @@
+ 
+     //gossip before obtaining Survey the Land
+     if (pPlayer->GetQuestStatus(QUEST_SURVEY) == QUEST_STATUS_NONE)
+-        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "I see twisted steel and smell sundered earth.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+10);
++        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Ich sehe verbogenen Stahl und rieche zerrissene Erde..", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+10);
+ 
+     //gossip when Survey the Land is incomplete (technically, after the flight)
+     if (pPlayer->GetQuestStatus(QUEST_SURVEY) == QUEST_STATUS_INCOMPLETE)
+-        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Well...?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+20);
++        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Nun...?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+20);
+ 
+     //wowwiki.com/Varedis
+     if (pPlayer->GetQuestStatus(QUEST_PUPIL) == QUEST_STATUS_INCOMPLETE)
+-        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "[PH] Story about Illidan's Pupil", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+30);
++        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "[PH] Story about Illidan's Pupil", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+30); //GMDB TODO
+ 
+     pPlayer->SEND_GOSSIP_MENU(9419, pCreature->GetGUID());
+     return true;
+@@ -304,15 +304,15 @@
+             pPlayer->SEND_GOSSIP_MENU(9420, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+11:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "And now?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 12);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Und nun?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 12);
+             pPlayer->SEND_GOSSIP_MENU(9421, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+12:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "How do you see them now?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 13);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Wie seht Ihr sie jetzt?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 13);
+             pPlayer->SEND_GOSSIP_MENU(9422, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+13:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Forge camps?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 14);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Konstruktionslager?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 14);
+             pPlayer->SEND_GOSSIP_MENU(9423, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+14:
+@@ -320,7 +320,7 @@
+             break;
+ 
+         case GOSSIP_ACTION_INFO_DEF+20:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Ok.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 21);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Ok.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 21); //GMDB TODO
+             pPlayer->SEND_GOSSIP_MENU(9427, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+21:
+@@ -329,7 +329,7 @@
+             break;
+ 
+         case GOSSIP_ACTION_INFO_DEF+30:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "[PH] Story done", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 31);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "[PH] Geschichte erzählt", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 31); // Should be verified
+             pPlayer->SEND_GOSSIP_MENU(384, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+31:
+@@ -362,12 +362,12 @@
+ 
+     if (pPlayer->GetQuestStatus(10044) == QUEST_STATUS_INCOMPLETE)
+     {
+-        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Hello, Greatmother. Garrosh told me that you wanted to speak with me.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 1);
++        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Hello, Greatmother. Garrosh told me that you wanted to speak with me.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 1); //GMDB TODO
+         pPlayer->SEND_GOSSIP_MENU(pPlayer->GetGossipTextId(pCreature), pCreature->GetGUID());
+     }
+     else if (pPlayer->GetQuestStatus(10172) == QUEST_STATUS_INCOMPLETE)
+     {
+-        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Garrosh is beyond redemption, Greatmother. I fear that in helping the Mag'har, I have convinced Garrosh that he is unfit to lead.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 10);
++        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Garrosh is beyond redemption, Greatmother. I fear that in helping the Mag'har, I have convinced Garrosh that he is unfit to lead.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 10); //GMDB TODO
+         pPlayer->SEND_GOSSIP_MENU(pPlayer->GetGossipTextId(pCreature), pCreature->GetGUID());
+     }
+     else
+@@ -382,27 +382,27 @@
+     switch(uiAction)
+     {
+         case GOSSIP_ACTION_INFO_DEF + 1:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "You raised all of the orcs here, Greatmother?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 2);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "You raised all of the orcs here, Greatmother?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 2); //GMDB TODO
+             pPlayer->SEND_GOSSIP_MENU(pPlayer->GetGossipTextId(pCreature), pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF + 2:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Do you believe that?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 3);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Do you believe that?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 3); //GMDB TODO
+             pPlayer->SEND_GOSSIP_MENU(pPlayer->GetGossipTextId(pCreature), pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF + 3:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "What can be done? I have tried many different things. I have done my best to help the people of Nagrand. Each time I have approached Garrosh, he has dismissed me.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 4);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "What can be done? I have tried many different things. I have done my best to help the people of Nagrand. Each time I have approached Garrosh, he has dismissed me.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 4); //GMDB TODO
+             pPlayer->SEND_GOSSIP_MENU(pPlayer->GetGossipTextId(pCreature), pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF + 4:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Left? How can you choose to leave?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 5);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Left? How can you choose to leave?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 5); //GMDB TODO
+             pPlayer->SEND_GOSSIP_MENU(pPlayer->GetGossipTextId(pCreature), pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF + 5:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "What is this duty?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 6);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "What is this duty?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 6); //GMDB TODO
+             pPlayer->SEND_GOSSIP_MENU(pPlayer->GetGossipTextId(pCreature), pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF + 6:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Is there anything I can do for you, Greatmother?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 7);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Is there anything I can do for you, Greatmother?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 7); //GMDB TODO
+             pPlayer->SEND_GOSSIP_MENU(pPlayer->GetGossipTextId(pCreature), pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF + 7:
+@@ -411,23 +411,23 @@
+             break;
+ 
+         case GOSSIP_ACTION_INFO_DEF + 10:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "I have done all that I could, Greatmother. I thank you for your kind words.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 11);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "I have done all that I could, Greatmother. I thank you for your kind words.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 11); //GMDB TODO
+             pPlayer->SEND_GOSSIP_MENU(pPlayer->GetGossipTextId(pCreature), pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF + 11:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Greatmother, you are the mother of Durotan?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 12);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Greatmother, you are the mother of Durotan?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 12); //GMDB TODO
+             pPlayer->SEND_GOSSIP_MENU(pPlayer->GetGossipTextId(pCreature), pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF + 12:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Greatmother, I never had the honor. Durotan died long before my time, but his heroics are known to all on my world. The orcs of Azeroth reside in a place known as Durotar, named after your son. And ... (You take a moment to breathe and think through what you are about to tell the Greatmother.)", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 13);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Greatmother, I never had the honor. Durotan died long before my time, but his heroics are known to all on my world. The orcs of Azeroth reside in a place known as Durotar, named after your son. And ... (You take a moment to breathe and think through what you are about to tell the Greatmother.)", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 13); //GMDB TODO
+             pPlayer->SEND_GOSSIP_MENU(pPlayer->GetGossipTextId(pCreature), pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF + 13:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "It is my Warchief, Greatmother. The leader of my people. From my world. He ... He is the son of Durotan. He is your grandchild.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 14);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "It is my Warchief, Greatmother. The leader of my people. From my world. He ... He is the son of Durotan. He is your grandchild.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 14); //GMDB TODO
+             pPlayer->SEND_GOSSIP_MENU(pPlayer->GetGossipTextId(pCreature), pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF + 14:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "I will return to Azeroth at once, Greatmother.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 15);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "I will return to Azeroth at once, Greatmother.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 15); //GMDB TODO
+             pPlayer->SEND_GOSSIP_MENU(pPlayer->GetGossipTextId(pCreature), pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF + 15:
+@@ -448,7 +448,7 @@
+         pPlayer->PrepareQuestMenu(pCreature->GetGUID());
+ 
+     if (pPlayer->GetQuestStatus(10107) == QUEST_STATUS_INCOMPLETE || pPlayer->GetQuestStatus(10108) == QUEST_STATUS_INCOMPLETE)
+-        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "I have killed many of your ogres, Lantresor. I have no fear.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF);
++        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Ich habe viele Eurer Ogers getötet, Lantresor. Ich habe keine Furcht.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF);
+ 
+     pPlayer->SEND_GOSSIP_MENU(9361, pCreature->GetGUID());
+ 
+@@ -460,31 +460,31 @@
+     switch(uiAction)
+     {
+         case GOSSIP_ACTION_INFO_DEF:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Should I know? You look like an orc to me.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 1);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Sollte ich das? Für mich seht Ihr wie ein Orc aus.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 1);
+             pPlayer->SEND_GOSSIP_MENU(9362, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+1:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "And the other half?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 2);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Und die andere Hälfte?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 2);
+             pPlayer->SEND_GOSSIP_MENU(9363, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+2:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "I have heard of your kind, but I never thought to see the day when I would meet a half-breed.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 3);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Ich habe von Eurer Art gehört, aber ich hätte nie geglaubt, den Tag zu erleben, an dem ich ein Halbblut treffe.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 3);
+             pPlayer->SEND_GOSSIP_MENU(9364, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+3:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "My apologies. I did not mean to offend. I am here on behalf of my people.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 4);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Ich bitte um Verzeihung, ich wollte Euch nicht beleidigen. Ich bin hier im Auftrag meines Volkes.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 4);
+             pPlayer->SEND_GOSSIP_MENU(9365, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+4:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "My people ask that you pull back your Boulderfist ogres and cease all attacks on our territories. In return, we will also pull back our forces.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 5);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Mein Volk verlangt, dass Ihr Eure Oger der Felsfäuste zurückzieht und alle Angriffe auf unsere Gebiete unterlasst. Im Gegenzug werden wir unsere Streitkräfte ebenfalls zurückziehen.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 5);
+             pPlayer->SEND_GOSSIP_MENU(9366, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+5:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "We will fight you until the end, then, Lantresor. We will not stand idly by as you pillage our towns and kill our people.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 6);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Dann werden wir Euch bis zum Ende bekämpfen, Lantresor. Wir werden nicht tatenlos zusehen, wie ihr unsere Städte plündert und unsere Leute tötet.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 6);
+             pPlayer->SEND_GOSSIP_MENU(9367, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+6:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "What do I need to do?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 7);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Was muss ich machen?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 7);
+             pPlayer->SEND_GOSSIP_MENU(9368, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+7:
+Index: scripts/outland/netherstorm.cpp
+===================================================================
+--- scripts/outland/netherstorm.cpp	(Revision 1994)
++++ scripts/outland/netherstorm.cpp	(Arbeitskopie)
+@@ -635,7 +635,7 @@
+     TAXI_PATH_ID                = 627                       //(possibly 627+628(152->153->154->155))
+ };
+ 
+-#define GOSSIP_ITEM_FLY_ULTRIS  "Fly me to Ultris"
++#define GOSSIP_ITEM_FLY_ULTRIS  "Ich bin bereit loszufliegen! Bringt mich hinauf, Drache!"
+ 
+ bool GossipHello_npc_protectorate_nether_drake(Player* pPlayer, Creature* pCreature)
+ {
+@@ -667,7 +667,7 @@
+     SPELL_STEALTH_FLIGHT     = 34905
+ };
+ 
+-#define GOSSIP_ITEM_FLY_CORUU  "Fly me to Manaforge Coruu please"
++#define GOSSIP_ITEM_FLY_CORUU  "Ich bin so bereit, wie ich es nur sein kann!"
+ 
+ bool GossipHello_npc_veronia(Player* pPlayer, Creature* pCreature)
+ {
+Index: scripts/outland/shadowmoon_valley.cpp
+===================================================================
+--- scripts/outland/shadowmoon_valley.cpp	(Revision 1994)
++++ scripts/outland/shadowmoon_valley.cpp	(Arbeitskopie)
+@@ -384,9 +384,9 @@
+ bool GossipHello_npcs_flanis_swiftwing_and_kagrosh(Player* pPlayer, Creature* pCreature)
+ {
+     if (pPlayer->GetQuestStatus(10583) == QUEST_STATUS_INCOMPLETE && !pPlayer->HasItemCount(30658,1,true))
+-        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Take Flanis's Pack", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+1);
++        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Bringt Flanis' Beutel zurück.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+1);
+     if (pPlayer->GetQuestStatus(10601) == QUEST_STATUS_INCOMPLETE && !pPlayer->HasItemCount(30659,1,true))
+-        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Take Kagrosh's Pack", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+2);
++        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Bringt Kagroshs' Beutel zurück.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+2);
+ 
+     pPlayer->SEND_GOSSIP_MENU(pPlayer->GetGossipTextId(pCreature), pCreature->GetGUID());
+ 
+@@ -421,7 +421,7 @@
+ bool GossipHello_npc_murkblood_overseer(Player* pPlayer, Creature* pCreature)
+ {
+     if (pPlayer->GetQuestStatus(QUEST_11082) == QUEST_STATUS_INCOMPLETE)
+-        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "I am here for you, overseer.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+1);
++        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Ich bin wegen Euch hier, Aufpasser.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+1);
+ 
+     pPlayer->SEND_GOSSIP_MENU(10940, pCreature->GetGUID());
+     return true;
+@@ -432,27 +432,27 @@
+     switch(uiAction)
+     {
+         case GOSSIP_ACTION_INFO_DEF+1:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "How dare you question an overseer of the Dragonmaw!", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+2);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Ihr wagt es, einen Aufseher des Drachenmals in Frage zu stellen!", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+2);
+                                                             //correct id not known
+             pPlayer->SEND_GOSSIP_MENU(10940, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+2:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Who speaks of me? What are you talking about, broken?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+3);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Wer spricht von mir? Was redet Ihr da, Zerschlagener?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+3);
+                                                             //correct id not known
+             pPlayer->SEND_GOSSIP_MENU(10940, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+3:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Continue please.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+4);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Fahrt bitte fort.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+4);
+                                                             //correct id not known
+             pPlayer->SEND_GOSSIP_MENU(10940, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+4:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Who are these bidders?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+5);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Wer sind diese Biester?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+5);
+                                                             //correct id not known
+             pPlayer->SEND_GOSSIP_MENU(10940, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+5:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Well... yes.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+6);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Nun... ja.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+6);
+                                                             //correct id not known
+             pPlayer->SEND_GOSSIP_MENU(10940, pCreature->GetGUID());
+             break;
+@@ -476,7 +476,7 @@
+         pPlayer->PrepareQuestMenu(pCreature->GetGUID());
+ 
+     if (pPlayer->GetQuestStatus(10814) == QUEST_STATUS_INCOMPLETE)
+-        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "I am listening, dragon", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+1);
++        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Ich höre, Drache.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+1);
+ 
+     pPlayer->SEND_GOSSIP_MENU(10613, pCreature->GetGUID());
+ 
+@@ -488,15 +488,15 @@
+     switch(uiAction)
+     {
+         case GOSSIP_ACTION_INFO_DEF+1:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "But you are dragons! How could orcs do this to you?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+2);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Aber Ihr seid Drachen? Wie können Orcs Euch so etwas antun?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+2);
+             pPlayer->SEND_GOSSIP_MENU(10614, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+2:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Your mate?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+3);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Eure Gefährtin?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+3);
+             pPlayer->SEND_GOSSIP_MENU(10615, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+3:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "I have battled many beasts, dragon. I will help you.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+4);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Ich habe gegen viele Bestien gekämpft, Drache. Ich werde Euch helfen.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+4);
+             pPlayer->SEND_GOSSIP_MENU(10616, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+4:
+@@ -511,13 +511,13 @@
+ ## npc_oronok
+ ######*/
+ 
+-#define GOSSIP_ORONOK1 "I am ready to hear your story, Oronok."
+-#define GOSSIP_ORONOK2 "How do I find the cipher?"
+-#define GOSSIP_ORONOK3 "How do you know all of this?"
+-#define GOSSIP_ORONOK4 "Yet what? What is it, Oronok?"
+-#define GOSSIP_ORONOK5 "Continue, please."
+-#define GOSSIP_ORONOK6 "So what of the cipher now? And your boys?"
+-#define GOSSIP_ORONOK7 "I will find your boys and the cipher, Oronok."
++#define GOSSIP_ORONOK1 "Ich bin bereit für Eure Geschichte, Oronok."
++#define GOSSIP_ORONOK2 "Wie kann ich die Litanei finden?"
++#define GOSSIP_ORONOK3 "Woher wisst Ihr das alles?"
++#define GOSSIP_ORONOK4 "Und dann? Was ist los, Oronok?"
++#define GOSSIP_ORONOK5 "Bitte, fahrt fort."
++#define GOSSIP_ORONOK6 "Was ist aus der Litanei geworden? Und aus Euren Söhnen?"
++#define GOSSIP_ORONOK7 "Ich werde Eure Jungs und die Litanei finden, Oronok."
+ 
+ bool GossipHello_npc_oronok_tornheart(Player* pPlayer, Creature* pCreature)
+ {
+@@ -601,7 +601,7 @@
+ {
+     SAY_WIL_START               = -1000381,
+     SAY_WIL_AGGRO1              = -1000382,
+-    SAY_WIL_AGGRO2              = -1000383,
++    SAY_WIL_AGGRO2              = -1000383, //GMDB Missing
+     SAY_WIL_PROGRESS1           = -1000384,
+     SAY_WIL_PROGRESS2           = -1000385,
+     SAY_WIL_FIND_EXIT           = -1000386,
+@@ -787,7 +787,7 @@
+     SAY_TORLOTH_DIALOGUE1             = -1000532,
+     SAY_TORLOTH_DIALOGUE2             = -1000533,
+     SAY_TORLOTH_DIALOGUE3             = -1000534,
+-    SAY_ILLIDAN_DIALOGUE              = -1000535,
++    SAY_ILLIDAN_DIALOGUE              = -1000535, //GMDB Missing
+     SAY_ILLIDAN_SUMMON1               = -1000536,
+     SAY_ILLIDAN_SUMMON2               = -1000537,
+     SAY_ILLIDAN_SUMMON3               = -1000538,
+Index: scripts/outland/shattrath_city.cpp
+===================================================================
+--- scripts/outland/shattrath_city.cpp	(Revision 1994)
++++ scripts/outland/shattrath_city.cpp	(Arbeitskopie)
+@@ -264,8 +264,8 @@
+ ## npc_ishanah
+ ######*/
+ 
+-#define GOSSIP_ISHANAH_1    "Who are the Sha'tar?"
+-#define GOSSIP_ISHANAH_2    "Isn't Shattrath a draenei city? Why do you allow others here?"
++#define GOSSIP_ISHANAH_1    "Wer sind die Sha'tar?"
++#define GOSSIP_ISHANAH_2    "Ist Shattrath nicht eine Draeneistadt? Warum lasst Ihr dann auch andere hier zu?"
+ 
+ bool GossipHello_npc_ishanah(Player* pPlayer, Creature* pCreature)
+ {
+@@ -298,12 +298,12 @@
+     QUEST_CITY_LIGHT        = 10211,
+ };
+ 
+-#define KHADGAR_GOSSIP_1    "I've heard your name spoken only in whispers, mage. Who are you?"
+-#define KHADGAR_GOSSIP_2    "Go on, please."
+-#define KHADGAR_GOSSIP_3    "I see."
+-#define KHADGAR_GOSSIP_4    "What did you do then?"
+-#define KHADGAR_GOSSIP_5    "What happened next?"
+-#define KHADGAR_GOSSIP_7    "There was something else I wanted to ask you."
++#define KHADGAR_GOSSIP_1    "Euer Name wird nur mit Ehrfurcht gesprochen, Magier. Wer seid Ihr?"
++#define KHADGAR_GOSSIP_2    "Erzählt weiter, bitte."
++#define KHADGAR_GOSSIP_3    "Ich verstehe."
++#define KHADGAR_GOSSIP_4    "Was tatet Ihr dann?"
++#define KHADGAR_GOSSIP_5    "Was passierte danach?"
++#define KHADGAR_GOSSIP_7    "Es gibt noch etwas anderes, das ich Euch fragen wollte."
+ 
+ bool GossipHello_npc_khadgar(Player* pPlayer, Creature* pCreature)
+ {
+@@ -653,7 +653,7 @@
+     FACTION_HOSTILE_RD      = 45
+ };
+ 
+-#define GOSSIP_RALIQ        "You owe Sim'salabim money. Hand them over or die!"
++#define GOSSIP_RALIQ        "Ich wurde von Sal'salabim geschickt, um eine Schuld einzutreiben. Bezahlt, oder ich muss Euch weh tun."
+ 
+ struct MANGOS_DLL_DECL npc_raliq_the_drunkAI : public ScriptedAI
+ {
+@@ -841,7 +841,7 @@
+ bool GossipHello_npc_zephyr(Player* pPlayer, Creature* pCreature)
+ {
+     if (pPlayer->GetReputationRank(989) >= REP_REVERED)
+-        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Take me to the Caverns of Time.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+1);
++        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Bringt mich zu den Höhlen der Zeit.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+1);
+ 
+     pPlayer->SEND_GOSSIP_MENU(pPlayer->GetGossipTextId(pCreature), pCreature->GetGUID());
+ 
+Index: scripts/outland/terokkar_forest.cpp
+===================================================================
+--- scripts/outland/terokkar_forest.cpp	(Revision 1994)
++++ scripts/outland/terokkar_forest.cpp	(Arbeitskopie)
+@@ -384,8 +384,8 @@
+     QUEST_CRACK_SKULLS      = 10009
+ };
+ 
+-#define GOSSIP_FLOON1       "You owe Sim'salabim money. Hand them over or die!"
+-#define GOSSIP_FLOON2       "Hand over the money or die...again!"
++#define GOSSIP_FLOON1       "Ich wurde von Sal'salabim geschickt, um eine Schuld einzutreiben. Bezahlt, oder ich muss Euch weh tun."
++#define GOSSIP_FLOON2       "Er will sein 'Gold'. Bezahlt oder Sterbt... wieder..."
+ 
+ struct MANGOS_DLL_DECL npc_floonAI : public ScriptedAI
+ {
+@@ -472,7 +472,7 @@
+ ## npc_skyguard_handler_deesak -- TODO move to WorldDB (gossip)
+ ######*/
+ 
+-#define GOSSIP_SKYGUARD "Fly me to Ogri'la please"
++#define GOSSIP_SKYGUARD "Aber ja doch! Bringt mich zum Außenposten der Himmelswache."
+ 
+ bool GossipHello_npc_skyguard_handler_deesak(Player* pPlayer, Creature* pCreature)
+ {
+Index: scripts/outland/zangarmarsh.cpp
+===================================================================
+--- scripts/outland/zangarmarsh.cpp	(Revision 1994)
++++ scripts/outland/zangarmarsh.cpp	(Arbeitskopie)
+@@ -40,8 +40,8 @@
+ 
+ #define SAY_REWARD_BLESS          -1000207
+ 
+-#define GOSSIP_ITEM_BLESS_ASH     "Grant me your mark, wise ancient."
+-#define GOSSIP_ITEM_BLESS_KEL     "Grant me your mark, mighty ancient."
++#define GOSSIP_ITEM_BLESS_ASH     "Gewährt mir Euer Mal, weises Urtum."
++#define GOSSIP_ITEM_BLESS_KEL     "Mächtiges Urtum, bitte gewährt mir Euer Mal."
+ 
+ //#define TEXT_BLESSINGS        "<You need higher standing with Cenarion Expedition to recive a blessing.>"
+ 
+@@ -123,7 +123,7 @@
+     FACTION_HOSTILE_CO      = 45
+ };
+ 
+-#define GOSSIP_COOSH        "You owe Sim'salabim money. Hand them over or die!"
++#define GOSSIP_COOSH        "Ich wurde von Sal'salabim geschickt, um eine Schuld einzutreiben. Bezahlt, oder ich muss Euch weh tun."
+ 
+ struct MANGOS_DLL_DECL npc_cooshcooshAI : public ScriptedAI
+ {
+@@ -188,9 +188,9 @@
+ ## npc_elder_kuruti
+ ######*/
+ 
+-#define GOSSIP_ITEM_KUR1 "Offer treat"
+-#define GOSSIP_ITEM_KUR2 "Im a messenger for Draenei"
+-#define GOSSIP_ITEM_KUR3 "Get message"
++#define GOSSIP_ITEM_KUR1 "Seid gegrüßt, Ältester. Es ist Zeit für Euer Volk, die Feindseligkeiten mit den Draenei und ihren Verbündeten zu beenden."
++#define GOSSIP_ITEM_KUR2 "Ich wollte Euch nicht täuschen, Ältester. Die Draenei von Telredor wollten in einer Weise an Euch herantreten, mit der Ihr vertraut seid."
++#define GOSSIP_ITEM_KUR3 "Ich werde es ihnen sagen. Gehabt Euch wohl, Ältester."
+ 
+ bool GossipHello_npc_elder_kuruti(Player* pPlayer, Creature* pCreature)
+ {
+@@ -328,8 +328,8 @@
+ ## npc_timothy_daniels
+ ######*/
+ 
+-#define GOSSIP_TIMOTHY_DANIELS_ITEM1    "Specialist, eh? Just what kind of specialist are you, anyway?"
+-#define GOSSIP_TEXT_BROWSE_POISONS      "Let me browse your reagents and poison supplies."
++#define GOSSIP_TIMOTHY_DANIELS_ITEM1    "Spezialist, was? Was für ein Spezialist seid Ihr denn genau?"
++#define GOSSIP_TEXT_BROWSE_POISONS      "Zeigt mir Eure Reagenzien und Giftzutanten."
+ 
+ enum
+ {
+Index: scripts/world/npc_professions.cpp
+===================================================================
+--- scripts/world/npc_professions.cpp	(Revision 1994)
++++ scripts/world/npc_professions.cpp	(Arbeitskopie)
+@@ -37,15 +37,15 @@
+ /*###
+ # to be removed from here (->ncp_text). This is data for database projects.
+ ###*/
+-#define TALK_MUST_UNLEARN_WEAPON    "You must forget your weapon type specialty before I can help you. Go to Everlook in Winterspring and seek help there."
++#define TALK_MUST_UNLEARN_WEAPON    "You must forget your weapon type specialty before I can help you. Go to Everlook in Winterspring and seek help there." //GMDB TODO
+ 
+-#define TALK_HAMMER_LEARN           "Ah, a seasoned veteran you once were. I know you are capable, you merely need to ask and I shall teach you the way of the hammersmith."
+-#define TALK_AXE_LEARN              "Ah, a seasoned veteran you once were. I know you are capable, you merely need to ask and I shall teach you the way of the axesmith."
+-#define TALK_SWORD_LEARN            "Ah, a seasoned veteran you once were. I know you are capable, you merely need to ask and I shall teach you the way of the swordsmith."
++#define TALK_HAMMER_LEARN           "Ah, a seasoned veteran you once were. I know you are capable, you merely need to ask and I shall teach you the way of the hammersmith." //GMDB TODO
++#define TALK_AXE_LEARN              "Ah, a seasoned veteran you once were. I know you are capable, you merely need to ask and I shall teach you the way of the axesmith." //GMDB TODO
++#define TALK_SWORD_LEARN            "Ah, a seasoned veteran you once were. I know you are capable, you merely need to ask and I shall teach you the way of the swordsmith." //GMDB TODO
+ 
+-#define TALK_HAMMER_UNLEARN         "Forgetting your Hammersmithing skill is not something to do lightly. If you choose to abandon it you will forget all recipes that require Hammersmithing to create!"
+-#define TALK_AXE_UNLEARN            "Forgetting your Axesmithing skill is not something to do lightly. If you choose to abandon it you will forget all recipes that require Axesmithing to create!"
+-#define TALK_SWORD_UNLEARN          "Forgetting your Swordsmithing skill is not something to do lightly. If you choose to abandon it you will forget all recipes that require Swordsmithing to create!"
++#define TALK_HAMMER_UNLEARN         "Forgetting your Hammersmithing skill is not something to do lightly. If you choose to abandon it you will forget all recipes that require Hammersmithing to create!" //GMDB TODO
++#define TALK_AXE_UNLEARN            "Forgetting your Axesmithing skill is not something to do lightly. If you choose to abandon it you will forget all recipes that require Axesmithing to create!" //GMDB TODO
++#define TALK_SWORD_UNLEARN          "Forgetting your Swordsmithing skill is not something to do lightly. If you choose to abandon it you will forget all recipes that require Swordsmithing to create!" //GMDB TODO
+ 
+ /*###
+ # generic defines
+@@ -59,52 +59,52 @@
+ # gossip item and box texts
+ ###*/
+ 
+-#define GOSSIP_LEARN_POTION         "Please teach me how to become a Master of Potions, Lauranna"
+-#define GOSSIP_UNLEARN_POTION       "I wish to unlearn Potion Mastery"
+-#define GOSSIP_LEARN_TRANSMUTE      "Please teach me how to become a Master of Transmutations, Zarevhi"
+-#define GOSSIP_UNLEARN_TRANSMUTE    "I wish to unlearn Transmutation Mastery"
+-#define GOSSIP_LEARN_ELIXIR         "Please teach me how to become a Master of Elixirs, Lorokeem"
+-#define GOSSIP_UNLEARN_ELIXIR       "I wish to unlearn Elixir Mastery"
++#define GOSSIP_LEARN_POTION         "Please teach me how to become a Master of Potions, Lauranna" //GMDB TODO
++#define GOSSIP_UNLEARN_POTION       "I wish to unlearn Potion Mastery" //GMDB TODO
++#define GOSSIP_LEARN_TRANSMUTE      "Please teach me how to become a Master of Transmutations, Zarevhi" //GMDB TODO
++#define GOSSIP_UNLEARN_TRANSMUTE    "I wish to unlearn Transmutation Mastery" //GMDB TODO
++#define GOSSIP_LEARN_ELIXIR         "Please teach me how to become a Master of Elixirs, Lorokeem" //GMDB TODO
++#define GOSSIP_UNLEARN_ELIXIR       "I wish to unlearn Elixir Mastery" //GMDB TODO
+ 
+-#define BOX_UNLEARN_ALCHEMY_SPEC    "Do you really want to unlearn your alchemy specialty and lose all associated recipes? \n Cost: "
++#define BOX_UNLEARN_ALCHEMY_SPEC    "Do you really want to unlearn your alchemy specialty and lose all associated recipes? \n Cost: " //GMDB TODO
+ 
+-#define GOSSIP_WEAPON_LEARN         "Please teach me how to become a Weaponsmith"
+-#define GOSSIP_WEAPON_UNLEARN       "I wish to unlearn the art of Weaponsmithing"
+-#define GOSSIP_ARMOR_LEARN          "Please teach me how to become a Armorsmith"
+-#define GOSSIP_ARMOR_UNLEARN        "I wish to unlearn the art of Armorsmithing"
++#define GOSSIP_WEAPON_LEARN         "Please teach me how to become a Weaponsmith" //GMDB TODO
++#define GOSSIP_WEAPON_UNLEARN       "I wish to unlearn the art of Weaponsmithing" //GMDB TODO
++#define GOSSIP_ARMOR_LEARN          "Please teach me how to become a Armorsmith" //GMDB TODO
++#define GOSSIP_ARMOR_UNLEARN        "I wish to unlearn the art of Armorsmithing" //GMDB TODO
+ 
+-#define GOSSIP_UNLEARN_SMITH_SPEC   "I wish to unlearn my blacksmith specialty"
+-#define BOX_UNLEARN_ARMORORWEAPON   "Do you really want to unlearn your blacksmith specialty and lose all associated recipes? \n Cost: "
++#define GOSSIP_UNLEARN_SMITH_SPEC   "I wish to unlearn my blacksmith specialty" //GMDB TODO
++#define BOX_UNLEARN_ARMORORWEAPON   "Do you really want to unlearn your blacksmith specialty and lose all associated recipes? \n Cost: " //GMDB TODO
+ 
+-#define GOSSIP_LEARN_HAMMER         "Please teach me how to become a Hammersmith, Lilith"
+-#define GOSSIP_UNLEARN_HAMMER       "I wish to unlearn Hammersmithing"
+-#define GOSSIP_LEARN_AXE            "Please teach me how to become a Axesmith, Kilram"
+-#define GOSSIP_UNLEARN_AXE          "I wish to unlearn Axesmithing"
+-#define GOSSIP_LEARN_SWORD          "Please teach me how to become a Swordsmith, Seril"
+-#define GOSSIP_UNLEARN_SWORD        "I wish to unlearn Swordsmithing"
++#define GOSSIP_LEARN_HAMMER         "Please teach me how to become a Hammersmith, Lilith" //GMDB TODO
++#define GOSSIP_UNLEARN_HAMMER       "I wish to unlearn Hammersmithing" //GMDB TODO
++#define GOSSIP_LEARN_AXE            "Please teach me how to become a Axesmith, Kilram" //GMDB TODO
++#define GOSSIP_UNLEARN_AXE          "I wish to unlearn Axesmithing" //GMDB TODO
++#define GOSSIP_LEARN_SWORD          "Please teach me how to become a Swordsmith, Seril" //GMDB TODO
++#define GOSSIP_UNLEARN_SWORD        "I wish to unlearn Swordsmithing" //GMDB TODO
+ 
+-#define BOX_UNLEARN_WEAPON_SPEC     "Do you really want to unlearn your weaponsmith specialty and lose all associated recipes? \n Cost: "
++#define BOX_UNLEARN_WEAPON_SPEC     "Do you really want to unlearn your weaponsmith specialty and lose all associated recipes? \n Cost: " //GMDB TODO
+ 
+-#define GOSSIP_LEARN_DRAGON         "I am absolutely certain that i want to learn dragonscale leatherworking"
+-#define GOSSIP_UNLEARN_DRAGON       "I wish to unlearn Dragonscale Leatherworking"
+-#define GOSSIP_LEARN_ELEMENTAL      "I am absolutely certain that i want to learn elemental leatherworking"
+-#define GOSSIP_UNLEARN_ELEMENTAL    "I wish to unlearn Elemental Leatherworking"
+-#define GOSSIP_LEARN_TRIBAL         "I am absolutely certain that i want to learn tribal leatherworking"
+-#define GOSSIP_UNLEARN_TRIBAL       "I wish to unlearn Tribal Leatherworking"
++#define GOSSIP_LEARN_DRAGON         "I am absolutely certain that i want to learn dragonscale leatherworking" //GMDB TODO
++#define GOSSIP_UNLEARN_DRAGON       "I wish to unlearn Dragonscale Leatherworking" //GMDB TODO
++#define GOSSIP_LEARN_ELEMENTAL      "I am absolutely certain that i want to learn elemental leatherworking" //GMDB TODO
++#define GOSSIP_UNLEARN_ELEMENTAL    "I wish to unlearn Elemental Leatherworking" //GMDB TODO
++#define GOSSIP_LEARN_TRIBAL         "I am absolutely certain that i want to learn tribal leatherworking" //GMDB TODO
++#define GOSSIP_UNLEARN_TRIBAL       "I wish to unlearn Tribal Leatherworking" //GMDB TODO
+ 
+-#define BOX_UNLEARN_LEATHER_SPEC    "Do you really want to unlearn your leatherworking specialty and lose all associated recipes? \n Cost: "
++#define BOX_UNLEARN_LEATHER_SPEC    "Do you really want to unlearn your leatherworking specialty and lose all associated recipes? \n Cost: " //GMDB TODO
+ 
+-#define GOSSIP_LEARN_SPELLFIRE      "Please teach me how to become a Spellcloth tailor"
+-#define GOSSIP_UNLEARN_SPELLFIRE    "I wish to unlearn Spellfire Tailoring"
+-#define GOSSIP_LEARN_MOONCLOTH      "Please teach me how to become a Mooncloth tailor"
+-#define GOSSIP_UNLEARN_MOONCLOTH    "I wish to unlearn Mooncloth Tailoring"
+-#define GOSSIP_LEARN_SHADOWEAVE     "Please teach me how to become a Shadoweave tailor"
+-#define GOSSIP_UNLEARN_SHADOWEAVE   "I wish to unlearn Shadoweave Tailoring"
++#define GOSSIP_LEARN_SPELLFIRE      "Please teach me how to become a Spellcloth tailor" //GMDB TODO
++#define GOSSIP_UNLEARN_SPELLFIRE    "I wish to unlearn Spellfire Tailoring" //GMDB TODO
++#define GOSSIP_LEARN_MOONCLOTH      "Please teach me how to become a Mooncloth tailor" //GMDB TODO
++#define GOSSIP_UNLEARN_MOONCLOTH    "I wish to unlearn Mooncloth Tailoring" //GMDB TODO
++#define GOSSIP_LEARN_SHADOWEAVE     "Please teach me how to become a Shadoweave tailor" //GMDB TODO
++#define GOSSIP_UNLEARN_SHADOWEAVE   "I wish to unlearn Shadoweave Tailoring" //GMDB TODO
+ 
+-#define BOX_UNLEARN_TAILOR_SPEC     "Do you really want to unlearn your tailoring specialty and lose all associated recipes? \n Cost: "
++#define BOX_UNLEARN_TAILOR_SPEC     "Do you really want to unlearn your tailoring specialty and lose all associated recipes? \n Cost: " //GMDB TODO
+ 
+-#define GOSSIP_LEARN_GOBLIN         "I am absolutely certain that i want to learn Goblin engineering"
+-#define GOSSIP_LEARN_GNOMISH        "I am absolutely certain that i want to learn Gnomish engineering"
++#define GOSSIP_LEARN_GOBLIN         "I am absolutely certain that i want to learn Goblin engineering" //GMDB TODO
++#define GOSSIP_LEARN_GNOMISH        "I am absolutely certain that i want to learn Gnomish engineering" //GMDB TODO
+ 
+ /*###
+ # spells defines
+@@ -836,10 +836,10 @@
+     ITEM_GOBLIN_CARD            = 10791
+ };
+ 
+-#define GOSSIP_ITEM_ZAP         "[PH] Unknown"
+-#define GOSSIP_ITEM_JHORDY      "I must build a beacon for this marvelous device!"
+-#define GOSSIP_ITEM_KABLAM      "[PH] Unknown"
+-#define GOSSIP_ITEM_SMILES      "[PH] Unknown"
++#define GOSSIP_ITEM_ZAP         "[PH] Unbekannt" // Should be verified
++#define GOSSIP_ITEM_JHORDY      "Ich muss ein Blinklicht für diesen großartigen Apparat bauen!"
++#define GOSSIP_ITEM_KABLAM      "[PH] Unbekannt" // Should be verified
++#define GOSSIP_ITEM_SMILES      "[PH] Unbekannt" // Should be verified
+ 
+ bool GossipHello_npc_engineering_tele_trinket(Player* pPlayer, Creature* pCreature)
+ {
+Index: scripts/world/npcs_special.cpp
+===================================================================
+--- scripts/world/npcs_special.cpp	(Revision 1994)
++++ scripts/world/npcs_special.cpp	(Arbeitskopie)
+@@ -1062,8 +1062,8 @@
+     SPELL_TRICK_OR_TREATED          = 24755,                 // buff player get when tricked or treated
+ };
+ 
+-#define GOSSIP_ITEM_TRICK_OR_TREAT  "Trick or Treat!"
+-#define GOSSIP_ITEM_WHAT_TO_DO      "What can I do at an Inn?"
++#define GOSSIP_ITEM_TRICK_OR_TREAT  "Süßes oder Saures!"
++#define GOSSIP_ITEM_WHAT_TO_DO      "Was kann ich in einem Gasthaus alles machen?"
+ 
+ bool GossipHello_npc_innkeeper(Player* pPlayer, Creature* pCreature)
+ {
+@@ -1120,7 +1120,7 @@
+     QUEST_MAGICAL_KINGDOM_N = 12796
+ };
+ 
+-#define GOSSIP_ITEM_TELEPORT_TO "I am ready to be teleported to Dalaran."
++#define GOSSIP_ITEM_TELEPORT_TO "Ich bin bereit nach Dalaran teleportiert zu werden."
+ 
+ bool GossipHello_npc_kingdom_of_dalaran_quests(Player* pPlayer, Creature* pCreature)
+ {
+@@ -1158,7 +1158,7 @@
+     TEXT_ID_PROGRESS        = 4715
+ };
+ 
+-#define GOSSIP_ITEM_GRANT   "You have thought well, spirit. I ask you to grant me the strength of your body and the strength of your heart."
++#define GOSSIP_ITEM_GRANT   "You have thought well, spirit. I ask you to grant me the strength of your body and the strength of your heart." //GMDB TODO
+ 
+ bool GossipHello_npc_lunaclaw_spirit(Player* pPlayer, Creature* pCreature)
+ {
+@@ -1280,11 +1280,11 @@
+         pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_TRAINER, GOSSIP_TEXT_TRAIN, GOSSIP_SENDER_MAIN, GOSSIP_ACTION_TRAIN);
+ 
+     if (pCreature->CanTrainAndResetTalentsOf(pPlayer))
+-        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_TRAINER, "I wish to unlearn my talents", GOSSIP_SENDER_MAIN, GOSSIP_OPTION_UNLEARNTALENTS);
++        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_TRAINER, "Ich möchte meine Talente verlernen", GOSSIP_SENDER_MAIN, GOSSIP_OPTION_UNLEARNTALENTS);
+ 
+     if (pPlayer->getClass() == CLASS_ROGUE && pPlayer->getLevel() >= 24 && !pPlayer->HasItemCount(17126,1) && !pPlayer->GetQuestRewardStatus(6681))
+     {
+-        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "<Take the letter>", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+1);
++        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "<Nimmt den Brief>", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+1);
+         pPlayer->SEND_GOSSIP_MENU(5996, pCreature->GetGUID());
+     } else
+         pPlayer->SEND_GOSSIP_MENU(pPlayer->GetGossipTextId(pCreature), pCreature->GetGUID());
+@@ -1341,7 +1341,7 @@
+         pPlayer->SEND_GOSSIP_MENU(7393, pCreature->GetGUID());
+     else
+     {
+-        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Yes", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+1);
++        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Ich bin bereit zu erfahren, was das Schickal für mich bereithält!", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+1);
+         pPlayer->SEND_GOSSIP_MENU(7339, pCreature->GetGUID());
+     }
+ 
+@@ -1353,38 +1353,38 @@
+     switch(uiAction)
+     {
+         case GOSSIP_ACTION_INFO_DEF+1:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Slay the Man",                      GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+2);
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Turn him over to liege",            GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+3);
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Confiscate the corn",               GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+4);
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Let him go and have the corn",      GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+5);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Ich töte den Mann auf der Stelle, wie mein Lehnsherr es von mir erwartet, denn der Kerl ist ein Dieb und ein Lügner zugleich.",                      GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+2);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Ich bringe den Mann zu meinem Lehnsherrn für eine Bestrafung, da er das Gesetz gebrochen hat, und es meine beeidete Pflicht ist, das Gesetz zu wahren.",            GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+3);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Ich konfisziere das Getreide, das er stahl, warne ihn, das Stehlen der Weg zur Verdammnis und Zerstörung ist, aber lass ihn letztendlich zu seiner Familie zurückkehren.",               GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+4);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Ich erlaube dem Mann genug Getreide für seine Familie mitzunehmen, damit er sie für ein paar Tage ernähren kann und ermutige ihn das Land zu verlassen.",      GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+5);
+             pPlayer->SEND_GOSSIP_MENU(7340, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+2:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Execute your friend painfully",     GOSSIP_SENDER_MAIN+1, GOSSIP_ACTION_INFO_DEF);
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Execute your friend painlessly",    GOSSIP_SENDER_MAIN+2, GOSSIP_ACTION_INFO_DEF);
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Let your friend go",                GOSSIP_SENDER_MAIN+3, GOSSIP_ACTION_INFO_DEF);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Entsprechend der Order meines Herrn, werde ich ihn hinrichten. Er wird bis zum letzten Atemzug endlose Schmerzen erleiden. So werde ich ihm die Taten an meinem Volk heimzahlen.",     GOSSIP_SENDER_MAIN+1, GOSSIP_ACTION_INFO_DEF);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Entsprechend der Order meines Herrn, werde ich ihn hinrichten, doch werde ich es auf eine möglich schmerzfreie Art tun. Zwar muss der Gerechtigkeit genüge getan werden, doch soll dies mein Mitleid nicht mindern.",    GOSSIP_SENDER_MAIN+2, GOSSIP_ACTION_INFO_DEF);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Ich riskiere mein Leben und befreie ihn, damit er seine Unschuld beweisen kann. Soweit ich es kann, unterstütze ich ihn auf jede erdenkliche Art und Weise.",                GOSSIP_SENDER_MAIN+3, GOSSIP_ACTION_INFO_DEF); 
+             pPlayer->SEND_GOSSIP_MENU(7341, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+3:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Confront the diplomat",             GOSSIP_SENDER_MAIN+4, GOSSIP_ACTION_INFO_DEF);
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Show not so quiet defiance",        GOSSIP_SENDER_MAIN+5, GOSSIP_ACTION_INFO_DEF);
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Remain quiet",                      GOSSIP_SENDER_MAIN+2, GOSSIP_ACTION_INFO_DEF);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Ich konfrontiere den Herrscher mit seinem unangebrachten Verhalten und bewahre so die Ehre meines Lehensherrn, mit der Gefahr zukünftig diplomatische Verhandlungen unmöglich zu machen.",             GOSSIP_SENDER_MAIN+4, GOSSIP_ACTION_INFO_DEF);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Ich nehme die Beleidigung hin und versuche dem Herrscher unterschwellig klar zu mach, dass er sich einen unentschuldbaren diplomatischen Ausrutscher geleistet hat.Anschließend werde ich bei meiner Rückkehr, meinen Lehensherrn über dieses Vorkommnis unterrichten.",        GOSSIP_SENDER_MAIN+5, GOSSIP_ACTION_INFO_DEF);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Ich nehme die Beleidigung stillschweigend hin und werde meinen Lehenherrn nichts davon berichten, schließlich soll ich um jeden preis Frieden schaffen. Es ist immerhin nur eine Beleidigung und keine Kriegserklärung.",                      GOSSIP_SENDER_MAIN+2, GOSSIP_ACTION_INFO_DEF);
+             pPlayer->SEND_GOSSIP_MENU(7361, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+4:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Speak against your brother openly", GOSSIP_SENDER_MAIN+6, GOSSIP_ACTION_INFO_DEF);
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Help your brother in",              GOSSIP_SENDER_MAIN+7, GOSSIP_ACTION_INFO_DEF);
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Keep your brother out without letting him know", GOSSIP_SENDER_MAIN+8, GOSSIP_ACTION_INFO_DEF);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Ich würde mich gegen die Aufnahme meines Bruders in den Orden aussprechen und einen permanenten Bruch unserer Beziehung zu einander riskieren. Er wäre eine zu große Gefahr für sich selbst und andere in seinem Umfeld und es wäre ein viel zu großes Risiko darauf zu hoffen, dass er in seine Rolle hineinwachen würde.", GOSSIP_SENDER_MAIN+6, GOSSIP_ACTION_INFO_DEF);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Ich würde mich für die Aufnahme meines Bruders in den Orden aussprechen und die Gefahr auf mich nehmen, dass die Sicherheit des Ordens gefährdet wäre. Ich vertraue seiner Fähigkeit sich anzupassen und sein Wissen zu erweitern und könnte ihm helfen in seine Rolle hineinzuwachsen.",              GOSSIP_SENDER_MAIN+7, GOSSIP_ACTION_INFO_DEF);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Ich würde heimlich Gerüchte streuen, die gegen die Aufnahme meines Bruders in den Orden sprechen. So verhindere ich seine Mitgleidschaft und rette unsere Familienbande.", GOSSIP_SENDER_MAIN+8, GOSSIP_ACTION_INFO_DEF);
+             pPlayer->SEND_GOSSIP_MENU(7362, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+5:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Take credit, keep gold",            GOSSIP_SENDER_MAIN+5, GOSSIP_ACTION_INFO_DEF);
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Take credit, share the gold",       GOSSIP_SENDER_MAIN+4, GOSSIP_ACTION_INFO_DEF);
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Let the knight take credit",        GOSSIP_SENDER_MAIN+3, GOSSIP_ACTION_INFO_DEF);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Ich würde meinem Lehensherrn das Ohr des Monsters bringen, um dessen Tod für mich zu beanspruchen und die Belohnung an mich nehmen. Es ist falsch eine Tat für sich zu beanspruchen, die in Wirklichkeit ein Anderer vollbracht hat.",            GOSSIP_SENDER_MAIN+5, GOSSIP_ACTION_INFO_DEF);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Ich würde meinem Lehensherrn das Ohr des Monsters bringen, um dessen Tod für mich zu beanspruchen - immerhin wurde es durch meine Hand getötet. Anschließend würde ich dem Ritter einen Teil der Belohnung abgeben, damit er der mittellosen Familie helfen kann.",       GOSSIP_SENDER_MAIN+4, GOSSIP_ACTION_INFO_DEF);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Ich erzähle niemanden von meiner heldenhaften Tat und erlaube dem Ritter die Belohnung für sich zu beanspruchen, damit er der mittellosen Familie helfen kann.",        GOSSIP_SENDER_MAIN+3, GOSSIP_ACTION_INFO_DEF);
+             pPlayer->SEND_GOSSIP_MENU(7363, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF:
+-            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Thanks",                            GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+6);
++            pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Ich habe ausreichend Platz in meinem Gepäck und würde gerne eines dieser Horoskope haben, von denen Ihr mir erzählt habt!",                            GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF+6);
+             pPlayer->SEND_GOSSIP_MENU(7364, pCreature->GetGUID());
+             break;
+         case GOSSIP_ACTION_INFO_DEF+6:
+@@ -1486,16 +1486,16 @@
+     SPELL_TABARD_OF_SUMMER_FLAMES              = 62769
+ };
+ 
+-#define GOSSIP_LOST_TABARD_OF_BLOOD_KNIGHT               "I've lost my Tabard of Blood Knight."
+-#define GOSSIP_LOST_TABARD_OF_THE_HAND                   "I've lost my Tabard of the Hand."
+-#define GOSSIP_LOST_TABARD_OF_THE_PROTECTOR              "I've lost my Tabard of the Protector."
+-#define GOSSIP_LOST_GREEN_TROPHY_TABARD_OF_THE_ILLIDARI  "I've lost my Green Trophy Tabard of the Illidari."
+-#define GOSSIP_LOST_PURPLE_TROPHY_TABARD_OF_THE_ILLIDARI "I've lost my Purple Trophy Tabard of the Illidari."
+-#define GOSSIP_LOST_TABARD_OF_SUMMER_SKIES               "I've lost my Tabard of Summer Skies."
+-#define GOSSIP_LOST_TABARD_OF_SUMMER_FLAMES              "I've lost my Tabard of Summer Flames."
+-#define GOSSIP_LOST_LOREMASTERS_COLORS                   "I've lost my Loremaster's Colors."
+-#define GOSSIP_LOST_TABARD_OF_THE_EXPLORER               "I've lost my Tabard of the Explorer."
+-#define GOSSIP_LOST_TABARD_OF_THE_ACHIEVER               "I've lost my Tabard of the Achiever."
++#define GOSSIP_LOST_TABARD_OF_BLOOD_KNIGHT               "Ich habe meinen Wappenrock der Blutritter verloren."
++#define GOSSIP_LOST_TABARD_OF_THE_HAND                   "Ich habe meinen Wappenrock der Hand verloren."
++#define GOSSIP_LOST_TABARD_OF_THE_PROTECTOR              "Ich habe meinen Wappenrock des Beschützers verloren."
++#define GOSSIP_LOST_GREEN_TROPHY_TABARD_OF_THE_ILLIDARI  "Ich habe meinen grünen Trophäenwappenrock der Illidari verloren."
++#define GOSSIP_LOST_PURPLE_TROPHY_TABARD_OF_THE_ILLIDARI "Ich habe meinen lila Trophäenwappenrock der Illidari verloren."
++#define GOSSIP_LOST_TABARD_OF_SUMMER_SKIES               "Ich habe meinen sommerlichen Himmelswappenrock verloren."
++#define GOSSIP_LOST_TABARD_OF_SUMMER_FLAMES              "Ich habe meinen sommerlichen Flammenwappenrock verloren."
++#define GOSSIP_LOST_LOREMASTERS_COLORS                   "Ich habe meinen Wappenrock des Meisters der Lehren verloren."
++#define GOSSIP_LOST_TABARD_OF_THE_EXPLORER               "Ich habe meinen Wappenrock des Forschers verloren."
++#define GOSSIP_LOST_TABARD_OF_THE_ACHIEVER               "Ich habe meinen Wappenrock des Erfolgreichen verloren."
+ 
+ bool GossipHello_npc_tabard_vendor(Player* pPlayer, Creature* pCreature)
+ {
+@@ -1634,12 +1634,12 @@
+     SPELL_VIOLET_HOLD_KEY                 = 67253
+ };
+ 
+-#define GOSSIP_LOST_ARCATRAZ_KEY         "I've lost my key to the Arcatraz."
+-#define GOSSIP_LOST_SHADOWFORGE_KEY      "I've lost my key to the Blackrock Depths."
+-#define GOSSIP_LOST_SKELETON_KEY         "I've lost my key to the Scholomance."
+-#define GOSSIP_LOST_SHATTERED_HALLS_KEY  "I've lost my key to the Shattered Halls."
+-#define GOSSIP_LOST_THE_MASTERS_KEY      "I've lost my key to the Karazhan."
+-#define GOSSIP_LOST_VIOLET_HOLD_KEY      "I've lost my key to the Violet Hold."
++#define GOSSIP_LOST_ARCATRAZ_KEY         "Ich habe meinen Schlüssel zur Arkatraz verloren."
++#define GOSSIP_LOST_SHADOWFORGE_KEY      "Ich habe meinen Schlüssel für die Schattenschmiede verloren."
++#define GOSSIP_LOST_SKELETON_KEY         "Ich habe meinen Schlüssel für Scholomance verloren"
++#define GOSSIP_LOST_SHATTERED_HALLS_KEY  "Ich habe meinen Schlüssel für die zerschmetterten Hallen verloren."
++#define GOSSIP_LOST_THE_MASTERS_KEY      "Ich habe meinen Schlüssel für Karazan verloren"
++#define GOSSIP_LOST_VIOLET_HOLD_KEY      "Ich habe meinen Schlüssel zur Violetten Festung verloren."
+ 
+ 
+ bool GossipHello_npc_locksmith(Player* pPlayer, Creature* pCreature)

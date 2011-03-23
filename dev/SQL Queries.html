@@ -1,0 +1,639 @@
+<html>
+<head>
+	<title>-=SQL Queries=-</title>
+</head>
+
+<body>
+<a name=top></a>
+<center><pre>
+#############################################################################
+#####									#####
+#####         GGGGGGGG	  MM      MM     DDDDDDD    BBBBBBB 		#####
+#####        GG      	  M M    M M     D     DD   B      B   		#####
+#####       GG    GGG	  M  M  M  M     D      D   BBBBBBB    		#####
+#####        GG     GG	  M   MM   M     D     DD   B      B   		#####
+#####         GGGGGGG	  M        M     DDDDDDD    BBBBBBB    		#####
+#####  			      	 CREW					#####
+#############################################################################
+</center>
+</pre>
+<font size="+0" face="cursive">
+##### SQL Queries	#####
+<h3>Übersicht:</h3>
+
+<lo>
+MaNGOS-Database:
+	<li>
+		<a href=#1>Creatures</a>
+	</li>
+	<li>
+		<a href=#2>GameObjects</a>
+	</li>
+		<li>
+		<a href=#3>Gossip_menu_option</a>
+	</li>
+	<li>
+		<a href=#4>Items</a>
+	</li>
+	<li>
+		<a href=#5>Page_Text</a>
+	</li>
+	<li>
+		<a href=#6>Npc_Text</a>
+	</li>
+	<li>
+		<a href=#7>Quests</a>
+	</li>
+	<li>
+		<a href=#8>Creature_Ai_Texts</a>
+	</li>
+<br>
+ScriptDev2:
+	<li>
+		<a href=#9>Script_Texts</a>
+	</li>
+</lo>
+<br>
+___________________________________________________________________________________________________ <br>
+___________________________________________________________________________________________________ <br>
+<h5><u><a name=1>Creatures</a></u></h5><p align="right"><a href="#top">Go To Top</a></p>
+
+<ol>
+	<li>Alle komplett fehlenden Einträge:	</li><br><br>
+<code>SELECT<br>
+creature_template.entry,<br>
+creature_template.name,<br>
+locales_creature.name_loc3,<br>
+creature_template.subname,<br>
+locales_creature.subname_loc3<br>
+FROM<br>
+creature_template ,<br>
+locales_creature<br>
+WHERE<br>
+locales_creature.name_loc3 = '' AND<br>
+locales_creature.entry = creature_template.entry AND NOT<br>
+(creature_template.name IS NULL OR<br>
+creature_template.name = '');<br>
+</code>
+
+<br>
+<br>
+
+	<li>Name:	</li><br><br>
+<code>SELECT<br>
+creature_template.entry,<br>
+creature_template.name,<br>
+locales_creature.name_loc3<br>
+FROM<br>
+creature_template ,<br>
+locales_creature<br>
+WHERE<br>
+locales_creature.name_loc3 =  '' AND<br>
+locales_creature.entry =  creature_template.entry AND NOT<br>
+(creature_template.name IS NULL  OR<br>
+creature_template.name =  '');<br>
+</code>
+
+<br>
+<br>
+
+	<li>Subname:	</li><br><br>
+<code>SELECT<br>
+creature_template.entry,<br>
+creature_template.subname,<br>
+locales_creature.subname_loc3<br>
+FROM<br>
+creature_template ,<br>
+locales_creature<br>
+WHERE<br>
+locales_creature.subname_loc3 IS NULL AND<br>
+locales_creature.entry = creature_template.entry AND NOT<br>
+(creature_template.subname IS NULL OR<br>
+creature_template.subname = '');<br>
+</code>
+</ol>
+
+<br>
+<br>
+___________________________________________________________________________________________________ <br>
+<h5><u><a name=2>GameObjects</a></u></h5><p align="right"><a href="#top">Go To Top</a></p>
+
+<ol>
+	<li>Alle komplett fehlenden Einträge:	</li><br><br>
+<code>SELECT<br>
+gameobject_template.entry,<br>
+gameobject_template.name,<br>
+locales_gameobject.name_loc3,<br>
+gameobject_template.castBarCaption,<br>
+locales_gameobject.castBarCaption_loc3<br>
+FROM<br>
+gameobject_template ,<br>
+locales_gameobject<br>
+WHERE<br>
+locales_gameobject.name_loc3 = '' AND<br>
+locales_gameobject.entry = gameobject_template.entry AND NOT<br>
+(gameobject_template.name = '' OR<br>
+gameobject_template.name IS NULL OR<br>
+gameobject_template.name LIKE 'Doodad%' OR<br>
+gameobject_template.name LIKE 'Temp%');<br>
+</code>
+
+<br>
+<br>
+
+	<li>Name:	</li><br><br>
+<code>SELECT<br>
+gameobject_template.entry,<br>
+gameobject_template.name,<br>
+locales_gameobject.name_loc3<br>
+FROM<br>
+gameobject_template ,<br>
+locales_gameobject<br>
+WHERE<br>
+locales_gameobject.name_loc3 =  '' AND<br>
+locales_gameobject.entry =  gameobject_template.entry AND NOT<br>
+(gameobject_template.name = '' OR<br>
+gameobject_template.name IS NULL OR<br>
+gameobject_template.name LIKE 'Doodad%' OR<br>
+gameobject_template.name LIKE 'Temp%');<br>
+</code>
+
+<br>
+<br>
+
+	<li>CastBarCaption:	</li><br><br>
+<code>SELECT<br>
+gameobject_template.entry,<br>
+gameobject_template.castBarCaption,<br>
+locales_gameobject.castBarCaption_loc3<br>
+FROM<br>
+gameobject_template ,<br>
+locales_gameobject<br>
+WHERE<br>
+locales_gameobject.castBarCaption_loc3 = '' AND<br>
+locales_gameobject.entry = gameobject_template.entry AND NOT<br>
+(gameobject_template.castBarCaption = '' OR<br>
+gameobject_template.castBarCaption IS NULL );<br>
+</code>
+</ol>
+
+<br>
+<br>
+
+___________________________________________________________________________________________________ <br>
+<h5><u><a name=3>Gossip_menu_option</a></u></h5><p align="right"><a href="#top">Go To Top</a></p>
+
+
+<code>SELECT<br>
+gossip_menu_option.menu_id,<br>
+gossip_menu_option.id,<br>
+gossip_menu_option.option_text,<br>
+locales_gossip_menu_option.option_text_loc3<br>
+FROM<br>
+gossip_menu_option,<br>
+locales_gossip_menu_option<br>
+WHERE<br>
+gossip_menu_option.menu_id = locales_gossip_menu_option.menu_id AND<br>
+gossip_menu_option.id = locales_gossip_menu_option.id AND<br>
+locales_gossip_menu_option.option_text_loc3 IS NULL AND NOT<br>
+(gossip_menu_option.option_text = '' OR<br>
+gossip_menu_option.option_text IS NULL );<br>
+</code>
+
+<br>
+<br>
+__________________________________________________________________________________________________ <br>
+<h5><u><a name=4>Items</a></u></h5><p align="right"><a href="#top">Go To Top</a></p>
+
+<ol>
+	<li>Alle komplett fehlenden Einträge:	</li><br><br>
+<code>SELECT<br>
+item_template.entry,<br>
+item_template.name,<br>
+locales_item.name_loc3,<br>
+item_template.description,<br>
+locales_item.description_loc3<br>
+FROM<br>
+locales_item ,<br>
+item_template<br>
+WHERE<br>
+locales_item.name_loc3 = '' AND<br>
+locales_item.entry = item_template.entry AND NOT<br>
+(item_template.name = '' OR<br>
+item_template.name IS NULL );<br>
+</code>
+
+<br>
+<br>
+
+	<li>Name:	</li><br><br>
+<code>SELECT<br>
+item_template.entry,<br>
+item_template.name,<br>
+locales_item.name_loc3<br>
+FROM<br>
+locales_item ,<br>
+item_template<br>
+WHERE<br>
+locales_item.name_loc3 =  '' AND<br>
+locales_item.entry =  item_template.entry AND NOT<br>
+(item_template.name =  '' OR<br>
+item_template.name IS NULL );<br>
+</code>
+
+<br>
+<br>
+
+	<li>Description:	</li><br><br>
+<code>SELECT<br>
+item_template.entry,<br>
+item_template.description,<br>
+locales_item.description_loc3<br>
+FROM<br>
+locales_item ,<br>
+item_template<br>
+WHERE<br>
+locales_item.description_loc3 IS NULL AND<br>
+locales_item.entry =  item_template.entry AND NOT<br>
+(item_template.description =  '' OR<br>
+item_template.description IS NULL );<br>
+</code>
+</ol>
+
+<br>
+<br>
+___________________________________________________________________________________________________ <br>
+<h5><u><a name=5>Page_Text</a></u></h5><p align="right"><a href="#top">Go To Top</a></p>
+
+
+<code>SELECT<br>
+page_text.entry,<br>
+page_text.text,<br>
+locales_page_text.Text_loc3<br>
+FROM<br>
+page_text ,<br>
+locales_page_text<br>
+WHERE<br>
+page_text.entry =  locales_page_text.entry AND<br>
+locales_page_text.Text_loc3 IS NULL  AND NOT<br>
+(page_text.text =  '' OR<br>
+page_text.text IS NULL );<br>
+</code>
+
+<br>
+<br>
+___________________________________________________________________________________________________ <br>
+<h5><u><a name=6>Npc_Text</a></u></h5><p align="right"><a href="#top">Go To Top</a></p>
+
+
+<code>SELECT<br>
+npc_text.ID,<br>
+npc_text.text0_0,<br>
+locales_npc_text.Text0_0_loc3,<br>
+npc_text.text0_1,<br>
+locales_npc_text.Text0_1_loc3,<br>
+npc_text.text1_0,<br>
+locales_npc_text.Text1_0_loc3,<br>
+npc_text.text1_1,<br>
+locales_npc_text.Text1_1_loc3,<br>
+npc_text.text2_0,<br>
+locales_npc_text.Text2_0_loc3,<br>
+npc_text.text2_1,<br>
+locales_npc_text.Text2_1_loc3,<br>
+npc_text.text3_0,<br>
+locales_npc_text.Text3_0_loc3,<br>
+npc_text.text3_1,<br>
+locales_npc_text.Text3_1_loc3,<br>
+npc_text.text4_0,<br>
+locales_npc_text.Text4_0_loc3,<br>
+npc_text.text4_1,<br>
+locales_npc_text.Text4_1_loc3,<br>
+npc_text.text5_0,<br>
+locales_npc_text.Text5_0_loc3,<br>
+npc_text.text5_1,<br>
+locales_npc_text.Text5_1_loc3,<br>
+npc_text.text6_0,<br>
+locales_npc_text.Text6_0_loc3,<br>
+npc_text.text6_1,<br>
+locales_npc_text.Text6_1_loc3,<br>
+npc_text.text7_0,<br>
+locales_npc_text.Text7_0_loc3,<br>
+npc_text.text7_1,<br>
+locales_npc_text.Text7_1_loc3<br>
+FROM<br>
+npc_text,<br>
+locales_npc_text<br>
+WHERE<br>
+npc_text.ID =  locales_npc_text.entry AND<br>
+locales_npc_text.Text0_0_loc3 IS NULL  AND NOT<br>
+(npc_text.text0_0 =  '' OR<br>
+npc_text.text0_0 IS NULL );<br>
+</code>
+
+<br>
+<br>
+___________________________________________________________________________________________________ <br>
+<h5><u><a name=7>Quests</a></u></h5><p align="right"><a href="#top">Go To Top</a></p>
+
+
+
+<ol>
+	<li>Alle komplett fehlenden Einträge:	</li><br><br>
+<code>SELECT<br>
+quest_template.entry,<br>
+quest_template.Title,<br>
+locales_quest.Title_loc3,<br>
+quest_template.Details,<br>
+locales_quest.Details_loc3,<br>
+quest_template.Objectives,<br>
+locales_quest.Objectives_loc3,<br>
+quest_template.OfferRewardText,<br>
+locales_quest.OfferRewardText_loc3,<br>
+quest_template.RequestItemsText,<br>
+locales_quest.RequestItemsText_loc3,<br>
+quest_template.EndText,<br>
+locales_quest.EndText_loc3,<br>
+quest_template.CompletedText,<br>
+locales_quest.CompletedText_loc3,<br>
+quest_template.ObjectiveText1,<br>
+locales_quest.ObjectiveText1_loc3,<br>
+quest_template.ObjectiveText2,<br>
+locales_quest.ObjectiveText2_loc3,<br>
+quest_template.ObjectiveText3,<br>
+locales_quest.ObjectiveText3_loc3,<br>
+quest_template.ObjectiveText4,<br>
+locales_quest.ObjectiveText4_loc3<br>
+FROM<br>
+quest_template ,<br>
+locales_quest<br>
+WHERE<br>
+quest_template.entry = locales_quest.entry AND<br>
+locales_quest.Title_loc3 IS NULL AND NOT<br>
+(quest_template.Title IS NULL OR<br>
+quest_template.Title = '');<br>
+</code>
+
+<br>
+<br>
+
+	<li>Titles:	</li><br><br>
+<code>
+SELECT<br>
+quest_template.entry,<br>
+quest_template.Title,<br>
+locales_quest.Title_loc3<br>
+FROM<br>
+quest_template ,<br>
+locales_quest<br>
+WHERE<br>
+quest_template.entry =  locales_quest.entry AND<br>
+locales_quest.Title_loc3 IS NULL  AND NOT<br>
+(quest_template.Title IS NULL  OR<br>
+quest_template.Title =  '');<br>
+</code>
+
+<br>
+<br>
+
+	<li>Details:	</li><br><br>
+<code>
+SELECT<br>
+quest_template.entry,<br>
+quest_template.Details,<br>
+locales_quest.Details_loc3<br>
+FROM<br>
+quest_template ,<br>
+locales_quest<br>
+WHERE<br>
+quest_template.entry =  locales_quest.entry AND<br>
+locales_quest.Details_loc3 IS NULL  AND NOT<br>
+(quest_template.Details IS NULL  OR<br>
+quest_template.Details =  '');<br>
+</code>
+
+<br>
+<br>
+
+	<li>Objectives:	</li><br><br>
+<code>
+SELECT<br>
+quest_template.entry,<br>
+quest_template.Objectives,<br>
+locales_quest.Objectives_loc3<br>
+FROM<br>
+quest_template ,<br>
+locales_quest<br>
+WHERE<br>
+quest_template.entry =  locales_quest.entry AND<br>
+locales_quest.Objectives_loc3 IS NULL  AND NOT<br>
+(quest_template.Objectives IS NULL  OR<br>
+quest_template.Objectives =  '');<br>
+</code>
+
+<br>
+<br>
+
+	<li>OfferRewardText:	</li><br><br>
+<code>
+SELECT<br>
+quest_template.entry,<br>
+quest_template.OfferRewardText,<br>
+locales_quest.OfferRewardText_loc3<br>
+FROM<br>
+quest_template ,<br>
+locales_quest<br>
+WHERE<br>
+quest_template.entry =  locales_quest.entry AND<br>
+locales_quest.OfferRewardText_loc3 IS NULL  AND NOT<br>
+(quest_template.OfferRewardText IS NULL  OR<br>
+quest_template.OfferRewardText =  '');<br>
+</code>
+
+<br>
+<br>
+
+	<li>RequestItemsText:	</li><br><br>
+<code>
+SELECT<br>
+quest_template.entry,<br>
+quest_template.RequestItemsText,<br>
+locales_quest.RequestItemsText_loc3<br>
+FROM<br>
+quest_template ,<br>
+locales_quest<br>
+WHERE<br>
+quest_template.entry =  locales_quest.entry AND<br>
+locales_quest.RequestItemsText_loc3 IS NULL  AND NOT<br>
+(quest_template.RequestItemsText IS NULL  OR<br>
+quest_template.RequestItemsText =  '');<br>
+</code>
+
+<br>
+<br>
+
+	<li>EndText:	</li><br><br>
+<code>
+SELECT<br>
+quest_template.entry,<br>
+quest_template.EndText,<br>
+locales_quest.EndText_loc3<br>
+FROM<br>
+quest_template ,<br>
+locales_quest<br>
+WHERE<br>
+quest_template.entry =  locales_quest.entry AND<br>
+locales_quest.EndText_loc3 IS NULL  AND NOT<br>
+(quest_template.EndText IS NULL  OR<br>
+quest_template.EndText =  '');<br>
+</code>
+
+<br>
+<br>
+
+	<li>CompletedText:	</li><br><br>
+<code>
+SELECT<br>
+quest_template.entry,<br>
+quest_template.CompletedText,<br>
+locales_quest.CompletedText_loc3<br>
+FROM<br>
+quest_template ,<br>
+locales_quest<br>
+WHERE<br>
+quest_template.entry =  locales_quest.entry AND<br>
+locales_quest.CompletedText_loc3 IS NULL  AND NOT<br>
+(quest_template.CompletedText IS NULL  OR<br>
+quest_template.CompletedText =  '');<br>
+</code>
+
+<br>
+<br>
+
+	<li>Objectives1:	</li><br><br>
+<code>
+SELECT<br>
+quest_template.entry,<br>
+quest_template.ObjectiveText1,<br>
+locales_quest.ObjectiveText1_loc3<br>
+FROM<br>
+quest_template ,<br>
+locales_quest<br>
+WHERE<br>
+quest_template.entry =  locales_quest.entry AND<br>
+locales_quest.ObjectiveText1_loc3 IS NULL  AND NOT<br>
+(quest_template.ObjectiveText1 IS NULL  OR<br>
+quest_template.ObjectiveText1 =  '');<br>
+</code>
+
+<br>
+<br>
+
+	<li>Objectives2:	</li><br><br>
+<code>
+SELECT<br>
+quest_template.entry,<br>
+quest_template.ObjectiveText2,<br>
+locales_quest.ObjectiveText2_loc3<br>
+FROM<br>
+quest_template ,<br>
+locales_quest<br>
+WHERE<br>
+quest_template.entry =  locales_quest.entry AND<br>
+locales_quest.ObjectiveText2_loc3 IS NULL  AND NOT<br>
+(quest_template.ObjectiveText2 IS NULL  OR<br>
+quest_template.ObjectiveText2 =  '');<br>
+</code>
+
+<br>
+<br>
+
+	<li>Objectives3:	</li><br><br>
+<code>
+SELECT<br>
+quest_template.entry,<br>
+quest_template.ObjectiveText3,<br>
+locales_quest.ObjectiveText3_loc3<br>
+FROM<br>
+quest_template ,<br>
+locales_quest<br>
+WHERE<br>
+quest_template.entry =  locales_quest.entry AND<br>
+locales_quest.ObjectiveText3_loc3 IS NULL  AND NOT<br>
+(quest_template.ObjectiveText3 IS NULL  OR<br>
+quest_template.ObjectiveText3 =  '');<br>
+</code>
+
+<br>
+<br>
+
+	<li>Objectives4:	</li><br><br>
+<code>
+SELECT<br>
+quest_template.entry,<br>
+quest_template.ObjectiveText4,<br>
+locales_quest.ObjectiveText4_loc3<br>
+FROM<br>
+quest_template ,<br>
+locales_quest<br>
+WHERE<br>
+quest_template.entry =  locales_quest.entry AND<br>
+locales_quest.ObjectiveText4_loc3 IS NULL  AND NOT<br>
+(quest_template.ObjectiveText4 IS NULL  OR<br>
+quest_template.ObjectiveText4 =  '');<br>
+</code>
+</ol>
+
+<br>
+<br>
+___________________________________________________________________________________________________ <br>
+<h5><u><a name=8>Creature_Ai_Texts</a></u></h5><p align="right"><a href="#top">Go To Top</a></p>
+
+<code>SELECT<br>
+creature_ai_texts.entry,<br>
+creature_ai_texts.content_default,<br>
+creature_ai_texts.content_loc3<br>
+FROM<br>
+creature_ai_texts<br>
+WHERE<br>
+creature_ai_texts.content_loc3 IS NULL;<br>
+</code>
+
+<br>
+<br>
+___________________________________________________________________________________________________ <br>
+<h5><u><a name=9>Script_Texts</a></u></h5><p align="right"><a href="#top">Go To Top</a></p>
+
+<code>SELECT<br>
+script_texts.entry,<br>
+script_texts.content_default,<br>
+script_texts.content_loc3<br>
+FROM<br>
+script_texts<br>
+WHERE<br>
+script_texts.content_loc3 IS NULL;<br>
+</code>
+
+<br>
+<br>
+___________________________________________________________________________________________________ <br>
+
+
+<br>
+<br>
+
+##### SQL Queries	#####
+</font>
+<pre><center>
+#############################################################################
+#####									#####
+#####         GGGGGGGG	  MM      MM     DDDDDDD    BBBBBBB 		#####
+#####        GG      	  M M    M M     D     DD   B      B   		#####
+#####       GG    GGG	  M  M  M  M     D      D   BBBBBBB    		#####
+#####        GG     GG	  M   MM   M     D     DD   B      B   		#####
+#####         GGGGGGG	  M        M     DDDDDDD    BBBBBBB    		#####
+#####  			      	 CREW					#####
+#############################################################################
+</center>
+</pre>
+</body>
+</html>

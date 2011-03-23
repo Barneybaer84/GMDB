@@ -1,0 +1,28 @@
+GMDB Crew
+-----------------------
+
+German Mangos DataBase
+
+Version 0.2
+
+MaNGOS 2.0.12
+
+Diese Übersetzung ist kompatiebel mit SDB Changeset 163+
+
+-----------------------
+Changes from 0.1
+
+- Übertragung aller Namen, Städte ... auf 2.0.12
+- VIELE neue items, gameobjects, creatures
+- creatures zu 100 % übersetzt (bugs augeschlossen ;-) )
+
+
+-----------------------
+Kommentar:
+
+NEU: Für alle GMDB Entwickler und die, die es werden wollen:
+         Ein Delete-Patch ist nun unter dem Bereich "dev" verfügbar!
+
+-----------------------
+### GMDB-Crew ###
+-----------------------

@@ -1,0 +1,39 @@
+﻿GMDB Crew
+-----------------------
+
+German Mangos DataBase
+
+Version 0.7
+
+Clientversion 2.4.3
+
+Diese Übersetzung ist kompatibel mit:
+		- MaNGOS GIT 6961+
+		- UDB Changeset 364+ (und unter Vorbehalt mit jeder weiteren MaNGOS-DB)
+		- ScriptDev2 838+
+		- ACID 22+
+
+-----------------------
+Changes from 0.6
+
+- Neu: Support für die SD2 Datenbank
+	1) "eventai_texts" über 300 Texte hinzugefügt!
+	2) "script_texts" ca. 1000 Texte hinzugefügt!
+- Neu: "mangos_db_scripts"
+- Hinzugefügt: `castBarCaption` für "locales_gameobject"
+- Updates für "command" und "mangos_string"
+- Updates für Quests, NPCs, Items, Gameobjects etc.
+ ... (genaueren Changelog wie immer über Sourceforge!)
+
+
+-----------------------
+Kommentar: Erneut hat sich unser Team stark verändert!
+	   Ich möchte allen Entwicklern und der gesamten Community für die Unterstützung danken!
+	   Auf einen Delete-Patch wird dieses mal verzichtet. Die fehlenden Einträge lassen sich mittlerweile 
+	   durch einfache SQL Befehle selbst filtern.
+
+
+-----------------------
+### GMDB-Crew ###
+-----------------------
+

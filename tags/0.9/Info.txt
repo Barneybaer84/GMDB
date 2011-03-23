@@ -1,0 +1,39 @@
+﻿GMDB Crew
+-----------------------
+
+German Mangos DataBase
+
+Version 0.9
+
+Clientversion 3.3.5a
+
+Diese Übersetzung ist kompatibel mit:
+		- MaNGOS GIT 10400+
+		- UDB Changeset 392+ (und unter Vorbehalt mit jeder weiteren MaNGOS-DB)
+		- ScriptDev2 1807+
+		- ACID 35+
+
+-----------------------
+Changes from 0.8
+
+- neu: locales_gossip_menu_option
+- neu: game_event
+- neu: sehr viele neue Übersetzungen für die Spalte completedtext in locales_quest
+- neu: Übersetzung von game_tele
+- neu: gossip_texts für ScriptDev2
+- update: HardcodedGossipTexts.patch für ScriptDev2
+- viele, viele neue Inhalte von WDB-Dateien . . .
+
+
+ ... (genaueren Changelog wie immer über Sourceforge!)
+
+
+-----------------------
+Kommentar: Die aktiven Entwickler sind in letzter Zeit für dieses Projekt rar geworden.
+	   Umso mehr möchte ich allen Entwicklern und der gesamten Community für die Unterstützung danken!
+	   Wir hoffen auch in Zukunft auf eine super Zusammenarbeit!
+
+-----------------------
+### GMDB-Crew ###
+-----------------------
+

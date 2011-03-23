@@ -1,0 +1,24 @@
+// Relative path to the files folder
+../../trunk/
+
+// The name of each file
+areatrigger_tavern.sql
+areatrigger_teleport.sql
+command.sql
+creature_ai_texts.sql
+db_script_string.sql
+game_event.sql
+game_tele.sql
+locales_achievement_reward.sql
+locales_creature.sql
+locales_gameobject.sql
+locales_gossip_menu_option.sql
+locales_item.sql
+locales_npc_text.sql
+locales_page_text.sql
+locales_points_of_interest.sql
+locales_quest.sql
+mangos_string.sql
+transports.sql
+ScriptDev2/gossip_texts.sql
+ScriptDev2/script_texts.sql

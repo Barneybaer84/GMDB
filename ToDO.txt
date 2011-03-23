@@ -1,0 +1,78 @@
+For all those who want to help! Here is our current point of development:
+
+These are only the TRANSLATIONS which are LEFT!
+There are already translations which might be buggy! If you find some of them, please report them to us!
+THX
+
+
+All Statistics are in comparision with UDB!
+
+-------------------------------------------------------------------------------------------------------
+
+Statistic of missing entries with:
+	MaNGOS Git 11234 and UDB Rev. 399 and ScriptDev2 1994 and ACID 42 and GMDB Revision 1455:
+	---------------     ------------     ---------------     -------     ------------------
+
+areatrigger_tavern (Statistic: 0 entries left)
+        100% finished!
+
+areatrigger_teleport (Statistic: 0 entries left)
+        100% finished!
+
+command (Statistic: 6 entries left)
+        98% finished!
+
+creature_ai_texts (ACID) (Statistic: 54 entries left)
+        95% finished!
+
+db_script_string (Statistic: 16 entries left)
+        96% finished!
+
+game_event (Statistic: 0 entries left)
+        100% finished!
+
+game_tele (Statistic: 0 entries left)
+        100% finished!
+
+locales_achievement_reward (Statistic: 21 entries left)
+        32% finished!
+
+locales_creature (Statistic: 107 entries left, 0 entries incomplete)
+        99% finished!
+
+locales_gameobject (Statistic: 775 entries left, 0 entries incomplete)
+        95% finished!
+
+locales_gossip_menu_option (Statistic: 629 entries left, 0 entries incomplete)
+        73% finished!
+
+locales_item (Statistic: 179 entries left, 9 entries incomplete)
+        99% finished!
+
+locales_npc_text (Statistic: 692 entries left, 6 entries incomplete)
+        88% finished!
+
+locales_page_text (Statistic: 9 entries left)
+        99% finished!
+
+locales_points_of_interest (Statistic: 0 entries left)
+        100% finished!
+
+locales_quest (Statistic: 69 entries left, 3211 entries incomplete)
+        63% finished!
+
+mangos_string (Statistic: 0 entries left)
+        100% finished!
+
+transports (Statistic: 0 entries left)
+        100% finished!
+
+gossip_texts (SD2) (Statistic: 5 entries left)
+        86% finished!
+
+script_texts (SD2) (Statistic: 138 entries left)
+        95% finished!
+
+ScriptDev2: HardcodedGossipTexts (Statistic: 120 entries left)
+
+-------------------------------------------------------------------------------------------------------

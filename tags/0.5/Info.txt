@@ -1,0 +1,37 @@
+GMDB Crew
+-----------------------
+
+German Mangos DataBase
+
+Version 0.5
+
+MaNGOS 2.2.3
+
+Diese Übersetzung ist kompatibel mit UDB Changeset 328+ 
+(und unter Vorbehalt mit jeder weiteren MaNGOS-DB)
+
+-----------------------
+Changes from 0.4
+
+- Multilanguage Support!
+  Ihr habt nun die Möglichkeit euren Datenbank mehrsprachig bzw. weiterhin nur in Deutsch zu patchen!
+
+- Hinzugefügt: Alle neuen "commands" seit letztem Milestone
+- Hinzugefügt: Neue RequestItemTexte in "locales_quest" (wird noch fortgesetzt!)
+- Neu: "areatrigger_teleport" (alte "areatrigger_template")
+- Hinzugefügt: Neue "quest_start_scripts" und neue "quest_end_scripts"
+- Viele WDB-Dateien eingefügt (Danke an alle, die diese bereitgestellt haben!)
+ ... (genaueren Changelog wie immer über Sourceforge!)
+
+
+-----------------------
+Kommentar:
+
+Wieder mit dabei: Ein DELETE-Patch für alle GMDB Entwickler und die, die es werden wollen!
+                  Bitte benutzt diesen allerdings nur wenn ihr wisst, was ihr tut!!!
+                  Es werden die Dateien aus den "*_template" Tabellen gelöscht!!!
+
+-----------------------
+### GMDB-Crew ###
+-----------------------
+

@@ -7,7 +7,7 @@
 #####          GGGGGGG     M        M     DDDDDDD    BBBBBBB               #####
 #####                             CREW                                     #####
 ################################################################################
-# Copyright (C) 2007-2011 GMDB <https://github.com/gmdb/gmdb>         #
+# Copyright (C) 2007-2011 GMDB <https://github.com/gmdb/gmdb>                  #
 #                                                                              #
 # This program is free software: you can redistribute it and/or modify         #
 # it under the terms of the GNU General Public License as published by         #
